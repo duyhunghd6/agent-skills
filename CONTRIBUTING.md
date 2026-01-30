@@ -1,11 +1,11 @@
-# 🤝 Contributing Guide - V3 Enterprise Edition
+# 🤝 Contributing Guide - V4 Enterprise Edition
 
 **Thank you for wanting to make this repo better!** This guide shows you exactly how to contribute, even if you're new to open source.
-With V3, we raised the bar for quality. Please read the **new Quality Standards** below carefully.
+With V4, we raised the bar for quality. Please read the **new Quality Standards** below carefully.
 
 ---
 
-## 🧐 The "Quality Bar" (V3 Standard)
+## 🧐 The "Quality Bar" (V4 Standard)
 
 **Critical for new skills:** Every skill submitted must pass our **5-Point Quality Check** (see `docs/QUALITY_BAR.md` for details):
 
@@ -112,16 +112,13 @@ code example here
 - ❌ Don't do this
 ```
 
-#### Step 4: Validate (CRITICAL V3 STEP)
+#### Step 4: Validate (CRITICAL V4 STEP)
 
-Run the validation script locally. **We will not merge PRs that fail this check.**
+Use the canonical validator `scripts/validate_skills.py` via `npm run validate`. **We will not merge PRs that fail this check.**
 
 ```bash
-# Soft mode (warnings only)
-python3 scripts/validate_skills.py
-
-# Hard mode (what CI runs)
-python3 scripts/validate_skills.py --strict
+npm run validate        # soft mode (warnings only)
+npm run validate:strict # strict mode (what CI runs)
 ```
 
 This checks:

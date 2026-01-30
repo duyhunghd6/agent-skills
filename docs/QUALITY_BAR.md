@@ -57,8 +57,9 @@ We also categorize skills by who maintains them:
 
 ## How to Validate Your Skill
 
-Run the validator script before submitting a PR:
+The canonical validator is `scripts/validate_skills.py`. Run `npm run validate` (or `npm run validate:strict`) before submitting a PR:
 
 ```bash
-python3 scripts/validate_skills.py --strict
+npm run validate       # soft mode (warnings only)
+npm run validate:strict  # strict mode (CI uses this)
 ```

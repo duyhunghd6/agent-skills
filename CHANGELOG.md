@@ -11,6 +11,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [4.0.0] - 2026-01-28 - "The Enterprise Era"
+
+> **A massive integration of 300+ Enterprise skills, transforming Antigravity into a complete operating system for AI agents.**
+
+### Added
+
+- **Massive Skill Injection**: Merged 300+ Enterprise skills from `rmyndharis/antigravity-skills`.
+- **New Categories**:
+  - **Architecture & Design**: `backend-architect`, `c4-architecture`.
+  - **Data & AI**: `rag-engineer`, `langchain-architecture`.
+  - **Security**: `security-auditor`, `cloud-pentesting`.
+- **Catalog System**: Introduced `CATALOG.md` and `scripts/build-catalog.js` for automated, table-based skill discovery.
+
+### Changed
+
+- **Documentation Overhaul**:
+  - Removed the legacy 250+ row skill table from `README.md`.
+  - Restructured `README.md` to focus on high-level domains.
+  - Replaced static registry with dynamic `CATALOG.md`.
+- **Version Bump**: Major version update to 4.0.0 reflecting the doubling of skill capacity (247 -> 550+).
+
+### Credits
+
+- **[@rmyndharis](https://github.com/rmyndharis)** - For the massive contribution of 300+ Enterprise skills and valid catalog logic.
+- **[@sstklen](https://github.com/sstklen)** & **[@rookie-ricardo](https://github.com/rookie-ricard)** - Continued community support.
+
 ## [3.4.0] - 2026-01-27 - "Voice Intelligence & Categorization"
 
 ### Added
@@ -73,7 +99,7 @@ The following skills are now correctly indexed and visible in the registry:
 ### Changed
 
 - **Documentation**: Added `docs/CI_DRIFT_FIX.md` as a canonical reference for resolving drift issues.
-- **Guidance**: Updated `GETTING_STARTED.md` counts to match the full registry (253+ skills).
+- **Guidance**: Updated `docs/GETTING_STARTED.md` counts to match the full registry (253+ skills).
 - **Maintenance**: Updated `MAINTENANCE.md` with strict protocols for handling generated files.
 
 ## [3.0.0] - 2026-01-25 - "The Governance Update"
@@ -233,7 +259,7 @@ The following skills are now correctly indexed and visible in the registry:
   - `cc-skill-project-guidelines-example`
   - `cc-skill-security-review`
   - `cc-skill-strategic-compact`
-- **Documentation**: New `WALKTHROUGH.md` for import process details.
+- **Documentation**: New `docs/WALKTHROUGH.md` for import process details.
 
 ### Changed
 

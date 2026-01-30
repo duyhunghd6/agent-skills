@@ -31,9 +31,7 @@
 antigravity-awesome-skills/
 │
 ├── 📄 README.md                    ← Overview & skill list
-├── 📄 GETTING_STARTED.md           ← Start here! (NEW)
 ├── 📄 CONTRIBUTING.md              ← How to contribute
-├── 📄 FAQ.md                       ← Troubleshooting
 │
 ├── 📁 skills/                      ← All 250+ skills live here
 │   │
@@ -54,6 +52,8 @@ antigravity-awesome-skills/
 │   └── 📄 MAINTENANCE.md           ← Maintainers Guide
 │
 └── 📁 docs/                        ← Documentation
+    ├── 📄 GETTING_STARTED.md       ← Start here! (NEW)
+    ├── 📄 FAQ.md                   ← Troubleshooting
     ├── 📄 BUNDLES.md               ← Starter Packs (NEW)
     ├── 📄 QUALITY_BAR.md           ← Quality Standards
     ├── 📄 SKILL_ANATOMY.md         ← How skills work
@@ -456,7 +456,7 @@ START HERE
 │  5. Submit PR                                               │
 │                                                             │
 │  🆘 HELP                                                    │
-│  • GETTING_STARTED.md - Basics                              │
+│  • docs/GETTING_STARTED.md - Basics                         │
 │  • CONTRIBUTING.md - How to contribute                │
 │  • SKILL_ANATOMY.md - Deep dive                             │
 │  • GitHub Issues - Ask questions                            │
@@ -505,7 +505,7 @@ Month 1: Regular contributor
 
 **Visual learner?** This guide should help! Still have questions? Check out:
 
-- [GETTING_STARTED.md](../GETTING_STARTED.md) - Text-based intro
+- [GETTING_STARTED.md](GETTING_STARTED.md) - Text-based intro
 - [SKILL_ANATOMY.md](SKILL_ANATOMY.md) - Detailed breakdown
 - [CONTRIBUTING.md](../CONTRIBUTING.md) - How to contribute
 
