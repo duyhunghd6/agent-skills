@@ -7,6 +7,7 @@ LOCAL_CONFIG.md
 
 agent-factory/library/
 agent-factory/ref/
+agent-factory/temp/
 
 data/node_modules
 
@@ -29,3 +30,4 @@ scripts/*html*.py
 scripts/*similar*.py
 scripts/*count*.py
 .DS_Store
+
