@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-02T10:35:00.345Z",
+  "generatedAt": "2026-02-02T11:05:25.912Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
@@ -60,6 +60,7 @@
         "go-concurrency-patterns",
         "golang-pro",
         "graphql",
+        "gsap-animation",
         "hubspot-integration",
         "hugging-face-jobs",
         "ios-developer",

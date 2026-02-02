@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-02-02T10:35:00.345Z
+Generated at: 2026-02-02T11:05:25.912Z
 
-Total skills: 626
+Total skills: 627
 
 ## architecture (60)
 
@@ -211,7 +211,7 @@ Total skills: 626
 | `xlsx` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx | xlsx, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work, spreadsheets |
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 
-## development (83)
+## development (84)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -248,6 +248,7 @@ Total skills: 626
 | `frontend-slides` | Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a... | frontend, slides | frontend, slides, stunning, animation, rich, html, presentations, scratch, converting, powerpoint, files, user |
 | `go-concurrency-patterns` | Master Go concurrency with goroutines, channels, sync primitives, and context. Use when building concurrent Go applications, implementing worker pools, or de... | go, concurrency | go, concurrency, goroutines, channels, sync, primitives, context, building, concurrent, applications, implementing, worker |
 | `golang-pro` | Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem i... | golang | golang, pro, go, 21, concurrency, performance, optimization, microservices, latest, ecosystem, including, generics |
+| `gsap-animation` | Expert strategies for high-performance GSAP animations. Covers React integration (useGSAP), ScrollTrigger (Pinning/Scrubbing), and Three.js workflows. Use wh... | gsap, animation | gsap, animation, high, performance, animations, covers, react, integration, usegsap, scrolltrigger, pinning, scrubbing |
 | `hubspot-integration` | Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, associations, batch operations, webhooks, and custom objects. Covers... | hubspot, integration | hubspot, integration, crm, including, oauth, authentication, objects, associations, batch, operations, webhooks, custom |
 | `javascript-mastery` | Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced pa... | javascript, mastery | javascript, mastery, reference, covering, 33, essential, concepts, every, developer, should, know, fundamentals |
 | `javascript-pro` | Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PROACTIVELY for Java... | javascript | javascript, pro, es6, async, node, js, apis, promises, event, loops, browser, compatibility |

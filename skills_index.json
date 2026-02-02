@@ -2547,6 +2547,15 @@
     "source": "unknown"
   },
   {
+    "id": "gsap-animation",
+    "path": "skills/gsap-animation",
+    "category": "uncategorized",
+    "name": "gsap-animation",
+    "description": "Expert strategies for high-performance GSAP animations. Covers React integration (useGSAP), ScrollTrigger (Pinning/Scrubbing), and Three.js workflows. Use when asking for \"animations\", \"gsap\", \"scroll interactions\", or \"creative web effects\".",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "haskell-pro",
     "path": "skills/haskell-pro",
     "category": "uncategorized",

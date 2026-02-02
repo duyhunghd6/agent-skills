@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-02T10:35:00.345Z",
-  "total": 626,
+  "generatedAt": "2026-02-02T11:05:25.912Z",
+  "total": 627,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -6770,6 +6770,31 @@
         "time"
       ],
       "path": "skills/graphql-architect/SKILL.md"
+    },
+    {
+      "id": "gsap-animation",
+      "name": "gsap-animation",
+      "description": "Expert strategies for high-performance GSAP animations. Covers React integration (useGSAP), ScrollTrigger (Pinning/Scrubbing), and Three.js workflows. Use when asking for \"animations\", \"gsap\", \"scroll interactions\", or \"creative web effects\".",
+      "category": "development",
+      "tags": [
+        "gsap",
+        "animation"
+      ],
+      "triggers": [
+        "gsap",
+        "animation",
+        "high",
+        "performance",
+        "animations",
+        "covers",
+        "react",
+        "integration",
+        "usegsap",
+        "scrolltrigger",
+        "pinning",
+        "scrubbing"
+      ],
+      "path": "skills/gsap-animation/SKILL.md"
     },
     {
       "id": "haskell-pro",
