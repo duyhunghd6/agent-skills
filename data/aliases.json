@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-04T08:08:20.870Z",
+  "generatedAt": "2026-02-04T11:41:08.406Z",
   "aliases": {
     "accessibility-compliance-audit": "accessibility-compliance-accessibility-audit",
     "active directory attacks": "active-directory-attacks",
@@ -102,6 +102,7 @@
     "python-development-scaffold": "python-development-python-scaffold",
     "vercel-react-best-practices": "react-best-practices",
     "red team tools and methodology": "red-team-tools",
+    "rust-system-design": "rust-system-architecture-design",
     "security scanning tools": "scanning-tools",
     "security-compliance-check": "security-compliance-compliance-check",
     "security-scanning-dependencies": "security-scanning-security-dependencies",

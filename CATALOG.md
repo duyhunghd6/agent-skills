@@ -1,10 +1,10 @@
 # Skill Catalog
 
-Generated at: 2026-02-04T08:08:20.870Z
+Generated at: 2026-02-04T11:41:08.406Z
 
-Total skills: 631
+Total skills: 639
 
-## architecture (62)
+## architecture (63)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -44,6 +44,7 @@ Total skills: 631
 | `i18n-localization` | Internationalization and localization patterns. Detecting hardcoded strings, managing translations, locale files, RTL support. | i18n, localization | i18n, localization, internationalization, detecting, hardcoded, strings, managing, translations, locale, files, rtl |
 | `inngest` | Inngest expert for serverless-first background jobs, event-driven workflows, and durable execution without managing queues or workers. Use when: inngest, ser... | inngest | inngest, serverless, first, background, jobs, event, driven, durable, execution, without, managing, queues |
 | `julia-pro` | Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices. Expert in the Julia ecosystem including... | julia | julia, pro, 10, features, performance, optimization, multiple, dispatch, ecosystem, including, package, scientific |
+| `lib-fretboard-js` | Guitar/bass fretboard SVG visualization using fretboard.js library. Covers chord diagrams, scale patterns (CAGED, TNPS, pentatonic systems), event handling, ... | lib, fretboard, js | lib, fretboard, js, guitar, bass, svg, visualization, library, covers, chord, diagrams, scale |
 | `minecraft-bukkit-pro` | Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs. Specializes in event-driven architecture, command systems, world manipulation... | minecraft, bukkit | minecraft, bukkit, pro, server, plugin, development, spigot, paper, apis, specializes, event, driven |
 | `monorepo-architect` | Expert in monorepo architecture, build systems, and dependency management at scale. Masters Nx, Turborepo, Bazel, and Lerna for efficient multi-project devel... | monorepo | monorepo, architect, architecture, dependency, scale, masters, nx, turborepo, bazel, lerna, efficient, multi |
 | `multi-agent-patterns` | Master orchestrator, peer-to-peer, and hierarchical multi-agent architectures | multi, agent | multi, agent, orchestrator, peer, hierarchical, architectures |
@@ -113,7 +114,7 @@ Total skills: 631
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (93)
+## data-ai (95)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -166,6 +167,8 @@ Total skills: 631
 | `ios-developer` | Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization. Use PROACT... | ios | ios, developer, develop, native, applications, swift, swiftui, masters, 18, uikit, integration, core |
 | `langchain-architecture` | Design LLM applications using the LangChain framework with agents, memory, and tool integration patterns. Use when building LangChain applications, implement... | langchain, architecture | langchain, architecture, llm, applications, framework, agents, memory, integration, building, implementing, ai, creating |
 | `langgraph` | Expert in LangGraph - the production-grade framework for building stateful, multi-actor AI applications. Covers graph construction, state management, cycles ... | langgraph | langgraph, grade, framework, building, stateful, multi, actor, ai, applications, covers, graph, construction |
+| `lib-binance-js` | Comprehensive guide for Binance Spot API (REST & WebSocket) including mainnet & testnet support. Triggers on tasks involving Binance API integration, crypto ... | lib, binance, js | lib, binance, js, spot, api, rest, websocket, including, mainnet, testnet, triggers, tasks |
+| `lib-mexc-js` | Comprehensive guide for MEXC Spot V3 API (REST & WebSocket with Protocol Buffers) including trading, market data, and user data streams. Triggers on tasks in... | lib, mexc, js | lib, mexc, js, spot, v3, api, rest, websocket, protocol, buffers, including, trading |
 | `llm-application-dev-ai-assistant` | You are an AI assistant development expert specializing in creating intelligent conversational interfaces, chatbots, and AI-powered applications. Design comp... | llm, application, dev, ai | llm, application, dev, ai, assistant, development, specializing, creating, intelligent, conversational, interfaces, chatbots |
 | `llm-application-dev-langchain-agent` | You are an expert LangChain agent developer specializing in production-grade AI systems using LangChain 0.1+ and LangGraph. | llm, application, dev, langchain, agent | llm, application, dev, langchain, agent, developer, specializing, grade, ai, langgraph |
 | `llm-application-dev-prompt-optimize` | You are an expert prompt engineer specializing in crafting effective prompts for LLMs through advanced techniques including constitutional AI, chain-of-thoug... | llm, application, dev, prompt, optimize | llm, application, dev, prompt, optimize, engineer, specializing, crafting, effective, prompts, llms, through |
@@ -211,11 +214,12 @@ Total skills: 631
 | `web-artifacts-builder` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use ... | web, artifacts, builder | web, artifacts, builder, suite, creating, elaborate, multi, component, claude, ai, html, frontend |
 | `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work ... | xlsx, official | xlsx, official, spreadsheet, creation, editing, analysis, formulas, formatting, data, visualization, claude, work |
 
-## development (81)
+## development (85)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
 | `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |
+| `abcjs` | Skill for writing ABC Notation (v2.1 standard) and using the abcjs JavaScript library to render sheet music in web applications. Use when writing ABC notatio... | abcjs | abcjs, skill, writing, abc, notation, v2, standard, javascript, library, render, sheet, music |
 | `algolia-search` | Expert patterns for Algolia search implementation, indexing strategies, React InstantSearch, and relevance tuning Use when: adding search to, algolia, instan... | algolia, search | algolia, search, indexing, react, instantsearch, relevance, tuning, adding, api, functionality |
 | `api-design-principles` | Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, revie... | api, principles | api, principles, rest, graphql, intuitive, scalable, maintainable, apis, delight, developers, designing, new |
 | `api-documentation-generator` | Generate comprehensive, developer-friendly API documentation from code, including endpoints, parameters, examples, and best practices | api, documentation, generator | api, documentation, generator, generate, developer, friendly, code, including, endpoints, parameters, examples |
@@ -225,6 +229,7 @@ Total skills: 631
 | `async-python-patterns` | Master Python asyncio, concurrent programming, and async/await patterns for high-performance applications. Use when building async APIs, concurrent systems, ... | async, python | async, python, asyncio, concurrent, programming, await, high, performance, applications, building, apis, bound |
 | `azure-functions` | Expert patterns for Azure Functions development including isolated worker model, Durable Functions orchestration, cold start optimization, and production pat... | azure, functions | azure, functions, development, including, isolated, worker, model, durable, orchestration, cold, start, optimization |
 | `backend-dev-guidelines` | Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architecture, BaseController pattern, dependency i... | backend, dev, guidelines | backend, dev, guidelines, opinionated, development, standards, node, js, express, typescript, microservices, covers |
+| `backend-rust-best-practice` | Production-grade Rust engineering patterns for backend development. Covers Type-Driven Design, Builder Pattern, Structured Error Handling, Newtype Wrappers, ... | backend, rust, best, practice | backend, rust, best, practice, grade, engineering, development, covers, type, driven, builder, structured |
 | `bullmq-specialist` | BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript applications. Use when: bullmq, bull que... | bullmq | bullmq, redis, backed, job, queues, background, processing, reliable, async, execution, node, js |
 | `bun-development` | Modern JavaScript/TypeScript development with Bun runtime. Covers package management, bundling, testing, and migration from Node.js. Use when working with Bu... | bun | bun, development, javascript, typescript, runtime, covers, package, bundling, testing, migration, node, js |
 | `cc-skill-coding-standards` | Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development. | cc, skill, coding, standards | cc, skill, coding, standards, universal, typescript, javascript, react, node, js, development |
@@ -247,6 +252,7 @@ Total skills: 631
 | `game-development/mobile-games` | Mobile game development principles. Touch input, battery, performance, app stores. | game, development/mobile, games | game, development/mobile, games, mobile, development, principles, touch, input, battery, performance, app, stores |
 | `go-concurrency-patterns` | Master Go concurrency with goroutines, channels, sync primitives, and context. Use when building concurrent Go applications, implementing worker pools, or de... | go, concurrency | go, concurrency, goroutines, channels, sync, primitives, context, building, concurrent, applications, implementing, worker |
 | `golang-pro` | Master Go 1.21+ with modern patterns, advanced concurrency, performance optimization, and production-ready microservices. Expert in the latest Go ecosystem i... | golang | golang, pro, go, 21, concurrency, performance, optimization, microservices, latest, ecosystem, including, generics |
+| `gsap-animation` | Expert strategies for high-performance GSAP animations. Covers React integration (useGSAP), ScrollTrigger (Pinning/Scrubbing), and Three.js workflows. Use wh... | gsap, animation | gsap, animation, high, performance, animations, covers, react, integration, usegsap, scrolltrigger, pinning, scrubbing |
 | `hubspot-integration` | Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, associations, batch operations, webhooks, and custom objects. Covers... | hubspot, integration | hubspot, integration, crm, including, oauth, authentication, objects, associations, batch, operations, webhooks, custom |
 | `javascript-mastery` | Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals like primitives and closures to advanced pa... | javascript, mastery | javascript, mastery, reference, covering, 33, essential, concepts, every, developer, should, know, fundamentals |
 | `javascript-pro` | Master modern JavaScript with ES6+, async patterns, and Node.js APIs. Handles promises, event loops, and browser/Node compatibility. Use PROACTIVELY for Java... | javascript | javascript, pro, es6, async, node, js, apis, promises, event, loops, browser, compatibility |
@@ -278,6 +284,7 @@ Total skills: 631
 | `remotion-best-practices` | Best practices for Remotion - Video creation in React | remotion, video, react, animation, composition | remotion, video, react, animation, composition, creation |
 | `ruby-pro` | Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing fram... | ruby | ruby, pro, write, idiomatic, code, metaprogramming, rails, performance, optimization, specializes, gem, development |
 | `rust-async-patterns` | Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing conc... | rust, async | rust, async, programming, tokio, traits, error, handling, concurrent, building, applications, implementing, debugging |
+| `rust-design-patterns` | Comprehensive Rust idiomatic patterns and design patterns guide. Apply when writing, reviewing, or refactoring Rust code. Covers creational patterns (Builder... | rust | rust, idiomatic, apply, writing, reviewing, refactoring, code, covers, creational, builder, constructor, behavioural |
 | `rust-pro` | Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem in... | rust | rust, pro, 75, async, type, features, programming, latest, ecosystem, including, tokio, axum |
 | `senior-fullstack` | Comprehensive fullstack development skill for building complete web applications with React, Next.js, Node.js, GraphQL, and PostgreSQL. Includes project scaf... | senior, fullstack | senior, fullstack, development, skill, building, complete, web, applications, react, next, js, node |
 | `shodan-reconnaissance` | This skill should be used when the user asks to "search for exposed devices on the internet," "perform Shodan reconnaissance," "find vulnerable services usin... | shodan, reconnaissance | shodan, reconnaissance, pentesting, skill, should, used, user, asks, search, exposed, devices, internet |
@@ -432,7 +439,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `writing-skills` | Use when creating, updating, or improving agent skills. | writing, skills | writing, skills, creating, updating, improving, agent |
 | `x-article-publisher-skill` | Publish articles to X/Twitter | x, article, publisher, skill | x, article, publisher, skill, publish, articles, twitter |
 
-## infrastructure (79)
+## infrastructure (80)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -501,6 +508,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `prometheus-configuration` | Set up Prometheus for comprehensive metric collection, storage, and monitoring of infrastructure and applications. Use when implementing metrics collection, ... | prometheus, configuration | prometheus, configuration, set, up, metric, collection, storage, monitoring, infrastructure, applications, implementing, metrics |
 | `protocol-reverse-engineering` | Master network protocol reverse engineering including packet analysis, protocol dissection, and custom protocol documentation. Use when analyzing network tra... | protocol, reverse, engineering | protocol, reverse, engineering, network, including, packet, analysis, dissection, custom, documentation, analyzing, traffic |
 | `readme` | When the user wants to create or update a README.md file for a project. Also use when the user says 'write readme,' 'create readme,' 'document this project,'... | readme | readme, user, wants, update, md, file, says, write, document, documentation, asks, skill |
+| `rust-system-architecture-design` | Design production-grade Rust systems using the "5+1 Information Tower" methodology. Apply proven architectural patterns (Storage Abstraction, Service Pipelin... | rust, architecture | rust, architecture, grade, information, tower, methodology, apply, proven, architectural, storage, abstraction, pipeline |
 | `server-management` | Server management principles and decision-making. Process management, monitoring strategy, and scaling decisions. Teaches thinking, not commands. | server | server, principles, decision, making, process, monitoring, scaling, decisions, teaches, thinking, commands |
 | `service-mesh-observability` | Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debu... | service, mesh, observability | service, mesh, observability, meshes, including, distributed, tracing, metrics, visualization, setting, up, monitoring |
 | `slo-implementation` | Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets and alerting. Use when establishing reliability t... | slo | slo, define, level, indicators, slis, objectives, slos, error, budgets, alerting, establishing, reliability |

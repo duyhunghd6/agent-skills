@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-04T08:08:20.870Z",
-  "total": 631,
+  "generatedAt": "2026-02-04T11:41:08.406Z",
+  "total": 639,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -52,6 +52,30 @@
         "execution"
       ],
       "path": "skills/ab-test-setup/SKILL.md"
+    },
+    {
+      "id": "abcjs",
+      "name": "abcjs",
+      "description": "Skill for writing ABC Notation (v2.1 standard) and using the abcjs JavaScript library to render sheet music in web applications. Use when writing ABC notation files, implementing music notation rendering on websites, or integrating audio playback and animation. Triggers on tasks involving ABC notation syntax, sheet music display, music synthesis, or MIDI generation.",
+      "category": "development",
+      "tags": [
+        "abcjs"
+      ],
+      "triggers": [
+        "abcjs",
+        "skill",
+        "writing",
+        "abc",
+        "notation",
+        "v2",
+        "standard",
+        "javascript",
+        "library",
+        "render",
+        "sheet",
+        "music"
+      ],
+      "path": "skills/abcjs/SKILL.md"
     },
     {
       "id": "accessibility-compliance-accessibility-audit",
@@ -1445,6 +1469,33 @@
         "teams"
       ],
       "path": "skills/backend-development-feature-development/SKILL.md"
+    },
+    {
+      "id": "backend-rust-best-practice",
+      "name": "backend-rust-best-practice",
+      "description": "Production-grade Rust engineering patterns for backend development. Covers Type-Driven Design, Builder Pattern, Structured Error Handling, Newtype Wrappers, Trait-Based Abstraction, and Thread-Safe Concurrency. Use when writing Rust backend code, libraries, or services requiring robust, idiomatic patterns.",
+      "category": "development",
+      "tags": [
+        "backend",
+        "rust",
+        "best",
+        "practice"
+      ],
+      "triggers": [
+        "backend",
+        "rust",
+        "best",
+        "practice",
+        "grade",
+        "engineering",
+        "development",
+        "covers",
+        "type",
+        "driven",
+        "builder",
+        "structured"
+      ],
+      "path": "skills/backend-rust-best-practice/SKILL.md"
     },
     {
       "id": "backend-security-coder",
@@ -7086,6 +7137,31 @@
       "path": "skills/graphql-architect/SKILL.md"
     },
     {
+      "id": "gsap-animation",
+      "name": "gsap-animation",
+      "description": "Expert strategies for high-performance GSAP animations. Covers React integration (useGSAP), ScrollTrigger (Pinning/Scrubbing), and Three.js workflows. Use when asking for \"animations\", \"gsap\", \"scroll interactions\", or \"creative web effects\".",
+      "category": "development",
+      "tags": [
+        "gsap",
+        "animation"
+      ],
+      "triggers": [
+        "gsap",
+        "animation",
+        "high",
+        "performance",
+        "animations",
+        "covers",
+        "react",
+        "integration",
+        "usegsap",
+        "scrolltrigger",
+        "pinning",
+        "scrubbing"
+      ],
+      "path": "skills/gsap-animation/SKILL.md"
+    },
+    {
       "id": "haskell-pro",
       "name": "haskell-pro",
       "description": "Expert Haskell engineer specializing in advanced type systems, pure functional design, and high-reliability software. Use PROACTIVELY for type-level programming, concurrency, and architecture guidance.",
@@ -8130,6 +8206,84 @@
         "texts"
       ],
       "path": "skills/legal-advisor/SKILL.md"
+    },
+    {
+      "id": "lib-binance-js",
+      "name": "lib-binance-js",
+      "description": "Comprehensive guide for Binance Spot API (REST & WebSocket) including mainnet & testnet support. Triggers on tasks involving Binance API integration, crypto trading bots, market data streams, or user data updates.",
+      "category": "data-ai",
+      "tags": [
+        "lib",
+        "binance",
+        "js"
+      ],
+      "triggers": [
+        "lib",
+        "binance",
+        "js",
+        "spot",
+        "api",
+        "rest",
+        "websocket",
+        "including",
+        "mainnet",
+        "testnet",
+        "triggers",
+        "tasks"
+      ],
+      "path": "skills/lib-binance-js/SKILL.md"
+    },
+    {
+      "id": "lib-fretboard-js",
+      "name": "lib-fretboard-js",
+      "description": "Guitar/bass fretboard SVG visualization using fretboard.js library. Covers chord diagrams, scale patterns (CAGED, TNPS, pentatonic systems), event handling, and styling. Triggers on tasks involving guitar fretboard visualization, chord diagrams, scale boxes, tab rendering, or music theory visualization for stringed instruments.",
+      "category": "architecture",
+      "tags": [
+        "lib",
+        "fretboard",
+        "js"
+      ],
+      "triggers": [
+        "lib",
+        "fretboard",
+        "js",
+        "guitar",
+        "bass",
+        "svg",
+        "visualization",
+        "library",
+        "covers",
+        "chord",
+        "diagrams",
+        "scale"
+      ],
+      "path": "skills/lib-fretboard-js/SKILL.md"
+    },
+    {
+      "id": "lib-mexc-js",
+      "name": "lib-mexc-js",
+      "description": "Comprehensive guide for MEXC Spot V3 API (REST & WebSocket with Protocol Buffers) including trading, market data, and user data streams. Triggers on tasks involving MEXC API integration, crypto trading bots, market data streams, or wallet operations.",
+      "category": "data-ai",
+      "tags": [
+        "lib",
+        "mexc",
+        "js"
+      ],
+      "triggers": [
+        "lib",
+        "mexc",
+        "js",
+        "spot",
+        "v3",
+        "api",
+        "rest",
+        "websocket",
+        "protocol",
+        "buffers",
+        "including",
+        "trading"
+      ],
+      "path": "skills/lib-mexc-js/SKILL.md"
     },
     {
       "id": "linear-claude-skill",
@@ -11550,6 +11704,30 @@
       "path": "skills/rust-async-patterns/SKILL.md"
     },
     {
+      "id": "rust-design-patterns",
+      "name": "rust-design-patterns",
+      "description": "Comprehensive Rust idiomatic patterns and design patterns guide. Apply when writing, reviewing, or refactoring Rust code. Covers creational patterns (Builder, Constructor), behavioural patterns (Command, RAII, Newtype, Strategy), structural patterns (Compose Structs, Small Crates), common idioms, and anti-patterns to avoid. Triggers on Rust code design decisions, API design, memory management, type safety, and pattern implementation.",
+      "category": "development",
+      "tags": [
+        "rust"
+      ],
+      "triggers": [
+        "rust",
+        "idiomatic",
+        "apply",
+        "writing",
+        "reviewing",
+        "refactoring",
+        "code",
+        "covers",
+        "creational",
+        "builder",
+        "constructor",
+        "behavioural"
+      ],
+      "path": "skills/rust-design-patterns/SKILL.md"
+    },
+    {
       "id": "rust-pro",
       "name": "rust-pro",
       "description": "Master Rust 1.75+ with modern async patterns, advanced type system features, and production-ready systems programming. Expert in the latest Rust ecosystem including Tokio, axum, and cutting-edge crates. Use PROACTIVELY for Rust development, performance optimization, or systems programming.",
@@ -11572,6 +11750,31 @@
         "axum"
       ],
       "path": "skills/rust-pro/SKILL.md"
+    },
+    {
+      "id": "rust-system-architecture-design",
+      "name": "rust-system-architecture-design",
+      "description": "Design production-grade Rust systems using the \"5+1 Information Tower\" methodology. Apply proven architectural patterns (Storage Abstraction, Service Pipeline, Tiered Storage, Transaction Lifecycle) extracted from champion projects like Deno, Jito-Solana, Tokio, Actix-Web, Bevy, SurrealDB, and Ripgrep.",
+      "category": "infrastructure",
+      "tags": [
+        "rust",
+        "architecture"
+      ],
+      "triggers": [
+        "rust",
+        "architecture",
+        "grade",
+        "information",
+        "tower",
+        "methodology",
+        "apply",
+        "proven",
+        "architectural",
+        "storage",
+        "abstraction",
+        "pipeline"
+      ],
+      "path": "skills/rust-system-architecture-design/SKILL.md"
     },
     {
       "id": "saga-orchestration",
