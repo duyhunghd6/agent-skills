@@ -1,0 +1,198 @@
+# Dangerous Pattern Detection Library
+# Each pattern has: name, regex, severity (0-1), description, mitigation
+
+patterns:
+  # =============================================================================
+  # CRITICAL SEVERITY (0.8-1.0) - Block immediately
+  # =============================================================================
+  critical:
+    - name: eval_execution
+      pattern: "eval\\s*\\("
+      severity: 0.95
+      description: "Direct code execution via eval()"
+      mitigation: "Use safer alternatives like ast.literal_eval() for data parsing"
+
+    - name: exec_execution
+      pattern: "exec\\s*\\("
+      severity: 0.95
+      description: "Arbitrary code execution via exec()"
+      mitigation: "Avoid exec(); use safe function dispatch patterns"
+
+    - name: subprocess_shell
+      pattern: "subprocess\\.(call|run|Popen)\\s*\\([^)]*shell\\s*=\\s*True"
+      severity: 0.95
+      description: "Shell command execution with shell=True"
+      mitigation: "Use shell=False with list arguments"
+
+    - name: os_system
+      pattern: "os\\.system\\s*\\("
+      severity: 0.90
+      description: "Direct shell command execution"
+      mitigation: "Use subprocess with explicit arguments"
+
+    - name: rm_rf_command
+      pattern: "rm\\s+-rf?\\s+[/~]"
+      severity: 0.98
+      description: "Recursive file deletion from root or home"
+      mitigation: "Never include destructive commands in skills"
+
+    - name: base64_with_exec
+      pattern: "base64\\.(b64decode|decode)[^;]*exec"
+      severity: 0.99
+      description: "Obfuscated code execution"
+      mitigation: "Remove obfuscated code completely"
+
+    - name: curl_pipe_bash
+      pattern: "curl[^|]*\\|\\s*(ba)?sh"
+      severity: 0.95
+      description: "Remote code execution via curl pipe"
+      mitigation: "Download and verify scripts before execution"
+
+    - name: reverse_shell
+      pattern: "(bash\\s+-i|nc\\s+-e|python.*socket.*connect)"
+      severity: 0.99
+      description: "Potential reverse shell pattern"
+      mitigation: "Remove any reverse shell code"
+
+    - name: data_exfiltration
+      pattern: "(curl|wget|fetch)\\s+[^;]*(api_key|password|token|secret)"
+      severity: 0.90
+      description: "Potential credential exfiltration"
+      mitigation: "Never send credentials to external endpoints"
+
+  # =============================================================================
+  # HIGH SEVERITY (0.6-0.8) - Require human review
+  # =============================================================================
+  high:
+    - name: prompt_injection_ignore
+      pattern: "(?i)ignore\\s+(all\\s+)?(previous|prior|above)\\s+(instructions?|prompts?|rules?)"
+      severity: 0.80
+      description: "Prompt injection attempt - ignore previous"
+      mitigation: "Remove prompt override instructions"
+
+    - name: prompt_injection_disregard
+      pattern: "(?i)disregard\\s+(all\\s+)?(previous|prior|system)"
+      severity: 0.80
+      description: "Prompt injection attempt - disregard previous"
+      mitigation: "Remove prompt override instructions"
+
+    - name: prompt_injection_new_role
+      pattern: "(?i)you\\s+are\\s+now\\s+(a|an)\\s+"
+      severity: 0.75
+      description: "Role injection attempt"
+      mitigation: "Remove role override instructions"
+
+    - name: prompt_injection_jailbreak
+      pattern: "(?i)(DAN|jailbreak|bypass\\s+safety|ignore\\s+guidelines)"
+      severity: 0.85
+      description: "Jailbreak attempt"
+      mitigation: "Remove any jailbreak patterns"
+
+    - name: hidden_instructions
+      pattern: "<!--[^>]*(instruction|command|execute)[^>]*-->"
+      severity: 0.70
+      description: "Hidden instructions in HTML comments"
+      mitigation: "Remove hidden instruction comments"
+
+    - name: base64_encoded_block
+      pattern: "[A-Za-z0-9+/]{50,}={0,2}"
+      severity: 0.65
+      description: "Potential base64 encoded content"
+      mitigation: "Decode and verify content is safe"
+
+    - name: privilege_escalation
+      pattern: "(sudo|chmod\\s+[47][0-7]{2}|chown\\s+root|setuid)"
+      severity: 0.75
+      description: "Privilege escalation attempt"
+      mitigation: "Skills should not require elevated privileges"
+
+    - name: network_fetch_external
+      pattern: "(fetch|axios|requests)\\s*\\("
+      severity: 0.60
+      description: "External network request"
+      mitigation: "Verify destination is trusted and necessary"
+
+    - name: file_write_sensitive
+      pattern: "(open.*w|write).*(password|token|key|secret)"
+      severity: 0.70
+      description: "Writing to sensitive files"
+      mitigation: "Avoid writing credentials to files"
+
+    - name: environment_access
+      pattern: "os\\.environ|getenv\\s*\\("
+      severity: 0.55
+      description: "Environment variable access"
+      mitigation: "Document which env vars are needed"
+
+  # =============================================================================
+  # MEDIUM SEVERITY (0.3-0.6) - Flag for review
+  # =============================================================================
+  medium:
+    - name: file_system_access
+      pattern: "(open|read|write|delete|unlink|rmdir|mkdir)\\s*\\("
+      severity: 0.40
+      description: "File system access"
+      mitigation: "Ensure files are within allowed scope"
+
+    - name: git_push_force
+      pattern: "git\\s+push\\s+.*(-f|--force)"
+      severity: 0.50
+      description: "Force push to git repository"
+      mitigation: "Avoid force push; use safer alternatives"
+
+    - name: database_query
+      pattern: "(execute|cursor|query).*SELECT|INSERT|UPDATE|DELETE"
+      severity: 0.45
+      description: "Direct database query"
+      mitigation: "Use parameterized queries"
+
+    - name: api_key_reference
+      pattern: "(?i)(api[-_]?key|secret[-_]?key|access[-_]?token)"
+      severity: 0.35
+      description: "API key reference"
+      mitigation: "Ensure keys are loaded from secure sources"
+
+    - name: external_url
+      pattern: "https?://"
+      severity: 0.30
+      description: "External URL reference"
+      mitigation: "Verify URL is trusted"
+
+  # =============================================================================
+  # LOW SEVERITY (0-0.3) - Log only
+  # =============================================================================
+  low:
+    - name: debug_print
+      pattern: "print\\s*\\(|console\\.log\\s*\\("
+      severity: 0.10
+      description: "Debug output"
+      mitigation: "Consider removing debug statements"
+
+    - name: todo_comment
+      pattern: "#\\s*(TODO|FIXME|XXX|HACK)"
+      severity: 0.05
+      description: "TODO comment found"
+      mitigation: "Resolve TODO items before production"
+
+    - name: hardcoded_path
+      pattern: "/Users/|C:\\\\Users\\\\"
+      severity: 0.20
+      description: "Hardcoded user path"
+      mitigation: "Use relative paths or environment variables"
+
+# =============================================================================
+# ALLOWLIST - Patterns that are safe in specific contexts
+# =============================================================================
+allowlist:
+  - context: defensive
+    description: "Patterns allowed in defensive/audit skills"
+    patterns:
+      - subprocess
+      - os.system
+
+  - context: offensive
+    description: "Patterns allowed in authorized offensive skills"
+    requires_disclaimer: true
+    patterns:
+      - reverse_shell
+      - privilege_escalation

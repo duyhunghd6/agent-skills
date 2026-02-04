@@ -1,0 +1,160 @@
+# Risk Score Thresholds Configuration
+
+# =============================================================================
+# RISK CLASSIFICATION THRESHOLDS
+# =============================================================================
+thresholds:
+  low:
+    min: 0.0
+    max: 0.3
+    action: auto_approve
+    badge: "🟢"
+    description: "Safe for auto-approval"
+
+  medium:
+    min: 0.3
+    max: 0.6
+    action: flag_review
+    badge: "🟡"
+    description: "Flagged for optional review"
+
+  high:
+    min: 0.6
+    max: 0.8
+    action: require_review
+    badge: "🟠"
+    description: "Requires human review before approval"
+
+  critical:
+    min: 0.8
+    max: 1.0
+    action: block
+    badge: "🔴"
+    description: "Blocked and quarantined"
+
+# =============================================================================
+# RISK SCORE WEIGHTS
+# =============================================================================
+weights:
+  pattern_severity: 0.40
+  permission_scope: 0.30
+  source_trust: 0.20
+  community_reports: 0.10
+
+# =============================================================================
+# PERMISSION RISK LEVELS
+# =============================================================================
+permissions:
+  none:
+    score: 0.0
+    description: "Pure text/reasoning, no actions"
+
+  file_read:
+    score: 0.1
+    description: "Reads files from filesystem"
+
+  file_write:
+    score: 0.3
+    description: "Writes or modifies files"
+
+  file_delete:
+    score: 0.5
+    description: "Deletes files or directories"
+
+  network_fetch:
+    score: 0.2
+    description: "Makes HTTP GET requests"
+
+  network_post:
+    score: 0.4
+    description: "Makes HTTP POST/PUT requests"
+
+  shell_safe:
+    score: 0.3
+    description: "Runs safe shell commands (lint, test)"
+
+  shell_execute:
+    score: 0.6
+    description: "Runs arbitrary shell commands"
+
+  git_read:
+    score: 0.1
+    description: "Reads git status/history"
+
+  git_commit:
+    score: 0.3
+    description: "Creates git commits"
+
+  git_push:
+    score: 0.5
+    description: "Pushes to remote repositories"
+
+  browser_navigate:
+    score: 0.3
+    description: "Opens browser/navigates pages"
+
+  system_modify:
+    score: 0.7
+    description: "Modifies system configuration"
+
+  credential_access:
+    score: 0.8
+    description: "Accesses credentials/secrets"
+
+# =============================================================================
+# SOURCE TRUST LEVELS
+# =============================================================================
+source_trust:
+  official:
+    score: 0.0
+    description: "Official/vendor-maintained skill"
+    badge: "🟣"
+
+  verified:
+    score: 0.1
+    description: "Community skill that passed deep review"
+    badge: "✨"
+
+  community:
+    score: 0.3
+    description: "Community-contributed skill"
+    badge: "⚪"
+
+  unknown:
+    score: 0.5
+    description: "Unknown or unverified source"
+    badge: "❓"
+
+  untrusted:
+    score: 0.9
+    description: "Flagged or reported source"
+    badge: "⚠️"
+
+# =============================================================================
+# SKILL CATEGORIES & DEFAULT RISK
+# =============================================================================
+categories:
+  documentation:
+    default_risk: "low"
+    description: "Documentation/writing skills"
+
+  development:
+    default_risk: "medium"
+    description: "General development skills"
+
+  testing:
+    default_risk: "low"
+    description: "Testing and validation skills"
+
+  deployment:
+    default_risk: "high"
+    description: "Deployment and CI/CD skills"
+
+  security:
+    default_risk: "high"
+    description: "Security analysis (defensive)"
+
+  offensive:
+    default_risk: "critical"
+    description: "Penetration testing (requires auth)"
+    requires_disclaimer: true
