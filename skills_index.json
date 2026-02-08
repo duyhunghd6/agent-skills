@@ -135,6 +135,42 @@
     "source": "vibeship-spawner-skills (Apache 2.0)"
   },
   {
+    "id": "agentic-gsafe-beads-mem",
+    "path": "skills/agentic-gsafe-beads-mem",
+    "category": "uncategorized",
+    "name": "agentic-gsafe-beads-mem",
+    "description": "Use Beads (bd CLI) as persistent memory and task tracker for AI coding agents. Covers session workflow, issue management, dependency tracking, and multi-agent coordination. Triggers: beads, bd, issue tracker, task tracking, agent memory.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "agenticse-gsafe-cass",
+    "path": "skills/agenticse-gsafe-cass",
+    "category": "uncategorized",
+    "name": "agentic-gsafe-cass",
+    "description": "Use CASS (Coding Agent Session Search) to index and search across all local coding agent history. Aggregates sessions from Claude Code, Codex, Cursor, Gemini CLI, Aider, and more into a single searchable timeline. Triggers: cass, session search, agent history, cross-agent search.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "agenticse-gsafe-cm",
+    "path": "skills/agenticse-gsafe-cm",
+    "category": "uncategorized",
+    "name": "agenticse-gsafe-cm",
+    "description": "Use CM (CASS Memory System) for cross-agent procedural memory. Transforms scattered agent sessions into persistent, confidence-tracked playbook rules so every agent learns from every other agent's experience. Triggers: cm, cass memory, playbook, agent memory, cross-agent learning.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
+    "id": "agenticse-gsafe-ubs",
+    "path": "skills/agenticse-gsafe-ubs",
+    "category": "uncategorized",
+    "name": "agenticse-gsafe-ubs",
+    "description": "Use UBS (Ultimate Bug Scanner) as a quality gate for AI-generated code. Multi-language static analysis catching null safety, XSS, async bugs, memory leaks, and 13+ more categories across JS/TS, Python, Rust, Go, Java, C++, Ruby. Triggers: ubs, bug scanner, quality gate, static analysis, code scan.",
+    "risk": "safe",
+    "source": "self"
+  },
+  {
     "id": "ai-agents-architect",
     "path": "skills/ai-agents-architect",
     "category": "uncategorized",
@@ -4345,6 +4381,15 @@
     "description": "Master enterprise-grade Scala development with functional programming, distributed systems, and big data processing. Expert in Apache Pekko, Akka, Spark, ZIO/Cats Effect, and reactive architectures. Use PROACTIVELY for Scala system design, performance optimization, or enterprise integration.",
     "risk": "unknown",
     "source": "unknown"
+  },
+  {
+    "id": "scaled-agile-framework",
+    "path": "skills/scaled-agile-framework",
+    "category": "uncategorized",
+    "name": "scaled-agile-framework",
+    "description": "Scaled Agile Framework (SAFe 6.0) methodology for software development teams. Covers Lean-Agile principles, Agile Release Trains, PI Planning, team roles (RTE, Product Owner, Scrum Master), DevOps and CI/CD pipeline, Built-in Quality, Lean Portfolio Management, flow metrics, and OKRs. Use when scaling agile across multiple teams, planning Program Increments, setting up ARTs, adopting SAFe configurations (Essential, Large Solution, Portfolio, Full), or implementing enterprise agility. Triggers: SAFe, scaled agile, PI planning, ART, release train, program increment, lean portfolio, value stream, safe methodology.",
+    "risk": "safe",
+    "source": "self"
   },
   {
     "id": "schema-markup",

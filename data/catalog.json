@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-04T14:36:59.516Z",
-  "total": 639,
+  "generatedAt": "2026-02-08T18:22:52.844Z",
+  "total": 644,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -330,6 +330,111 @@
         "works"
       ],
       "path": "skills/agent-tool-builder/SKILL.md"
+    },
+    {
+      "id": "agentic-gsafe-beads-mem",
+      "name": "agentic-gsafe-beads-mem",
+      "description": "Use Beads (bd CLI) as persistent memory and task tracker for AI coding agents. Covers session workflow, issue management, dependency tracking, and multi-agent coordination. Triggers: beads, bd, issue tracker, task tracking, agent memory.",
+      "category": "data-ai",
+      "tags": [
+        "agentic",
+        "gsafe",
+        "beads",
+        "mem"
+      ],
+      "triggers": [
+        "agentic",
+        "gsafe",
+        "beads",
+        "mem",
+        "bd",
+        "cli",
+        "persistent",
+        "memory",
+        "task",
+        "tracker",
+        "ai",
+        "coding"
+      ],
+      "path": "skills/agentic-gsafe-beads-mem/SKILL.md"
+    },
+    {
+      "id": "agenticse-gsafe-cass",
+      "name": "agentic-gsafe-cass",
+      "description": "Use CASS (Coding Agent Session Search) to index and search across all local coding agent history. Aggregates sessions from Claude Code, Codex, Cursor, Gemini CLI, Aider, and more into a single searchable timeline. Triggers: cass, session search, agent history, cross-agent search.",
+      "category": "general",
+      "tags": [
+        "agenticse",
+        "gsafe",
+        "cass"
+      ],
+      "triggers": [
+        "agenticse",
+        "gsafe",
+        "cass",
+        "agentic",
+        "coding",
+        "agent",
+        "session",
+        "search",
+        "index",
+        "all",
+        "local",
+        "history"
+      ],
+      "path": "skills/agenticse-gsafe-cass/SKILL.md"
+    },
+    {
+      "id": "agenticse-gsafe-cm",
+      "name": "agenticse-gsafe-cm",
+      "description": "Use CM (CASS Memory System) for cross-agent procedural memory. Transforms scattered agent sessions into persistent, confidence-tracked playbook rules so every agent learns from every other agent's experience. Triggers: cm, cass memory, playbook, agent memory, cross-agent learning.",
+      "category": "general",
+      "tags": [
+        "agenticse",
+        "gsafe",
+        "cm"
+      ],
+      "triggers": [
+        "agenticse",
+        "gsafe",
+        "cm",
+        "cass",
+        "memory",
+        "cross",
+        "agent",
+        "procedural",
+        "transforms",
+        "scattered",
+        "sessions",
+        "persistent"
+      ],
+      "path": "skills/agenticse-gsafe-cm/SKILL.md"
+    },
+    {
+      "id": "agenticse-gsafe-ubs",
+      "name": "agenticse-gsafe-ubs",
+      "description": "Use UBS (Ultimate Bug Scanner) as a quality gate for AI-generated code. Multi-language static analysis catching null safety, XSS, async bugs, memory leaks, and 13+ more categories across JS/TS, Python, Rust, Go, Java, C++, Ruby. Triggers: ubs, bug scanner, quality gate, static analysis, code scan.",
+      "category": "data-ai",
+      "tags": [
+        "agenticse",
+        "gsafe",
+        "ubs"
+      ],
+      "triggers": [
+        "agenticse",
+        "gsafe",
+        "ubs",
+        "ultimate",
+        "bug",
+        "scanner",
+        "quality",
+        "gate",
+        "ai",
+        "generated",
+        "code",
+        "multi"
+      ],
+      "path": "skills/agenticse-gsafe-ubs/SKILL.md"
     },
     {
       "id": "ai-agents-architect",
@@ -11897,6 +12002,32 @@
         "apache"
       ],
       "path": "skills/scala-pro/SKILL.md"
+    },
+    {
+      "id": "scaled-agile-framework",
+      "name": "scaled-agile-framework",
+      "description": "Scaled Agile Framework (SAFe 6.0) methodology for software development teams. Covers Lean-Agile principles, Agile Release Trains, PI Planning, team roles (RTE, Product Owner, Scrum Master), DevOps and CI/CD pipeline, Built-in Quality, Lean Portfolio Management, flow metrics, and OKRs. Use when scaling agile across multiple teams, planning Program Increments, setting up ARTs, adopting SAFe configurations (Essential, Large Solution, Portfolio, Full), or implementing enterprise agility. Triggers: SAFe, scaled agile, PI planning, ART, release train, program increment, lean portfolio, value stream, safe methodology.",
+      "category": "infrastructure",
+      "tags": [
+        "scaled",
+        "agile",
+        "framework"
+      ],
+      "triggers": [
+        "scaled",
+        "agile",
+        "framework",
+        "safe",
+        "methodology",
+        "software",
+        "development",
+        "teams",
+        "covers",
+        "lean",
+        "principles",
+        "release"
+      ],
+      "path": "skills/scaled-agile-framework/SKILL.md"
     },
     {
       "id": "scanning-tools",

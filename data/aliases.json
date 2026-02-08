@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-02-04T14:36:59.516Z",
+  "generatedAt": "2026-02-08T18:22:52.844Z",
   "aliases": {
     "accessibility-compliance-audit": "accessibility-compliance-accessibility-audit",
     "active directory attacks": "active-directory-attacks",
     "agent-orchestration-improve": "agent-orchestration-improve-agent",
     "agent-orchestration-optimize": "agent-orchestration-multi-agent-optimize",
+    "agentic-gsafe-cass": "agenticse-gsafe-cass",
     "api fuzzing for bug bounty": "api-fuzzing-bug-bounty",
     "api-testing-mock": "api-testing-observability-api-mock",
     "templates": "app-builder/templates",

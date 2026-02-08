@@ -1,8 +1,8 @@
 # Skill Catalog
 
-Generated at: 2026-02-04T14:36:59.516Z
+Generated at: 2026-02-08T18:22:52.844Z
 
-Total skills: 639
+Total skills: 644
 
 ## architecture (63)
 
@@ -114,12 +114,14 @@ Total skills: 639
 | `startup-financial-modeling` | This skill should be used when the user asks to "create financial projections", "build a financial model", "forecast revenue", "calculate burn rate", "estima... | startup, financial, modeling | startup, financial, modeling, skill, should, used, user, asks, projections, model, forecast, revenue |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team structure", "determine hiring needs", "design org chart", "calculate compensation", "plan equity a... | team, composition | team, composition, analysis, skill, should, used, user, asks, plan, structure, determine, hiring |
 
-## data-ai (95)
+## data-ai (97)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
 | `agent-memory-mcp` | A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Patterns, Decisions). | agent, memory, mcp | agent, memory, mcp, hybrid, provides, persistent, searchable, knowledge, ai, agents, architecture, decisions |
 | `agent-tool-builder` | Tools are how AI agents interact with the world. A well-designed tool is the difference between an agent that works and one that hallucinates, fails silently... | agent, builder | agent, builder, how, ai, agents, interact, world, well, designed, difference, between, works |
+| `agentic-gsafe-beads-mem` | Use Beads (bd CLI) as persistent memory and task tracker for AI coding agents. Covers session workflow, issue management, dependency tracking, and multi-agen... | agentic, gsafe, beads, mem | agentic, gsafe, beads, mem, bd, cli, persistent, memory, task, tracker, ai, coding |
+| `agenticse-gsafe-ubs` | Use UBS (Ultimate Bug Scanner) as a quality gate for AI-generated code. Multi-language static analysis catching null safety, XSS, async bugs, memory leaks, a... | agenticse, gsafe, ubs | agenticse, gsafe, ubs, ultimate, bug, scanner, quality, gate, ai, generated, code, multi |
 | `ai-agents-architect` | Expert in designing and building autonomous AI agents. Masters tool use, memory systems, planning strategies, and multi-agent orchestration. Use when: build ... | ai, agents | ai, agents, architect, designing, building, autonomous, masters, memory, planning, multi, agent, orchestration |
 | `ai-engineer` | Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and ente... | ai | ai, engineer, llm, applications, rag, intelligent, agents, implements, vector, search, multimodal, agent |
 | `ai-wrapper-product` | Expert in building products that wrap AI APIs (OpenAI, Anthropic, etc.) into focused tools people will pay for. Not just 'ChatGPT but different' - products t... | ai, wrapper, product | ai, wrapper, product, building, products, wrap, apis, openai, anthropic, etc, people, pay |
@@ -305,12 +307,14 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personality tests, and calculator tools. Covers t... | viral, generator, builder | viral, generator, builder, building, shareable, go, name, generators, quiz, makers, avatar, creators |
 | `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing... | webapp | webapp, testing, toolkit, interacting, local, web, applications, playwright, supports, verifying, frontend, functionality |
 
-## general (129)
+## general (131)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
 | `address-github-comments` | Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI. | address, github, comments | address, github, comments, review, issue, open, pull, request, gh, cli |
 | `agent-manager-skill` | Manage multiple local CLI agents via tmux sessions (start/stop/monitor/assign) with cron-friendly scheduling. | agent, manager, skill | agent, manager, skill, multiple, local, cli, agents, via, tmux, sessions, start, stop |
+| `agenticse-gsafe-cass` | Use CASS (Coding Agent Session Search) to index and search across all local coding agent history. Aggregates sessions from Claude Code, Codex, Cursor, Gemini... | agenticse, gsafe, cass | agenticse, gsafe, cass, agentic, coding, agent, session, search, index, all, local, history |
+| `agenticse-gsafe-cm` | Use CM (CASS Memory System) for cross-agent procedural memory. Transforms scattered agent sessions into persistent, confidence-tracked playbook rules so ever... | agenticse, gsafe, cm | agenticse, gsafe, cm, cass, memory, cross, agent, procedural, transforms, scattered, sessions, persistent |
 | `algorithmic-art` | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, gener... | algorithmic, art | algorithmic, art, creating, p5, js, seeded, randomness, interactive, parameter, exploration, users, request |
 | `angular-best-practices` | Angular performance optimization and best practices guide. Use when writing, reviewing, or refactoring Angular code for optimal performance, bundle size, and... | angular, best, practices | angular, best, practices, performance, optimization, writing, reviewing, refactoring, code, optimal, bundle, size |
 | `angular-migration` | Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and dependency injection updates. Use when upgrading AngularJS applicat... | angular, migration | angular, migration, migrate, angularjs, hybrid, mode, incremental, component, rewriting, dependency, injection, updates |
@@ -439,7 +443,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `writing-skills` | Use when creating, updating, or improving agent skills. | writing, skills | writing, skills, creating, updating, improving, agent |
 | `x-article-publisher-skill` | Publish articles to X/Twitter | x, article, publisher, skill | x, article, publisher, skill, publish, articles, twitter |
 
-## infrastructure (80)
+## infrastructure (81)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -509,6 +513,7 @@ TRIGGER: "shopify", "shopify app", "checkout extension",... | shopify | shopify,
 | `protocol-reverse-engineering` | Master network protocol reverse engineering including packet analysis, protocol dissection, and custom protocol documentation. Use when analyzing network tra... | protocol, reverse, engineering | protocol, reverse, engineering, network, including, packet, analysis, dissection, custom, documentation, analyzing, traffic |
 | `readme` | When the user wants to create or update a README.md file for a project. Also use when the user says 'write readme,' 'create readme,' 'document this project,'... | readme | readme, user, wants, update, md, file, says, write, document, documentation, asks, skill |
 | `rust-system-architecture-design` | Design production-grade Rust systems using the "5+1 Information Tower" methodology. Apply proven architectural patterns (Storage Abstraction, Service Pipelin... | rust, architecture | rust, architecture, grade, information, tower, methodology, apply, proven, architectural, storage, abstraction, pipeline |
+| `scaled-agile-framework` | Scaled Agile Framework (SAFe 6.0) methodology for software development teams. Covers Lean-Agile principles, Agile Release Trains, PI Planning, team roles (RT... | scaled, agile, framework | scaled, agile, framework, safe, methodology, software, development, teams, covers, lean, principles, release |
 | `server-management` | Server management principles and decision-making. Process management, monitoring strategy, and scaling decisions. Teaches thinking, not commands. | server | server, principles, decision, making, process, monitoring, scaling, decisions, teaches, thinking, commands |
 | `service-mesh-observability` | Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debu... | service, mesh, observability | service, mesh, observability, meshes, including, distributed, tracing, metrics, visualization, setting, up, monitoring |
 | `slo-implementation` | Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets and alerting. Use when establishing reliability t... | slo | slo, define, level, indicators, slis, objectives, slos, error, budgets, alerting, establishing, reliability |

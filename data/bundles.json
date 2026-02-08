@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-02-04T14:36:59.516Z",
+  "generatedAt": "2026-02-08T18:22:52.844Z",
   "bundles": {
     "core-dev": {
       "description": "Core development skills across languages, frameworks, and backend/frontend fundamentals.",
       "skills": [
         "3d-web-experience",
         "abcjs",
+        "agenticse-gsafe-ubs",
         "algolia-search",
         "api-design-principles",
         "api-documentation-generator",
@@ -399,6 +400,7 @@
         "readme",
         "risk-metrics-calculation",
         "rust-system-architecture-design",
+        "scaled-agile-framework",
         "security-auditor",
         "server-management",
         "service-mesh-expert",
