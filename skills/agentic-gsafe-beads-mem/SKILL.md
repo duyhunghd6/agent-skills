@@ -462,11 +462,13 @@ bd update <id> --claim --json          # Fails if already claimed by another age
 
 ## Filtering and Search
 
+> **Note:** Use `--label` for filtering by labels (NOT `--tag` — that flag does not exist).
+
 ```bash
 bd list --status open --json                    # By status
 bd list --priority 1 --json                     # By priority
 bd list --type bug --json                       # By type
-bd list --label bug,critical --json             # Labels (AND)
+bd list --label bug,critical --json             # Labels (AND, comma-separated)
 bd list --label-any frontend,backend --json     # Labels (OR)
 bd list --title-contains "auth" --json          # Text search
 bd list --no-assignee --json                    # Unassigned work
