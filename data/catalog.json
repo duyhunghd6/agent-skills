@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 845,
+  "total": 856,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -1549,6 +1549,87 @@
         "architecture"
       ],
       "path": "skills/aws-skills/SKILL.md"
+    },
+    {
+      "id": "azd-deployment",
+      "name": "azd-deployment",
+      "description": "Deploy containerized applications to Azure Container Apps using Azure Developer CLI (azd). Use when setting up azd projects, writing azure.yaml configuration, creating Bicep infrastructure for Container Apps, configuring remote builds with ACR, implementing idempotent deployments, managing environment variables across local/.azure/Bicep, or troubleshooting azd up failures. Triggers on requests for azd configuration, Container Apps deployment, multi-service deployments, and infrastructure-as-code with Bicep.",
+      "category": "infrastructure",
+      "tags": [
+        "azd",
+        "deployment"
+      ],
+      "triggers": [
+        "azd",
+        "deployment",
+        "deploy",
+        "containerized",
+        "applications",
+        "azure",
+        "container",
+        "apps",
+        "developer",
+        "cli",
+        "setting",
+        "up"
+      ],
+      "path": "skills/azd-deployment/SKILL.md"
+    },
+    {
+      "id": "azure-ai-agents-persistent-dotnet",
+      "name": "azure-ai-agents-persistent-dotnet",
+      "description": "Azure AI Agents Persistent SDK for .NET. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools. Use for agent CRUD, conversation threads, streaming responses, function calling, file search, and code interpreter. Triggers: \"PersistentAgentsClient\", \"persistent agents\", \"agent threads\", \"agent runs\", \"streaming agents\", \"function calling agents .NET\".",
+      "category": "data-ai",
+      "tags": [
+        "azure",
+        "ai",
+        "agents",
+        "persistent",
+        "dotnet"
+      ],
+      "triggers": [
+        "azure",
+        "ai",
+        "agents",
+        "persistent",
+        "dotnet",
+        "sdk",
+        "net",
+        "low",
+        "level",
+        "creating",
+        "managing",
+        "threads"
+      ],
+      "path": "skills/azure-ai-agents-persistent-dotnet/SKILL.md"
+    },
+    {
+      "id": "azure-ai-agents-persistent-java",
+      "name": "azure-ai-agents-persistent-java",
+      "description": "Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools.\nTriggers: \"PersistentAgentsClient\", \"persistent agents java\", \"agent threads java\", \"agent runs java\", \"streaming agents java\".",
+      "category": "data-ai",
+      "tags": [
+        "azure",
+        "ai",
+        "agents",
+        "persistent",
+        "java"
+      ],
+      "triggers": [
+        "azure",
+        "ai",
+        "agents",
+        "persistent",
+        "java",
+        "sdk",
+        "low",
+        "level",
+        "creating",
+        "managing",
+        "threads",
+        "messages"
+      ],
+      "path": "skills/azure-ai-agents-persistent-java/SKILL.md"
     },
     {
       "id": "azure-ai-anomalydetector-java",
@@ -7260,6 +7341,31 @@
       "path": "skills/convertkit-automation/SKILL.md"
     },
     {
+      "id": "copilot-sdk",
+      "name": "copilot-sdk",
+      "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, custom tools, streaming, hooks, MCP servers, BYOK providers, session persistence, and custom agents. Requires GitHub Copilot CLI installed and a GitHub Copilot subscription (unless using BYOK).",
+      "category": "development",
+      "tags": [
+        "copilot",
+        "sdk"
+      ],
+      "triggers": [
+        "copilot",
+        "sdk",
+        "applications",
+        "powered",
+        "github",
+        "creating",
+        "programmatic",
+        "integrations",
+        "node",
+        "js",
+        "typescript",
+        "python"
+      ],
+      "path": "skills/copilot-sdk/SKILL.md"
+    },
+    {
       "id": "copy-editing",
       "name": "copy-editing",
       "description": "When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' or 'copy sweep.' This skill provides a systematic approach to editing marketing copy through multiple focused passes.",
@@ -9388,6 +9494,32 @@
       "path": "skills/fastapi-pro/SKILL.md"
     },
     {
+      "id": "fastapi-router-py",
+      "name": "fastapi-router-py",
+      "description": "Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. Use when building REST API endpoints, creating new routes, implementing CRUD operations, or adding authenticated endpoints in FastAPI applications.",
+      "category": "development",
+      "tags": [
+        "fastapi",
+        "router",
+        "py"
+      ],
+      "triggers": [
+        "fastapi",
+        "router",
+        "py",
+        "routers",
+        "crud",
+        "operations",
+        "authentication",
+        "dependencies",
+        "proper",
+        "response",
+        "models",
+        "building"
+      ],
+      "path": "skills/fastapi-router-py/SKILL.md"
+    },
+    {
       "id": "fastapi-templates",
       "name": "fastapi-templates",
       "description": "Create production-ready FastAPI projects with async patterns, dependency injection, and comprehensive error handling. Use when building new FastAPI applications or setting up backend API projects.",
@@ -10717,6 +10849,32 @@
       "path": "skills/github-automation/SKILL.md"
     },
     {
+      "id": "github-issue-creator",
+      "name": "github-issue-creator",
+      "description": "Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use when the user pastes bug info, error messages, or informal descriptions and wants a structured GitHub issue. Supports images/GIFs for visual evidence.",
+      "category": "general",
+      "tags": [
+        "github",
+        "issue",
+        "creator"
+      ],
+      "triggers": [
+        "github",
+        "issue",
+        "creator",
+        "convert",
+        "raw",
+        "notes",
+        "error",
+        "logs",
+        "voice",
+        "dictation",
+        "screenshots",
+        "crisp"
+      ],
+      "path": "skills/github-issue-creator/SKILL.md"
+    },
+    {
       "id": "github-workflow-automation",
       "name": "github-workflow-automation",
       "description": "Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD integration, and Git operations. Use when automating GitHub workflows, setting up PR review automation, creating GitHub Actions, or triaging issues.",
@@ -11176,6 +11334,33 @@
         "canned"
       ],
       "path": "skills/helpdesk-automation/SKILL.md"
+    },
+    {
+      "id": "hosted-agents-v2-py",
+      "name": "hosted-agents-v2-py",
+      "description": "Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition.\nUse when creating container-based agents that run custom code in Azure AI Foundry.\nTriggers: \"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \n\"create_version\", \"ProtocolVersionRecord\", \"AgentProtocol.RESPONSES\".",
+      "category": "data-ai",
+      "tags": [
+        "hosted",
+        "agents",
+        "v2",
+        "py"
+      ],
+      "triggers": [
+        "hosted",
+        "agents",
+        "v2",
+        "py",
+        "azure",
+        "ai",
+        "sdk",
+        "imagebasedhostedagentdefinition",
+        "creating",
+        "container",
+        "run",
+        "custom"
+      ],
+      "path": "skills/hosted-agents-v2-py/SKILL.md"
     },
     {
       "id": "hr-pro",
@@ -12914,6 +13099,32 @@
         "interact"
       ],
       "path": "skills/mcp-builder/SKILL.md"
+    },
+    {
+      "id": "mcp-builder-ms",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP), Node/TypeScript (MCP SDK), or C#/.NET (Microsoft MCP SDK).",
+      "category": "development",
+      "tags": [
+        "mcp",
+        "builder",
+        "ms"
+      ],
+      "triggers": [
+        "mcp",
+        "builder",
+        "ms",
+        "creating",
+        "high",
+        "quality",
+        "model",
+        "context",
+        "protocol",
+        "servers",
+        "enable",
+        "llms"
+      ],
+      "path": "skills/mcp-builder-ms/SKILL.md"
     },
     {
       "id": "memory-forensics",
@@ -14917,6 +15128,31 @@
       "path": "skills/playwright-skill/SKILL.md"
     },
     {
+      "id": "podcast-generation",
+      "name": "podcast-generation",
+      "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio output. Covers full-stack implementation from React frontend to Python FastAPI backend with WebSocket streaming.",
+      "category": "data-ai",
+      "tags": [
+        "podcast",
+        "generation"
+      ],
+      "triggers": [
+        "podcast",
+        "generation",
+        "generate",
+        "ai",
+        "powered",
+        "style",
+        "audio",
+        "narratives",
+        "azure",
+        "openai",
+        "gpt",
+        "realtime"
+      ],
+      "path": "skills/podcast-generation/SKILL.md"
+    },
+    {
       "id": "popup-cro",
       "name": "popup-cro",
       "description": "Create and optimize popups, modals, overlays, slide-ins, and banners to increase conversions without harming user experience or brand trust.",
@@ -15480,6 +15716,32 @@
         "traffic"
       ],
       "path": "skills/protocol-reverse-engineering/SKILL.md"
+    },
+    {
+      "id": "pydantic-models-py",
+      "name": "pydantic-models-py",
+      "description": "Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. Use when defining API request/response schemas, database models, or data validation in Python applications using Pydantic v2.",
+      "category": "data-ai",
+      "tags": [
+        "pydantic",
+        "models",
+        "py"
+      ],
+      "triggers": [
+        "pydantic",
+        "models",
+        "py",
+        "following",
+        "multi",
+        "model",
+        "base",
+        "update",
+        "response",
+        "indb",
+        "variants",
+        "defining"
+      ],
+      "path": "skills/pydantic-models-py/SKILL.md"
     },
     {
       "id": "pypict-skill",
@@ -17573,6 +17835,32 @@
         "custom"
       ],
       "path": "skills/skill-creator/SKILL.md"
+    },
+    {
+      "id": "skill-creator-ms",
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.",
+      "category": "data-ai",
+      "tags": [
+        "skill",
+        "creator",
+        "ms"
+      ],
+      "triggers": [
+        "skill",
+        "creator",
+        "ms",
+        "creating",
+        "effective",
+        "skills",
+        "ai",
+        "coding",
+        "agents",
+        "working",
+        "azure",
+        "sdks"
+      ],
+      "path": "skills/skill-creator-ms/SKILL.md"
     },
     {
       "id": "skill-developer",

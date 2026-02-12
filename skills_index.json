@@ -567,6 +567,33 @@
     "source": "https://github.com/zxkane/aws-skills"
   },
   {
+    "id": "azd-deployment",
+    "path": "skills/azd-deployment",
+    "category": "uncategorized",
+    "name": "azd-deployment",
+    "description": "Deploy containerized applications to Azure Container Apps using Azure Developer CLI (azd). Use when setting up azd projects, writing azure.yaml configuration, creating Bicep infrastructure for Container Apps, configuring remote builds with ACR, implementing idempotent deployments, managing environment variables across local/.azure/Bicep, or troubleshooting azd up failures. Triggers on requests for azd configuration, Container Apps deployment, multi-service deployments, and infrastructure-as-code with Bicep.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "azure-ai-agents-persistent-dotnet",
+    "path": "skills/azure-ai-agents-persistent-dotnet",
+    "category": "uncategorized",
+    "name": "azure-ai-agents-persistent-dotnet",
+    "description": "Azure AI Agents Persistent SDK for .NET. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools. Use for agent CRUD, conversation threads, streaming responses, function calling, file search, and code interpreter. Triggers: \"PersistentAgentsClient\", \"persistent agents\", \"agent threads\", \"agent runs\", \"streaming agents\", \"function calling agents .NET\".\n",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "azure-ai-agents-persistent-java",
+    "path": "skills/azure-ai-agents-persistent-java",
+    "category": "uncategorized",
+    "name": "azure-ai-agents-persistent-java",
+    "description": "Azure AI Agents Persistent SDK for Java. Low-level SDK for creating and managing AI agents with threads, messages, runs, and tools.\nTriggers: \"PersistentAgentsClient\", \"persistent agents java\", \"agent threads java\", \"agent runs java\", \"streaming agents java\".\n",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "azure-ai-anomalydetector-java",
     "path": "skills/azure-ai-anomalydetector-java",
     "category": "uncategorized",
@@ -2556,6 +2583,15 @@
     "source": "unknown"
   },
   {
+    "id": "copilot-sdk",
+    "path": "skills/copilot-sdk",
+    "category": "uncategorized",
+    "name": "copilot-sdk",
+    "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, custom tools, streaming, hooks, MCP servers, BYOK providers, session persistence, and custom agents. Requires GitHub Copilot CLI installed and a GitHub Copilot subscription (unless using BYOK).",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "copy-editing",
     "path": "skills/copy-editing",
     "category": "uncategorized",
@@ -3375,6 +3411,15 @@
     "source": "unknown"
   },
   {
+    "id": "fastapi-router-py",
+    "path": "skills/fastapi-router-py",
+    "category": "uncategorized",
+    "name": "fastapi-router-py",
+    "description": "Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models. Use when building REST API endpoints, creating new routes, implementing CRUD operations, or adding authenticated endpoints in FastAPI applications.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "fastapi-templates",
     "path": "skills/fastapi-templates",
     "category": "uncategorized",
@@ -3807,6 +3852,15 @@
     "source": "unknown"
   },
   {
+    "id": "github-issue-creator",
+    "path": "skills/github-issue-creator",
+    "category": "uncategorized",
+    "name": "github-issue-creator",
+    "description": "Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use when the user pastes bug info, error messages, or informal descriptions and wants a structured GitHub issue. Supports images/GIFs for visual evidence.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "github-workflow-automation",
     "path": "skills/github-workflow-automation",
     "category": "uncategorized",
@@ -3974,6 +4028,15 @@
     "category": "uncategorized",
     "name": "helpdesk-automation",
     "description": "Automate HelpDesk tasks via Rube MCP (Composio): list tickets, manage views, use canned responses, and configure custom fields. Always search tools first for current schemas.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "hosted-agents-v2-py",
+    "path": "skills/hosted-agents-v2-py",
+    "category": "uncategorized",
+    "name": "hosted-agents-v2-py",
+    "description": "Build hosted agents using Azure AI Projects SDK with ImageBasedHostedAgentDefinition.\nUse when creating container-based agents that run custom code in Azure AI Foundry.\nTriggers: \"ImageBasedHostedAgentDefinition\", \"hosted agent\", \"container agent\", \n\"create_version\", \"ProtocolVersionRecord\", \"AgentProtocol.RESPONSES\".\n",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -4613,6 +4676,15 @@
     "category": "uncategorized",
     "name": "mcp-builder",
     "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "mcp-builder-ms",
+    "path": "skills/mcp-builder-ms",
+    "category": "uncategorized",
+    "name": "mcp-builder",
+    "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP), Node/TypeScript (MCP SDK), or C#/.NET (Microsoft MCP SDK).",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -5373,6 +5445,15 @@
     "source": "unknown"
   },
   {
+    "id": "podcast-generation",
+    "path": "skills/podcast-generation",
+    "category": "uncategorized",
+    "name": "podcast-generation",
+    "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model via WebSocket. Use when building text-to-speech features, audio narrative generation, podcast creation from content, or integrating with Azure OpenAI Realtime API for real audio output. Covers full-stack implementation from React frontend to Python FastAPI backend with WebSocket streaming.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
     "id": "popup-cro",
     "path": "skills/popup-cro",
     "category": "uncategorized",
@@ -5567,6 +5648,15 @@
     "category": "uncategorized",
     "name": "protocol-reverse-engineering",
     "description": "Master network protocol reverse engineering including packet analysis, protocol dissection, and custom protocol documentation. Use when analyzing network traffic, understanding proprietary protocols, or debugging network communication.",
+    "risk": "unknown",
+    "source": "unknown"
+  },
+  {
+    "id": "pydantic-models-py",
+    "path": "skills/pydantic-models-py",
+    "category": "uncategorized",
+    "name": "pydantic-models-py",
+    "description": "Create Pydantic models following the multi-model pattern with Base, Create, Update, Response, and InDB variants. Use when defining API request/response schemas, database models, or data validation in Python applications using Pydantic v2.",
     "risk": "unknown",
     "source": "unknown"
   },
@@ -6333,6 +6423,15 @@
     "name": "skill-creator",
     "description": "This skill should be used when the user asks to create a new skill, build a skill, make a custom skill, develop a CLI skill, or wants to extend the CLI with new capabilities. Automates the entire skill creation workflow from brainstorming to installation.",
     "risk": "safe",
+    "source": "unknown"
+  },
+  {
+    "id": "skill-creator-ms",
+    "path": "skills/skill-creator-ms",
+    "category": "uncategorized",
+    "name": "skill-creator",
+    "description": "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.",
+    "risk": "unknown",
     "source": "unknown"
   },
   {
