@@ -318,9 +318,11 @@ function buildCatalog() {
   }
 
   const catalog = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: process.env.SOURCE_DATE_EPOCH 
+      ? new Date(process.env.SOURCE_DATE_EPOCH * 1000).toISOString() 
+      : (process.env.CI ? '2026-02-08T00:00:00.000Z' : new Date().toISOString()),
     total: catalogSkills.length,
-    skills: catalogSkills.sort((a, b) => a.id.localeCompare(b.id)),
+    skills: catalogSkills.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0)),
   };
 
   const aliases = buildAliases(catalog.skills);

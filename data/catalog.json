@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-08T18:22:52.844Z",
-  "total": 644,
+  "generatedAt": "2026-02-20T11:10:09.871Z",
+  "total": 727,
   "skills": [
     {
       "id": "3d-web-experience",
@@ -128,6 +128,30 @@
         "kerberoasting"
       ],
       "path": "skills/active-directory-attacks/SKILL.md"
+    },
+    {
+      "id": "activecampaign-automation",
+      "name": "activecampaign-automation",
+      "description": "Automate ActiveCampaign tasks via Rube MCP (Composio): manage contacts, tags, list subscriptions, automation enrollment, and tasks. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "activecampaign"
+      ],
+      "triggers": [
+        "activecampaign",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "contacts",
+        "tags",
+        "list",
+        "subscriptions"
+      ],
+      "path": "skills/activecampaign-automation/SKILL.md"
     },
     {
       "id": "address-github-comments",
@@ -330,6 +354,32 @@
         "works"
       ],
       "path": "skills/agent-tool-builder/SKILL.md"
+    },
+    {
+      "id": "agentic-gsafe-agentmail",
+      "name": "agentic-gsafe-agentmail",
+      "description": "Coordinate multi-agent workflows using MCP Agent Mail. Includes file reservations, messaging, and integration with Beads task tracking and Beads Viewer intelligence.",
+      "category": "general",
+      "tags": [
+        "agentic",
+        "gsafe",
+        "agentmail"
+      ],
+      "triggers": [
+        "agentic",
+        "gsafe",
+        "agentmail",
+        "coordinate",
+        "multi",
+        "agent",
+        "mcp",
+        "mail",
+        "includes",
+        "file",
+        "reservations",
+        "messaging"
+      ],
+      "path": "skills/agentic-gsafe-agentmail/SKILL.md"
     },
     {
       "id": "agentic-gsafe-beads-mem",
@@ -562,6 +612,30 @@
       "path": "skills/airflow-dag-patterns/SKILL.md"
     },
     {
+      "id": "airtable-automation",
+      "name": "airtable-automation",
+      "description": "Automate Airtable tasks via Rube MCP (Composio): records, bases, tables, fields, views. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "airtable"
+      ],
+      "triggers": [
+        "airtable",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "records",
+        "bases",
+        "tables",
+        "fields"
+      ],
+      "path": "skills/airtable-automation/SKILL.md"
+    },
+    {
       "id": "algolia-search",
       "name": "algolia-search",
       "description": "Expert patterns for Algolia search implementation, indexing strategies, React InstantSearch, and relevance tuning Use when: adding search to, algolia, instantsearch, search api, search functionality.",
@@ -608,6 +682,30 @@
         "request"
       ],
       "path": "skills/algorithmic-art/SKILL.md"
+    },
+    {
+      "id": "amplitude-automation",
+      "name": "amplitude-automation",
+      "description": "Automate Amplitude tasks via Rube MCP (Composio): events, user activity, cohorts, user identification. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "amplitude"
+      ],
+      "triggers": [
+        "amplitude",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "events",
+        "user",
+        "activity",
+        "cohorts"
+      ],
+      "path": "skills/amplitude-automation/SKILL.md"
     },
     {
       "id": "analytics-tracking",
@@ -1187,6 +1285,30 @@
       "path": "skills/arm-cortex-expert/SKILL.md"
     },
     {
+      "id": "asana-automation",
+      "name": "asana-automation",
+      "description": "Automate Asana tasks via Rube MCP (Composio): tasks, projects, sections, teams, workspaces. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "asana"
+      ],
+      "triggers": [
+        "asana",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "sections",
+        "teams",
+        "workspaces",
+        "always"
+      ],
+      "path": "skills/asana-automation/SKILL.md"
+    },
+    {
       "id": "async-python-patterns",
       "name": "async-python-patterns",
       "description": "Master Python asyncio, concurrent programming, and async/await patterns for high-performance applications. Use when building async APIs, concurrent systems, or I/O-bound applications requiring non-blocking operations.",
@@ -1236,6 +1358,34 @@
         "gaps"
       ],
       "path": "skills/attack-tree-construction/SKILL.md"
+    },
+    {
+      "id": "audio-transcriber",
+      "name": "audio-transcriber",
+      "description": "Transform audio recordings into professional Markdown documentation with intelligent summaries using LLM integration",
+      "category": "data-ai",
+      "tags": [
+        "audio",
+        "transcription",
+        "whisper",
+        "meeting-minutes",
+        "speech-to-text"
+      ],
+      "triggers": [
+        "audio",
+        "transcription",
+        "whisper",
+        "meeting-minutes",
+        "speech-to-text",
+        "transcriber",
+        "transform",
+        "recordings",
+        "professional",
+        "markdown",
+        "documentation",
+        "intelligent"
+      ],
+      "path": "skills/audio-transcriber/SKILL.md"
     },
     {
       "id": "auth-implementation-patterns",
@@ -1654,6 +1804,54 @@
       "path": "skills/backtesting-frameworks/SKILL.md"
     },
     {
+      "id": "bamboohr-automation",
+      "name": "bamboohr-automation",
+      "description": "Automate BambooHR tasks via Rube MCP (Composio): employees, time-off, benefits, dependents, employee updates. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "bamboohr"
+      ],
+      "triggers": [
+        "bamboohr",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "employees",
+        "time",
+        "off",
+        "benefits"
+      ],
+      "path": "skills/bamboohr-automation/SKILL.md"
+    },
+    {
+      "id": "basecamp-automation",
+      "name": "basecamp-automation",
+      "description": "Automate Basecamp project management, to-dos, messages, people, and to-do list organization via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "basecamp"
+      ],
+      "triggers": [
+        "basecamp",
+        "automation",
+        "automate",
+        "dos",
+        "messages",
+        "people",
+        "do",
+        "list",
+        "organization",
+        "via",
+        "rube",
+        "mcp"
+      ],
+      "path": "skills/basecamp-automation/SKILL.md"
+    },
+    {
       "id": "bash-defensive-patterns",
       "name": "bash-defensive-patterns",
       "description": "Master defensive Bash programming techniques for production-grade scripts. Use when writing robust shell scripts, CI/CD pipelines, or system utilities requiring fault tolerance and safety.",
@@ -1875,6 +2073,30 @@
       "path": "skills/binary-analysis-patterns/SKILL.md"
     },
     {
+      "id": "bitbucket-automation",
+      "name": "bitbucket-automation",
+      "description": "Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "bitbucket"
+      ],
+      "triggers": [
+        "bitbucket",
+        "automation",
+        "automate",
+        "repositories",
+        "pull",
+        "requests",
+        "branches",
+        "issues",
+        "workspace",
+        "via",
+        "rube",
+        "mcp"
+      ],
+      "path": "skills/bitbucket-automation/SKILL.md"
+    },
+    {
       "id": "blockchain-developer",
       "name": "blockchain-developer",
       "description": "Build production-ready Web3 applications, smart contracts, and decentralized systems. Implements DeFi protocols, NFT platforms, DAOs, and enterprise blockchain integrations. Use PROACTIVELY for smart contracts, Web3 apps, DeFi protocols, or blockchain infrastructure.",
@@ -1921,6 +2143,30 @@
         "explicitly"
       ],
       "path": "skills/blockrun/SKILL.md"
+    },
+    {
+      "id": "box-automation",
+      "name": "box-automation",
+      "description": "Automate Box cloud storage operations including file upload/download, search, folder management, sharing, collaborations, and metadata queries via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "infrastructure",
+      "tags": [
+        "box"
+      ],
+      "triggers": [
+        "box",
+        "automation",
+        "automate",
+        "cloud",
+        "storage",
+        "operations",
+        "including",
+        "file",
+        "upload",
+        "download",
+        "search",
+        "folder"
+      ],
+      "path": "skills/box-automation/SKILL.md"
     },
     {
       "id": "brainstorming",
@@ -1997,6 +2243,30 @@
         "may"
       ],
       "path": "skills/brand-guidelines-community/SKILL.md"
+    },
+    {
+      "id": "brevo-automation",
+      "name": "brevo-automation",
+      "description": "Automate Brevo (Sendinblue) tasks via Rube MCP (Composio): manage email campaigns, create/edit templates, track senders, and monitor campaign performance. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "brevo"
+      ],
+      "triggers": [
+        "brevo",
+        "automation",
+        "automate",
+        "sendinblue",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "email",
+        "campaigns",
+        "edit"
+      ],
+      "path": "skills/brevo-automation/SKILL.md"
     },
     {
       "id": "broken-authentication",
@@ -2344,6 +2614,79 @@
       "path": "skills/c4-context/SKILL.md"
     },
     {
+      "id": "cal-com-automation",
+      "name": "cal-com-automation",
+      "description": "Automate Cal.com tasks via Rube MCP (Composio): manage bookings, check availability, configure webhooks, and handle teams. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "cal",
+        "com"
+      ],
+      "triggers": [
+        "cal",
+        "com",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "bookings",
+        "check",
+        "availability"
+      ],
+      "path": "skills/cal-com-automation/SKILL.md"
+    },
+    {
+      "id": "calendly-automation",
+      "name": "calendly-automation",
+      "description": "Automate Calendly scheduling, event management, invitee tracking, availability checks, and organization administration via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "architecture",
+      "tags": [
+        "calendly"
+      ],
+      "triggers": [
+        "calendly",
+        "automation",
+        "automate",
+        "scheduling",
+        "event",
+        "invitee",
+        "tracking",
+        "availability",
+        "checks",
+        "organization",
+        "administration",
+        "via"
+      ],
+      "path": "skills/calendly-automation/SKILL.md"
+    },
+    {
+      "id": "canva-automation",
+      "name": "canva-automation",
+      "description": "Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, autofill. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "canva"
+      ],
+      "triggers": [
+        "canva",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "designs",
+        "exports",
+        "folders",
+        "brand"
+      ],
+      "path": "skills/canva-automation/SKILL.md"
+    },
+    {
       "id": "canvas-design",
       "name": "canvas-design",
       "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
@@ -2612,6 +2955,30 @@
       "path": "skills/cicd-automation-workflow-automate/SKILL.md"
     },
     {
+      "id": "circleci-automation",
+      "name": "circleci-automation",
+      "description": "Automate CircleCI tasks via Rube MCP (Composio): trigger pipelines, monitor workflows/jobs, retrieve artifacts and test metadata. Always search tools first for current schemas.",
+      "category": "testing",
+      "tags": [
+        "circleci"
+      ],
+      "triggers": [
+        "circleci",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "trigger",
+        "pipelines",
+        "monitor",
+        "jobs"
+      ],
+      "path": "skills/circleci-automation/SKILL.md"
+    },
+    {
       "id": "clarity-gate",
       "name": "clarity-gate",
       "description": "Pre-ingestion verification for epistemic quality in RAG systems with 9-point verification and Two-Round HITL workflow",
@@ -2784,7 +3151,7 @@
     {
       "id": "clean-code",
       "name": "clean-code",
-      "description": "Pragmatic coding standards - concise, direct, no over-engineering, no unnecessary comments",
+      "description": "Applies principles from Robert C. Martin's 'Clean Code'. Use this skill when writing, reviewing, or refactoring code to ensure high quality, readability, and maintainability. Covers naming, functions, comments, error handling, and class design.",
       "category": "general",
       "tags": [
         "clean",
@@ -2793,15 +3160,16 @@
       "triggers": [
         "clean",
         "code",
-        "pragmatic",
-        "coding",
-        "standards",
-        "concise",
-        "direct",
-        "no",
-        "engineering",
-        "unnecessary",
-        "comments"
+        "applies",
+        "principles",
+        "robert",
+        "martin",
+        "skill",
+        "writing",
+        "reviewing",
+        "refactoring",
+        "high",
+        "quality"
       ],
       "path": "skills/clean-code/SKILL.md"
     },
@@ -2828,6 +3196,54 @@
         "up"
       ],
       "path": "skills/clerk-auth/SKILL.md"
+    },
+    {
+      "id": "clickup-automation",
+      "name": "clickup-automation",
+      "description": "Automate ClickUp project management including tasks, spaces, folders, lists, comments, and team operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "clickup"
+      ],
+      "triggers": [
+        "clickup",
+        "automation",
+        "automate",
+        "including",
+        "tasks",
+        "spaces",
+        "folders",
+        "lists",
+        "comments",
+        "team",
+        "operations",
+        "via"
+      ],
+      "path": "skills/clickup-automation/SKILL.md"
+    },
+    {
+      "id": "close-automation",
+      "name": "close-automation",
+      "description": "Automate Close CRM tasks via Rube MCP (Composio): create leads, manage calls/SMS, handle tasks, and track notes. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "close"
+      ],
+      "triggers": [
+        "close",
+        "automation",
+        "automate",
+        "crm",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "leads",
+        "calls",
+        "sms"
+      ],
+      "path": "skills/close-automation/SKILL.md"
     },
     {
       "id": "cloud-architect",
@@ -2877,6 +3293,30 @@
         "aws"
       ],
       "path": "skills/cloud-penetration-testing/SKILL.md"
+    },
+    {
+      "id": "coda-automation",
+      "name": "coda-automation",
+      "description": "Automate Coda tasks via Rube MCP (Composio): manage docs, pages, tables, rows, formulas, permissions, and publishing. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "coda"
+      ],
+      "triggers": [
+        "coda",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "docs",
+        "pages",
+        "tables",
+        "rows"
+      ],
+      "path": "skills/coda-automation/SKILL.md"
     },
     {
       "id": "code-documentation-code-explain",
@@ -3553,6 +3993,30 @@
       "path": "skills/conductor-validator/SKILL.md"
     },
     {
+      "id": "confluence-automation",
+      "name": "confluence-automation",
+      "description": "Automate Confluence page creation, content search, space management, labels, and hierarchy navigation via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "confluence"
+      ],
+      "triggers": [
+        "confluence",
+        "automation",
+        "automate",
+        "page",
+        "creation",
+        "content",
+        "search",
+        "space",
+        "labels",
+        "hierarchy",
+        "navigation",
+        "via"
+      ],
+      "path": "skills/confluence-automation/SKILL.md"
+    },
+    {
       "id": "content-creator",
       "name": "content-creator",
       "description": "Create SEO-optimized marketing content with consistent brand voice. Includes brand voice analyzer, SEO optimizer, content frameworks, and social media templates. Use when writing blog posts, creating social media content, analyzing brand voice, optimizing SEO, planning content calendars, or when user mentions content creation, brand voice, SEO optimization, social media marketing, or content strategy.",
@@ -3831,6 +4295,30 @@
         "persistence"
       ],
       "path": "skills/conversation-memory/SKILL.md"
+    },
+    {
+      "id": "convertkit-automation",
+      "name": "convertkit-automation",
+      "description": "Automate ConvertKit (Kit) tasks via Rube MCP (Composio): manage subscribers, tags, broadcasts, and broadcast stats. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "convertkit"
+      ],
+      "triggers": [
+        "convertkit",
+        "automation",
+        "automate",
+        "kit",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "subscribers",
+        "tags",
+        "broadcasts"
+      ],
+      "path": "skills/convertkit-automation/SKILL.md"
     },
     {
       "id": "copy-editing",
@@ -4479,6 +4967,30 @@
       "path": "skills/database-optimizer/SKILL.md"
     },
     {
+      "id": "datadog-automation",
+      "name": "datadog-automation",
+      "description": "Automate Datadog tasks via Rube MCP (Composio): query metrics, search logs, manage monitors/dashboards, create events and downtimes. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "datadog"
+      ],
+      "triggers": [
+        "datadog",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "query",
+        "metrics",
+        "search",
+        "logs"
+      ],
+      "path": "skills/datadog-automation/SKILL.md"
+    },
+    {
       "id": "dbt-transformation-patterns",
       "name": "dbt-transformation-patterns",
       "description": "Master dbt (data build tool) for analytics engineering with model organization, testing, documentation, and incremental strategies. Use when building data transformations, creating data models, or implementing analytics engineering best practices.",
@@ -4836,6 +5348,30 @@
       "path": "skills/devops-troubleshooter/SKILL.md"
     },
     {
+      "id": "discord-automation",
+      "name": "discord-automation",
+      "description": "Automate Discord tasks via Rube MCP (Composio): messages, channels, roles, webhooks, reactions. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "discord"
+      ],
+      "triggers": [
+        "discord",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "messages",
+        "channels",
+        "roles",
+        "webhooks"
+      ],
+      "path": "skills/discord-automation/SKILL.md"
+    },
+    {
       "id": "discord-bot-architect",
       "name": "discord-bot-architect",
       "description": "Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScript) and Pycord (Python), gateway intents, slash commands, interactive components, rate limiting, and sharding.",
@@ -5085,6 +5621,30 @@
       "path": "skills/documentation-templates/SKILL.md"
     },
     {
+      "id": "docusign-automation",
+      "name": "docusign-automation",
+      "description": "Automate DocuSign tasks via Rube MCP (Composio): templates, envelopes, signatures, document management. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "docusign"
+      ],
+      "triggers": [
+        "docusign",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "envelopes",
+        "signatures",
+        "document",
+        "always"
+      ],
+      "path": "skills/docusign-automation/SKILL.md"
+    },
+    {
       "id": "docx-official",
       "name": "docx",
       "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks",
@@ -5134,6 +5694,29 @@
       "path": "skills/dotnet-architect/SKILL.md"
     },
     {
+      "id": "dotnet-backend",
+      "name": "dotnet-backend",
+      "description": "Build ASP.NET Core 8+ backend services with EF Core, auth, background jobs, and production API patterns.",
+      "category": "security",
+      "tags": [
+        "dotnet",
+        "backend"
+      ],
+      "triggers": [
+        "dotnet",
+        "backend",
+        "asp",
+        "net",
+        "core",
+        "ef",
+        "auth",
+        "background",
+        "jobs",
+        "api"
+      ],
+      "path": "skills/dotnet-backend/SKILL.md"
+    },
+    {
       "id": "dotnet-backend-patterns",
       "name": "dotnet-backend-patterns",
       "description": "Master C#/.NET backend development patterns for building robust APIs, MCP servers, and enterprise applications. Covers async/await, dependency injection, Entity Framework Core, Dapper, configuration, caching, and testing with xUnit. Use when developing .NET backends, reviewing C# code, or designing API architectures.",
@@ -5157,6 +5740,30 @@
         "covers"
       ],
       "path": "skills/dotnet-backend-patterns/SKILL.md"
+    },
+    {
+      "id": "dropbox-automation",
+      "name": "dropbox-automation",
+      "description": "Automate Dropbox file management, sharing, search, uploads, downloads, and folder operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "dropbox"
+      ],
+      "triggers": [
+        "dropbox",
+        "automation",
+        "automate",
+        "file",
+        "sharing",
+        "search",
+        "uploads",
+        "downloads",
+        "folder",
+        "operations",
+        "via",
+        "rube"
+      ],
+      "path": "skills/dropbox-automation/SKILL.md"
     },
     {
       "id": "dx-optimizer",
@@ -5885,6 +6492,30 @@
       "path": "skills/ffuf-claude-skill/SKILL.md"
     },
     {
+      "id": "figma-automation",
+      "name": "figma-automation",
+      "description": "Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, exports. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "figma"
+      ],
+      "triggers": [
+        "figma",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "files",
+        "components",
+        "tokens",
+        "comments"
+      ],
+      "path": "skills/figma-automation/SKILL.md"
+    },
+    {
       "id": "file-organizer",
       "name": "file-organizer",
       "description": "Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures. Use when user wants to clean up directories, organize downloads, remove duplicates, or restructure projects.",
@@ -6337,6 +6968,54 @@
         "brand"
       ],
       "path": "skills/free-tool-strategy/SKILL.md"
+    },
+    {
+      "id": "freshdesk-automation",
+      "name": "freshdesk-automation",
+      "description": "Automate Freshdesk helpdesk operations including tickets, contacts, companies, notes, and replies via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "freshdesk"
+      ],
+      "triggers": [
+        "freshdesk",
+        "automation",
+        "automate",
+        "helpdesk",
+        "operations",
+        "including",
+        "tickets",
+        "contacts",
+        "companies",
+        "notes",
+        "replies",
+        "via"
+      ],
+      "path": "skills/freshdesk-automation/SKILL.md"
+    },
+    {
+      "id": "freshservice-automation",
+      "name": "freshservice-automation",
+      "description": "Automate Freshservice ITSM tasks via Rube MCP (Composio): create/update tickets, bulk operations, service requests, and outbound emails. Always search tools first for current schemas.",
+      "category": "infrastructure",
+      "tags": [
+        "freshservice"
+      ],
+      "triggers": [
+        "freshservice",
+        "automation",
+        "automate",
+        "itsm",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "update",
+        "tickets",
+        "bulk"
+      ],
+      "path": "skills/freshservice-automation/SKILL.md"
     },
     {
       "id": "frontend-design",
@@ -7022,6 +7701,30 @@
       "path": "skills/github-actions-templates/SKILL.md"
     },
     {
+      "id": "github-automation",
+      "name": "github-automation",
+      "description": "Automate GitHub repositories, issues, pull requests, branches, CI/CD, and permissions via Rube MCP (Composio). Manage code workflows, review PRs, search code, and handle deployments programmatically.",
+      "category": "infrastructure",
+      "tags": [
+        "github"
+      ],
+      "triggers": [
+        "github",
+        "automation",
+        "automate",
+        "repositories",
+        "issues",
+        "pull",
+        "requests",
+        "branches",
+        "ci",
+        "cd",
+        "permissions",
+        "via"
+      ],
+      "path": "skills/github-automation/SKILL.md"
+    },
+    {
       "id": "github-workflow-automation",
       "name": "github-workflow-automation",
       "description": "Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD integration, and Git operations. Use when automating GitHub workflows, setting up PR review automation, creating GitHub Actions, or triaging issues.",
@@ -7044,6 +7747,30 @@
         "cd"
       ],
       "path": "skills/github-workflow-automation/SKILL.md"
+    },
+    {
+      "id": "gitlab-automation",
+      "name": "gitlab-automation",
+      "description": "Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "gitlab"
+      ],
+      "triggers": [
+        "gitlab",
+        "automation",
+        "automate",
+        "issues",
+        "merge",
+        "requests",
+        "pipelines",
+        "branches",
+        "user",
+        "operations",
+        "via",
+        "rube"
+      ],
+      "path": "skills/gitlab-automation/SKILL.md"
     },
     {
       "id": "gitlab-ci-patterns",
@@ -7093,6 +7820,30 @@
         "setting"
       ],
       "path": "skills/gitops-workflow/SKILL.md"
+    },
+    {
+      "id": "gmail-automation",
+      "name": "gmail-automation",
+      "description": "Automate Gmail tasks via Rube MCP (Composio): send/reply, search, labels, drafts, attachments. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "gmail"
+      ],
+      "triggers": [
+        "gmail",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "send",
+        "reply",
+        "search",
+        "labels"
+      ],
+      "path": "skills/gmail-automation/SKILL.md"
     },
     {
       "id": "go-concurrency-patterns",
@@ -7167,6 +7918,105 @@
         "generics"
       ],
       "path": "skills/golang-pro/SKILL.md"
+    },
+    {
+      "id": "google-analytics-automation",
+      "name": "google-analytics-automation",
+      "description": "Automate Google Analytics tasks via Rube MCP (Composio): run reports, list accounts/properties, funnels, pivots, key events. Always search tools first for current schemas.",
+      "category": "data-ai",
+      "tags": [
+        "google",
+        "analytics"
+      ],
+      "triggers": [
+        "google",
+        "analytics",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "run",
+        "reports",
+        "list"
+      ],
+      "path": "skills/google-analytics-automation/SKILL.md"
+    },
+    {
+      "id": "google-calendar-automation",
+      "name": "google-calendar-automation",
+      "description": "Automate Google Calendar events, scheduling, availability checks, and attendee management via Rube MCP (Composio). Create events, find free slots, manage attendees, and list calendars programmatically.",
+      "category": "workflow",
+      "tags": [
+        "google",
+        "calendar"
+      ],
+      "triggers": [
+        "google",
+        "calendar",
+        "automation",
+        "automate",
+        "events",
+        "scheduling",
+        "availability",
+        "checks",
+        "attendee",
+        "via",
+        "rube",
+        "mcp"
+      ],
+      "path": "skills/google-calendar-automation/SKILL.md"
+    },
+    {
+      "id": "google-drive-automation",
+      "name": "google-drive-automation",
+      "description": "Automate Google Drive file operations (upload, download, search, share, organize) via Rube MCP (Composio). Upload/download files, manage folders, share with permissions, and search across drives programmatically.",
+      "category": "workflow",
+      "tags": [
+        "google",
+        "drive"
+      ],
+      "triggers": [
+        "google",
+        "drive",
+        "automation",
+        "automate",
+        "file",
+        "operations",
+        "upload",
+        "download",
+        "search",
+        "share",
+        "organize",
+        "via"
+      ],
+      "path": "skills/google-drive-automation/SKILL.md"
+    },
+    {
+      "id": "googlesheets-automation",
+      "name": "googlesheets-automation",
+      "description": "Automate Google Sheets operations (read, write, format, filter, manage spreadsheets) via Rube MCP (Composio). Read/write data, manage tabs, apply formatting, and search rows programmatically.",
+      "category": "data-ai",
+      "tags": [
+        "googlesheets"
+      ],
+      "triggers": [
+        "googlesheets",
+        "automation",
+        "automate",
+        "google",
+        "sheets",
+        "operations",
+        "read",
+        "write",
+        "format",
+        "filter",
+        "spreadsheets",
+        "via"
+      ],
+      "path": "skills/googlesheets-automation/SKILL.md"
     },
     {
       "id": "grafana-dashboards",
@@ -7316,6 +8166,30 @@
       "path": "skills/helm-chart-scaffolding/SKILL.md"
     },
     {
+      "id": "helpdesk-automation",
+      "name": "helpdesk-automation",
+      "description": "Automate HelpDesk tasks via Rube MCP (Composio): list tickets, manage views, use canned responses, and configure custom fields. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "helpdesk"
+      ],
+      "triggers": [
+        "helpdesk",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "list",
+        "tickets",
+        "views",
+        "canned"
+      ],
+      "path": "skills/helpdesk-automation/SKILL.md"
+    },
+    {
       "id": "hr-pro",
       "name": "hr-pro",
       "description": "Professional, ethical HR partner for hiring, onboarding/offboarding, PTO and leave, performance, compliant policies, and employee relations. Ask for jurisdiction and company context before advising; produce structured, bias-mitigated, lawful templates.",
@@ -7363,6 +8237,30 @@
         "pages"
       ],
       "path": "skills/html-injection-testing/SKILL.md"
+    },
+    {
+      "id": "hubspot-automation",
+      "name": "hubspot-automation",
+      "description": "Automate HubSpot CRM operations (contacts, companies, deals, tickets, properties) via Rube MCP using Composio integration.",
+      "category": "workflow",
+      "tags": [
+        "hubspot"
+      ],
+      "triggers": [
+        "hubspot",
+        "automation",
+        "automate",
+        "crm",
+        "operations",
+        "contacts",
+        "companies",
+        "deals",
+        "tickets",
+        "properties",
+        "via",
+        "rube"
+      ],
+      "path": "skills/hubspot-automation/SKILL.md"
     },
     {
       "id": "hubspot-integration",
@@ -7720,6 +8618,30 @@
       "path": "skills/inngest/SKILL.md"
     },
     {
+      "id": "instagram-automation",
+      "name": "instagram-automation",
+      "description": "Automate Instagram tasks via Rube MCP (Composio): create posts, carousels, manage media, get insights, and publishing limits. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "instagram"
+      ],
+      "triggers": [
+        "instagram",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "posts",
+        "carousels",
+        "media",
+        "get"
+      ],
+      "path": "skills/instagram-automation/SKILL.md"
+    },
+    {
       "id": "interactive-portfolio",
       "name": "interactive-portfolio",
       "description": "Expert in building portfolios that actually land jobs and clients - not just showing work, but creating memorable experiences. Covers developer portfolios, designer portfolios, creative portfolios, and portfolios that convert visitors into opportunities. Use when: portfolio, personal website, showcase work, developer portfolio, designer portfolio.",
@@ -7743,6 +8665,30 @@
         "creating"
       ],
       "path": "skills/interactive-portfolio/SKILL.md"
+    },
+    {
+      "id": "intercom-automation",
+      "name": "intercom-automation",
+      "description": "Automate Intercom tasks via Rube MCP (Composio): conversations, contacts, companies, segments, admins. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "intercom"
+      ],
+      "triggers": [
+        "intercom",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "conversations",
+        "contacts",
+        "companies",
+        "segments"
+      ],
+      "path": "skills/intercom-automation/SKILL.md"
     },
     {
       "id": "internal-comms-anthropic",
@@ -7993,6 +8939,30 @@
       "path": "skills/javascript-typescript-typescript-scaffold/SKILL.md"
     },
     {
+      "id": "jira-automation",
+      "name": "jira-automation",
+      "description": "Automate Jira tasks via Rube MCP (Composio): issues, projects, sprints, boards, comments, users. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "jira"
+      ],
+      "triggers": [
+        "jira",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "issues",
+        "sprints",
+        "boards",
+        "comments"
+      ],
+      "path": "skills/jira-automation/SKILL.md"
+    },
+    {
       "id": "julia-pro",
       "name": "julia-pro",
       "description": "Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices. Expert in the Julia ecosystem including package management, scientific computing, and high-performance numerical code. Use PROACTIVELY for Julia development, optimization, or advanced Julia patterns.",
@@ -8091,6 +9061,30 @@
         "quality"
       ],
       "path": "skills/kaizen/SKILL.md"
+    },
+    {
+      "id": "klaviyo-automation",
+      "name": "klaviyo-automation",
+      "description": "Automate Klaviyo tasks via Rube MCP (Composio): manage email/SMS campaigns, inspect campaign messages, track tags, and monitor send jobs. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "klaviyo"
+      ],
+      "triggers": [
+        "klaviyo",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "email",
+        "sms",
+        "campaigns",
+        "inspect"
+      ],
+      "path": "skills/klaviyo-automation/SKILL.md"
     },
     {
       "id": "kpi-dashboard-design",
@@ -8391,6 +9385,30 @@
       "path": "skills/lib-mexc-js/SKILL.md"
     },
     {
+      "id": "linear-automation",
+      "name": "linear-automation",
+      "description": "Automate Linear tasks via Rube MCP (Composio): issues, projects, cycles, teams, labels. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "linear"
+      ],
+      "triggers": [
+        "linear",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "issues",
+        "cycles",
+        "teams",
+        "labels"
+      ],
+      "path": "skills/linear-automation/SKILL.md"
+    },
+    {
       "id": "linear-claude-skill",
       "name": "linear-claude-skill",
       "description": "Manage Linear issues, projects, and teams",
@@ -8408,6 +9426,30 @@
         "teams"
       ],
       "path": "skills/linear-claude-skill/SKILL.md"
+    },
+    {
+      "id": "linkedin-automation",
+      "name": "linkedin-automation",
+      "description": "Automate LinkedIn tasks via Rube MCP (Composio): create posts, manage profile, company info, comments, and image uploads. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "linkedin"
+      ],
+      "triggers": [
+        "linkedin",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "posts",
+        "profile",
+        "company",
+        "info"
+      ],
+      "path": "skills/linkedin-automation/SKILL.md"
     },
     {
       "id": "linkerd-patterns",
@@ -8689,6 +9731,54 @@
         "arguments"
       ],
       "path": "skills/machine-learning-ops-ml-pipeline/SKILL.md"
+    },
+    {
+      "id": "mailchimp-automation",
+      "name": "mailchimp-automation",
+      "description": "Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, and analytics via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "data-ai",
+      "tags": [
+        "mailchimp"
+      ],
+      "triggers": [
+        "mailchimp",
+        "automation",
+        "automate",
+        "email",
+        "marketing",
+        "including",
+        "campaigns",
+        "audiences",
+        "subscribers",
+        "segments",
+        "analytics",
+        "via"
+      ],
+      "path": "skills/mailchimp-automation/SKILL.md"
+    },
+    {
+      "id": "make-automation",
+      "name": "make-automation",
+      "description": "Automate Make (Integromat) tasks via Rube MCP (Composio): operations, enums, language and timezone lookups. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "make"
+      ],
+      "triggers": [
+        "make",
+        "automation",
+        "automate",
+        "integromat",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "operations",
+        "enums",
+        "language"
+      ],
+      "path": "skills/make-automation/SKILL.md"
     },
     {
       "id": "makepad-skills",
@@ -9005,6 +10095,31 @@
       "path": "skills/microservices-patterns/SKILL.md"
     },
     {
+      "id": "microsoft-teams-automation",
+      "name": "microsoft-teams-automation",
+      "description": "Automate Microsoft Teams tasks via Rube MCP (Composio): send messages, manage channels, create meetings, handle chats, and search messages. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "microsoft",
+        "teams"
+      ],
+      "triggers": [
+        "microsoft",
+        "teams",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "send",
+        "messages",
+        "channels"
+      ],
+      "path": "skills/microsoft-teams-automation/SKILL.md"
+    },
+    {
       "id": "minecraft-bukkit-pro",
       "name": "minecraft-bukkit-pro",
       "description": "Master Minecraft server plugin development with Bukkit, Spigot, and Paper APIs. Specializes in event-driven architecture, command systems, world manipulation, player management, and performance optimization. Use PROACTIVELY for plugin architecture, gameplay mechanics, server-side features, or cross-version compatibility.",
@@ -9028,6 +10143,54 @@
         "driven"
       ],
       "path": "skills/minecraft-bukkit-pro/SKILL.md"
+    },
+    {
+      "id": "miro-automation",
+      "name": "miro-automation",
+      "description": "Automate Miro tasks via Rube MCP (Composio): boards, items, sticky notes, frames, sharing, connectors. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "miro"
+      ],
+      "triggers": [
+        "miro",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "boards",
+        "items",
+        "sticky",
+        "notes"
+      ],
+      "path": "skills/miro-automation/SKILL.md"
+    },
+    {
+      "id": "mixpanel-automation",
+      "name": "mixpanel-automation",
+      "description": "Automate Mixpanel tasks via Rube MCP (Composio): events, segmentation, funnels, cohorts, user profiles, JQL queries. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "mixpanel"
+      ],
+      "triggers": [
+        "mixpanel",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "events",
+        "segmentation",
+        "funnels",
+        "cohorts"
+      ],
+      "path": "skills/mixpanel-automation/SKILL.md"
     },
     {
       "id": "ml-engineer",
@@ -9200,6 +10363,30 @@
         "functions"
       ],
       "path": "skills/modern-javascript-patterns/SKILL.md"
+    },
+    {
+      "id": "monday-automation",
+      "name": "monday-automation",
+      "description": "Automate Monday.com work management including boards, items, columns, groups, subitems, and updates via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "monday"
+      ],
+      "triggers": [
+        "monday",
+        "automation",
+        "automate",
+        "com",
+        "work",
+        "including",
+        "boards",
+        "items",
+        "columns",
+        "groups",
+        "subitems",
+        "updates"
+      ],
+      "path": "skills/monday-automation/SKILL.md"
     },
     {
       "id": "monorepo-architect",
@@ -9797,6 +10984,30 @@
       "path": "skills/notebooklm/SKILL.md"
     },
     {
+      "id": "notion-automation",
+      "name": "notion-automation",
+      "description": "Automate Notion tasks via Rube MCP (Composio): pages, databases, blocks, comments, users. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "notion"
+      ],
+      "triggers": [
+        "notion",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "pages",
+        "databases",
+        "blocks",
+        "comments"
+      ],
+      "path": "skills/notion-automation/SKILL.md"
+    },
+    {
       "id": "notion-template-business",
       "name": "notion-template-business",
       "description": "Expert in building and selling Notion templates as a business - not just making templates, but building a sustainable digital product business. Covers template design, pricing, marketplaces, marketing, and scaling to real revenue. Use when: notion template, sell templates, digital product, notion business, gumroad.",
@@ -10027,6 +11238,31 @@
       "path": "skills/onboarding-cro/SKILL.md"
     },
     {
+      "id": "one-drive-automation",
+      "name": "one-drive-automation",
+      "description": "Automate OneDrive file management, search, uploads, downloads, sharing, permissions, and folder operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "one",
+        "drive"
+      ],
+      "triggers": [
+        "one",
+        "drive",
+        "automation",
+        "automate",
+        "onedrive",
+        "file",
+        "search",
+        "uploads",
+        "downloads",
+        "sharing",
+        "permissions",
+        "folder"
+      ],
+      "path": "skills/one-drive-automation/SKILL.md"
+    },
+    {
       "id": "openapi-spec-generation",
       "name": "openapi-spec-generation",
       "description": "Generate and maintain OpenAPI 3.1 specifications from code, design-first specs, and validation patterns. Use when creating API documentation, generating SDKs, or ensuring API contract compliance.",
@@ -10053,6 +11289,78 @@
       "path": "skills/openapi-spec-generation/SKILL.md"
     },
     {
+      "id": "oss-hunter",
+      "name": "oss-hunter",
+      "description": "Automatically hunt for high-impact OSS contribution opportunities in trending repositories.",
+      "category": "general",
+      "tags": [
+        "oss",
+        "hunter"
+      ],
+      "triggers": [
+        "oss",
+        "hunter",
+        "automatically",
+        "hunt",
+        "high",
+        "impact",
+        "contribution",
+        "opportunities",
+        "trending",
+        "repositories"
+      ],
+      "path": "skills/oss-hunter/SKILL.md"
+    },
+    {
+      "id": "outlook-automation",
+      "name": "outlook-automation",
+      "description": "Automate Outlook tasks via Rube MCP (Composio): emails, calendar, contacts, folders, attachments. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "outlook"
+      ],
+      "triggers": [
+        "outlook",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "emails",
+        "calendar",
+        "contacts",
+        "folders"
+      ],
+      "path": "skills/outlook-automation/SKILL.md"
+    },
+    {
+      "id": "outlook-calendar-automation",
+      "name": "outlook-calendar-automation",
+      "description": "Automate Outlook Calendar tasks via Rube MCP (Composio): create events, manage attendees, find meeting times, and handle invitations. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "outlook",
+        "calendar"
+      ],
+      "triggers": [
+        "outlook",
+        "calendar",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "events",
+        "attendees",
+        "find"
+      ],
+      "path": "skills/outlook-calendar-automation/SKILL.md"
+    },
+    {
       "id": "page-cro",
       "name": "page-cro",
       "description": "Analyze and optimize individual pages for conversion performance. Use when the user wants to improve conversion rates, diagnose why a page is underperforming, or increase the effectiveness of marketing pages (homepage, landing pages, pricing, feature pages, or blog posts). This skill focuses on diagnosis, prioritization, and testable recommendations— not blind optimization.",
@@ -10076,6 +11384,30 @@
         "rates"
       ],
       "path": "skills/page-cro/SKILL.md"
+    },
+    {
+      "id": "pagerduty-automation",
+      "name": "pagerduty-automation",
+      "description": "Automate PagerDuty tasks via Rube MCP (Composio): manage incidents, services, schedules, escalation policies, and on-call rotations. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "pagerduty"
+      ],
+      "triggers": [
+        "pagerduty",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "incidents",
+        "schedules",
+        "escalation",
+        "policies"
+      ],
+      "path": "skills/pagerduty-automation/SKILL.md"
     },
     {
       "id": "paid-ads",
@@ -10442,6 +11774,30 @@
       "path": "skills/php-pro/SKILL.md"
     },
     {
+      "id": "pipedrive-automation",
+      "name": "pipedrive-automation",
+      "description": "Automate Pipedrive CRM operations including deals, contacts, organizations, activities, notes, and pipeline management via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "infrastructure",
+      "tags": [
+        "pipedrive"
+      ],
+      "triggers": [
+        "pipedrive",
+        "automation",
+        "automate",
+        "crm",
+        "operations",
+        "including",
+        "deals",
+        "contacts",
+        "organizations",
+        "activities",
+        "notes",
+        "pipeline"
+      ],
+      "path": "skills/pipedrive-automation/SKILL.md"
+    },
+    {
       "id": "plaid-fintech",
       "name": "plaid-fintech",
       "description": "Expert patterns for Plaid API integration including Link token flows, transactions sync, identity verification, Auth for ACH, balance checks, webhook handling, and fintech compliance best practices. Use when: plaid, bank account linking, bank connection, ach, account aggregation.",
@@ -10639,6 +11995,54 @@
         "features"
       ],
       "path": "skills/postgresql/SKILL.md"
+    },
+    {
+      "id": "posthog-automation",
+      "name": "posthog-automation",
+      "description": "Automate PostHog tasks via Rube MCP (Composio): events, feature flags, projects, user profiles, annotations. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "posthog"
+      ],
+      "triggers": [
+        "posthog",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "events",
+        "feature",
+        "flags",
+        "user"
+      ],
+      "path": "skills/posthog-automation/SKILL.md"
+    },
+    {
+      "id": "postmark-automation",
+      "name": "postmark-automation",
+      "description": "Automate Postmark email delivery tasks via Rube MCP (Composio): send templated emails, manage templates, monitor delivery stats and bounces. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "postmark"
+      ],
+      "triggers": [
+        "postmark",
+        "automation",
+        "automate",
+        "email",
+        "delivery",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "send",
+        "templated"
+      ],
+      "path": "skills/postmark-automation/SKILL.md"
     },
     {
       "id": "postmortem-writing",
@@ -10934,24 +12338,27 @@
     {
       "id": "prompt-engineer",
       "name": "prompt-engineer",
-      "description": "Expert prompt engineer specializing in advanced prompting techniques, LLM optimization, and AI system design. Masters chain-of-thought, constitutional AI, and production prompt strategies. Use when building AI features, improving agent performance, or crafting system prompts.",
-      "category": "data-ai",
+      "description": "Transforms user prompts into optimized prompts using frameworks (RTF, RISEN, Chain of Thought, RODES, Chain of Density, RACE, RISE, STAR, SOAP, CLEAR, GROW)",
+      "category": "general",
       "tags": [
-        "prompt"
+        "prompt-engineering",
+        "optimization",
+        "frameworks",
+        "ai-enhancement"
       ],
       "triggers": [
+        "prompt-engineering",
+        "optimization",
+        "frameworks",
+        "ai-enhancement",
         "prompt",
         "engineer",
-        "specializing",
-        "prompting",
-        "techniques",
-        "llm",
-        "optimization",
-        "ai",
-        "masters",
-        "chain",
-        "thought",
-        "constitutional"
+        "transforms",
+        "user",
+        "prompts",
+        "optimized",
+        "rtf",
+        "risen"
       ],
       "path": "skills/prompt-engineer/SKILL.md"
     },
@@ -11564,6 +12971,30 @@
       "path": "skills/red-team-tools/SKILL.md"
     },
     {
+      "id": "reddit-automation",
+      "name": "reddit-automation",
+      "description": "Automate Reddit tasks via Rube MCP (Composio): search subreddits, create posts, manage comments, and browse top content. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "reddit"
+      ],
+      "triggers": [
+        "reddit",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "search",
+        "subreddits",
+        "posts",
+        "comments"
+      ],
+      "path": "skills/reddit-automation/SKILL.md"
+    },
+    {
       "id": "reference-builder",
       "name": "reference-builder",
       "description": "Creates exhaustive technical references and API documentation. Generates comprehensive parameter listings, configuration guides, and searchable reference materials. Use PROACTIVELY for API docs, configuration references, or complete technical specifications.",
@@ -11634,6 +13065,30 @@
         "creation"
       ],
       "path": "skills/remotion-best-practices/SKILL.md"
+    },
+    {
+      "id": "render-automation",
+      "name": "render-automation",
+      "description": "Automate Render tasks via Rube MCP (Composio): services, deployments, projects. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "render"
+      ],
+      "triggers": [
+        "render",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "deployments",
+        "always",
+        "search",
+        "first"
+      ],
+      "path": "skills/render-automation/SKILL.md"
     },
     {
       "id": "requesting-code-review",
@@ -11929,6 +13384,30 @@
         "case"
       ],
       "path": "skills/sales-automator/SKILL.md"
+    },
+    {
+      "id": "salesforce-automation",
+      "name": "salesforce-automation",
+      "description": "Automate Salesforce tasks via Rube MCP (Composio): leads, contacts, accounts, opportunities, SOQL queries. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "salesforce"
+      ],
+      "triggers": [
+        "salesforce",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "leads",
+        "contacts",
+        "accounts",
+        "opportunities"
+      ],
+      "path": "skills/salesforce-automation/SKILL.md"
     },
     {
       "id": "salesforce-development",
@@ -12375,6 +13854,30 @@
       "path": "skills/security-scanning-security-sast/SKILL.md"
     },
     {
+      "id": "segment-automation",
+      "name": "segment-automation",
+      "description": "Automate Segment tasks via Rube MCP (Composio): track events, identify users, manage groups, page views, aliases, batch operations. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "segment"
+      ],
+      "triggers": [
+        "segment",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "track",
+        "events",
+        "identify",
+        "users"
+      ],
+      "path": "skills/segment-automation/SKILL.md"
+    },
+    {
       "id": "segment-cdp",
       "name": "segment-cdp",
       "description": "Expert patterns for Segment Customer Data Platform including Analytics.js, server-side tracking, tracking plans with Protocols, identity resolution, destinations configuration, and data governance best practices. Use when: segment, analytics.js, customer data platform, cdp, tracking plan.",
@@ -12398,6 +13901,30 @@
         "plans"
       ],
       "path": "skills/segment-cdp/SKILL.md"
+    },
+    {
+      "id": "sendgrid-automation",
+      "name": "sendgrid-automation",
+      "description": "Automate SendGrid email operations including sending emails, managing contacts/lists, sender identities, templates, and analytics via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "data-ai",
+      "tags": [
+        "sendgrid"
+      ],
+      "triggers": [
+        "sendgrid",
+        "automation",
+        "automate",
+        "email",
+        "operations",
+        "including",
+        "sending",
+        "emails",
+        "managing",
+        "contacts",
+        "lists",
+        "sender"
+      ],
+      "path": "skills/sendgrid-automation/SKILL.md"
     },
     {
       "id": "senior-architect",
@@ -12447,6 +13974,30 @@
         "node"
       ],
       "path": "skills/senior-fullstack/SKILL.md"
+    },
+    {
+      "id": "sentry-automation",
+      "name": "sentry-automation",
+      "description": "Automate Sentry tasks via Rube MCP (Composio): manage issues/events, configure alerts, track releases, monitor projects and teams. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "sentry"
+      ],
+      "triggers": [
+        "sentry",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "issues",
+        "events",
+        "configure",
+        "alerts"
+      ],
+      "path": "skills/sentry-automation/SKILL.md"
     },
     {
       "id": "seo-audit",
@@ -12928,6 +14479,30 @@
       "path": "skills/shopify-apps/SKILL.md"
     },
     {
+      "id": "shopify-automation",
+      "name": "shopify-automation",
+      "description": "Automate Shopify tasks via Rube MCP (Composio): products, orders, customers, inventory, collections. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "shopify"
+      ],
+      "triggers": [
+        "shopify",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "products",
+        "orders",
+        "customers",
+        "inventory"
+      ],
+      "path": "skills/shopify-automation/SKILL.md"
+    },
+    {
       "id": "shopify-development",
       "name": "shopify-development",
       "description": "Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid.\nTRIGGER: \"shopify\", \"shopify app\", \"checkout extension\", \"admin extension\", \"POS extension\",\n\"shopify theme\", \"liquid template\", \"polaris\", \"shopify graphql\", \"shopify webhook\",\n\"shopify billing\", \"app subscription\", \"metafields\", \"shopify functions\"",
@@ -13005,25 +14580,27 @@
     {
       "id": "skill-creator",
       "name": "skill-creator",
-      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations.",
-      "category": "general",
+      "description": "This skill should be used when the user asks to create a new skill, build a skill, make a custom skill, develop a CLI skill, or wants to extend the CLI with new capabilities. Automates the entire skill creation workflow from brainstorming to installation.",
+      "category": "workflow",
       "tags": [
-        "skill",
-        "creator"
+        "automation",
+        "scaffolding",
+        "skill-creation",
+        "meta-skill"
       ],
       "triggers": [
+        "automation",
+        "scaffolding",
+        "skill-creation",
+        "meta-skill",
         "skill",
         "creator",
-        "creating",
-        "effective",
-        "skills",
         "should",
         "used",
-        "users",
-        "want",
+        "user",
+        "asks",
         "new",
-        "update",
-        "existing"
+        "custom"
       ],
       "path": "skills/skill-creator/SKILL.md"
     },
@@ -13096,6 +14673,30 @@
         "skills"
       ],
       "path": "skills/skill-seekers/SKILL.md"
+    },
+    {
+      "id": "slack-automation",
+      "name": "slack-automation",
+      "description": "Automate Slack messaging, channel management, search, reactions, and threads via Rube MCP (Composio). Send messages, search conversations, manage channels/users, and react to messages programmatically.",
+      "category": "development",
+      "tags": [
+        "slack"
+      ],
+      "triggers": [
+        "slack",
+        "automation",
+        "automate",
+        "messaging",
+        "channel",
+        "search",
+        "reactions",
+        "threads",
+        "via",
+        "rube",
+        "mcp",
+        "composio"
+      ],
+      "path": "skills/slack-automation/SKILL.md"
     },
     {
       "id": "slack-bot-builder",
@@ -13399,6 +15000,30 @@
       "path": "skills/sqlmap-database-pentesting/SKILL.md"
     },
     {
+      "id": "square-automation",
+      "name": "square-automation",
+      "description": "Automate Square tasks via Rube MCP (Composio): payments, orders, invoices, locations. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "square"
+      ],
+      "triggers": [
+        "square",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "payments",
+        "orders",
+        "invoices",
+        "locations"
+      ],
+      "path": "skills/square-automation/SKILL.md"
+    },
+    {
       "id": "ssh-penetration-testing",
       "name": "SSH Penetration Testing",
       "description": "This skill should be used when the user asks to \"pentest SSH services\", \"enumerate SSH configurations\", \"brute force SSH credentials\", \"exploit SSH vulnerabilities\", \"perform SSH tunneling\", or \"audit SSH security\". It provides comprehensive SSH penetration testing methodologies and techniques.",
@@ -13630,6 +15255,30 @@
       "path": "skills/stride-analysis-patterns/SKILL.md"
     },
     {
+      "id": "stripe-automation",
+      "name": "stripe-automation",
+      "description": "Automate Stripe tasks via Rube MCP (Composio): customers, charges, subscriptions, invoices, products, refunds. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "stripe"
+      ],
+      "triggers": [
+        "stripe",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "customers",
+        "charges",
+        "subscriptions",
+        "invoices"
+      ],
+      "path": "skills/stripe-automation/SKILL.md"
+    },
+    {
       "id": "stripe-integration",
       "name": "stripe-integration",
       "description": "Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks. Use when integrating Stripe payments, building subscription systems, or implementing secure checkout flows.",
@@ -13675,6 +15324,30 @@
         "session"
       ],
       "path": "skills/subagent-driven-development/SKILL.md"
+    },
+    {
+      "id": "supabase-automation",
+      "name": "supabase-automation",
+      "description": "Automate Supabase database queries, table management, project administration, storage, edge functions, and SQL execution via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "data-ai",
+      "tags": [
+        "supabase"
+      ],
+      "triggers": [
+        "supabase",
+        "automation",
+        "automate",
+        "database",
+        "queries",
+        "table",
+        "administration",
+        "storage",
+        "edge",
+        "functions",
+        "sql",
+        "execution"
+      ],
+      "path": "skills/supabase-automation/SKILL.md"
     },
     {
       "id": "superpowers-lab",
@@ -14038,6 +15711,30 @@
       "path": "skills/team-composition-analysis/SKILL.md"
     },
     {
+      "id": "telegram-automation",
+      "name": "telegram-automation",
+      "description": "Automate Telegram tasks via Rube MCP (Composio): send messages, manage chats, share photos/documents, and handle bot commands. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "telegram"
+      ],
+      "triggers": [
+        "telegram",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "send",
+        "messages",
+        "chats",
+        "share"
+      ],
+      "path": "skills/telegram-automation/SKILL.md"
+    },
+    {
       "id": "telegram-bot-builder",
       "name": "telegram-bot-builder",
       "description": "Expert in building Telegram bots that solve real problems - from simple automation to complex AI-powered bots. Covers bot architecture, the Telegram Bot API, user experience, monetization strategies, and scaling bots to thousands of users. Use when: telegram bot, bot api, telegram automation, chat bot telegram, tg bot.",
@@ -14397,6 +16094,54 @@
       "path": "skills/threejs-skills/SKILL.md"
     },
     {
+      "id": "tiktok-automation",
+      "name": "tiktok-automation",
+      "description": "Automate TikTok tasks via Rube MCP (Composio): upload/publish videos, post photos, manage content, and view user profiles/stats. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "tiktok"
+      ],
+      "triggers": [
+        "tiktok",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "upload",
+        "publish",
+        "videos",
+        "post"
+      ],
+      "path": "skills/tiktok-automation/SKILL.md"
+    },
+    {
+      "id": "todoist-automation",
+      "name": "todoist-automation",
+      "description": "Automate Todoist task management, projects, sections, filtering, and bulk operations via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "todoist"
+      ],
+      "triggers": [
+        "todoist",
+        "automation",
+        "automate",
+        "task",
+        "sections",
+        "filtering",
+        "bulk",
+        "operations",
+        "via",
+        "rube",
+        "mcp",
+        "composio"
+      ],
+      "path": "skills/todoist-automation/SKILL.md"
+    },
+    {
       "id": "tool-design",
       "name": "tool-design",
       "description": "Build tools that agents can use effectively, including architectural reduction patterns",
@@ -14460,6 +16205,30 @@
         "bugs"
       ],
       "path": "skills/track-management/SKILL.md"
+    },
+    {
+      "id": "trello-automation",
+      "name": "trello-automation",
+      "description": "Automate Trello boards, cards, and workflows via Rube MCP (Composio). Create cards, manage lists, assign members, and search across boards programmatically.",
+      "category": "workflow",
+      "tags": [
+        "trello"
+      ],
+      "triggers": [
+        "trello",
+        "automation",
+        "automate",
+        "boards",
+        "cards",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "lists",
+        "assign",
+        "members"
+      ],
+      "path": "skills/trello-automation/SKILL.md"
     },
     {
       "id": "trigger-dev",
@@ -14559,6 +16328,30 @@
         "user"
       ],
       "path": "skills/twilio-communications/SKILL.md"
+    },
+    {
+      "id": "twitter-automation",
+      "name": "twitter-automation",
+      "description": "Automate Twitter/X tasks via Rube MCP (Composio): posts, search, users, bookmarks, lists, media. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "twitter"
+      ],
+      "triggers": [
+        "twitter",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "posts",
+        "search",
+        "users",
+        "bookmarks"
+      ],
+      "path": "skills/twitter-automation/SKILL.md"
     },
     {
       "id": "typescript-advanced-types",
@@ -15052,6 +16845,30 @@
       "path": "skills/vector-index-tuning/SKILL.md"
     },
     {
+      "id": "vercel-automation",
+      "name": "vercel-automation",
+      "description": "Automate Vercel tasks via Rube MCP (Composio): manage deployments, domains, DNS, env vars, projects, and teams. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "vercel"
+      ],
+      "triggers": [
+        "vercel",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "deployments",
+        "domains",
+        "dns",
+        "env"
+      ],
+      "path": "skills/vercel-automation/SKILL.md"
+    },
+    {
       "id": "vercel-deploy-claimable",
       "name": "vercel-deploy-claimable",
       "description": "Deploy applications and websites to Vercel. Use this skill when the user requests deployment actions such as 'Deploy my app', 'Deploy this to production', 'Create a preview deployment', 'Deploy and give me the link', or 'Push this live'. No authentication required - returns preview URL and claimable deployment link.",
@@ -15424,6 +17241,54 @@
       "path": "skills/webapp-testing/SKILL.md"
     },
     {
+      "id": "webflow-automation",
+      "name": "webflow-automation",
+      "description": "Automate Webflow CMS collections, site publishing, page management, asset uploads, and ecommerce orders via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "webflow"
+      ],
+      "triggers": [
+        "webflow",
+        "automation",
+        "automate",
+        "cms",
+        "collections",
+        "site",
+        "publishing",
+        "page",
+        "asset",
+        "uploads",
+        "ecommerce",
+        "orders"
+      ],
+      "path": "skills/webflow-automation/SKILL.md"
+    },
+    {
+      "id": "whatsapp-automation",
+      "name": "whatsapp-automation",
+      "description": "Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates, upload media, and handle contacts. Always search tools first for current schemas.",
+      "category": "business",
+      "tags": [
+        "whatsapp"
+      ],
+      "triggers": [
+        "whatsapp",
+        "automation",
+        "automate",
+        "business",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "send",
+        "messages",
+        "upload"
+      ],
+      "path": "skills/whatsapp-automation/SKILL.md"
+    },
+    {
       "id": "windows-privilege-escalation",
       "name": "Windows Privilege Escalation",
       "description": "This skill should be used when the user asks to \"escalate privileges on Windows,\" \"find Windows privesc vectors,\" \"enumerate Windows for privilege escalation,\" \"exploit Windows misconfigurations,\" or \"perform post-exploitation privilege escalation.\" It provides comprehensive guidance for discovering and exploiting privilege escalation vulnerabilities in Windows environments.",
@@ -15565,6 +17430,30 @@
       "path": "skills/workflow-patterns/SKILL.md"
     },
     {
+      "id": "wrike-automation",
+      "name": "wrike-automation",
+      "description": "Automate Wrike project management via Rube MCP (Composio): create tasks/folders, manage projects, assign work, and track progress. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "wrike"
+      ],
+      "triggers": [
+        "wrike",
+        "automation",
+        "automate",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "tasks",
+        "folders",
+        "assign",
+        "work",
+        "track"
+      ],
+      "path": "skills/wrike-automation/SKILL.md"
+    },
+    {
       "id": "writing-plans",
       "name": "writing-plans",
       "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
@@ -15680,6 +17569,58 @@
       "path": "skills/xss-html-injection/SKILL.md"
     },
     {
+      "id": "youtube-automation",
+      "name": "youtube-automation",
+      "description": "Automate YouTube tasks via Rube MCP (Composio): upload videos, manage playlists, search content, get analytics, and handle comments. Always search tools first for current schemas.",
+      "category": "data-ai",
+      "tags": [
+        "youtube"
+      ],
+      "triggers": [
+        "youtube",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "upload",
+        "videos",
+        "playlists",
+        "search"
+      ],
+      "path": "skills/youtube-automation/SKILL.md"
+    },
+    {
+      "id": "youtube-summarizer",
+      "name": "youtube-summarizer",
+      "description": "Extract transcripts from YouTube videos and generate comprehensive, detailed summaries using intelligent analysis frameworks",
+      "category": "general",
+      "tags": [
+        "video",
+        "summarization",
+        "transcription",
+        "youtube",
+        "content-analysis"
+      ],
+      "triggers": [
+        "video",
+        "summarization",
+        "transcription",
+        "youtube",
+        "content-analysis",
+        "summarizer",
+        "extract",
+        "transcripts",
+        "videos",
+        "generate",
+        "detailed",
+        "summaries"
+      ],
+      "path": "skills/youtube-summarizer/SKILL.md"
+    },
+    {
       "id": "zapier-make-patterns",
       "name": "zapier-make-patterns",
       "description": "No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) let non-developers automate business processes without writing code. But no-code doesn't mean no-complexity - these platforms have their own patterns, pitfalls, and breaking points.  This skill covers when to use which platform, how to build reliable automations, and when to graduate to code-based solutions. Key insight: Zapier optimizes for simplicity and integrations (7000+ apps), Make optimizes for power",
@@ -15703,6 +17644,79 @@
         "developers"
       ],
       "path": "skills/zapier-make-patterns/SKILL.md"
+    },
+    {
+      "id": "zendesk-automation",
+      "name": "zendesk-automation",
+      "description": "Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "zendesk"
+      ],
+      "triggers": [
+        "zendesk",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "tickets",
+        "users",
+        "organizations",
+        "replies"
+      ],
+      "path": "skills/zendesk-automation/SKILL.md"
+    },
+    {
+      "id": "zoho-crm-automation",
+      "name": "zoho-crm-automation",
+      "description": "Automate Zoho CRM tasks via Rube MCP (Composio): create/update records, search contacts, manage leads, and convert leads. Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "zoho",
+        "crm"
+      ],
+      "triggers": [
+        "zoho",
+        "crm",
+        "automation",
+        "automate",
+        "tasks",
+        "via",
+        "rube",
+        "mcp",
+        "composio",
+        "update",
+        "records",
+        "search"
+      ],
+      "path": "skills/zoho-crm-automation/SKILL.md"
+    },
+    {
+      "id": "zoom-automation",
+      "name": "zoom-automation",
+      "description": "Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio). Always search tools first for current schemas.",
+      "category": "workflow",
+      "tags": [
+        "zoom"
+      ],
+      "triggers": [
+        "zoom",
+        "automation",
+        "automate",
+        "meeting",
+        "creation",
+        "recordings",
+        "webinars",
+        "participant",
+        "tracking",
+        "via",
+        "rube",
+        "mcp"
+      ],
+      "path": "skills/zoom-automation/SKILL.md"
     }
   ]
 }

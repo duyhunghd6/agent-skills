@@ -177,11 +177,19 @@ When cutting a new version (e.g., V4):
     - Update `package.json` → `"version": "X.Y.Z"` (source of truth for npm).
     - Update version header in `README.md` if it displays the number.
     - One-liner: `npm version patch` (or `minor`/`major`) — bumps `package.json` and creates a git tag; then amend if you need to tag after release.
-4.  **Tag Release**:
+4.  **Create GitHub Release** (REQUIRED):
+
+    > ⚠️ **CRITICAL**: Pushing a tag (`git push --tags`) is NOT enough. You must create a **GitHub Release Object** for it to appear in the sidebar and trigger the NPM publish workflow.
+
+    Use the GitHub CLI:
+
     ```bash
-    git tag -a v4.0.0 -m "V4 Enterprise Edition"
-    git push origin v4.0.0
+    # This creates the tag AND the release page automatically
+    gh release create v4.0.0 --title "v4.0.0 - [Theme Name]" --notes-file release_notes.md
     ```
+
+    _Or manually via the GitHub UI > Releases > Draft a new release._
+
 5.  **Publish to npm** (so `npx antigravity-awesome-skills` works):
     - **Option A (manual):** From repo root, with npm logged in and 2FA/token set up:
       ```bash

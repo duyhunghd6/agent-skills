@@ -14,9 +14,10 @@
 2. **Choose your bundle** from the list below based on your role or interests.
 
 3. **Use skills** by referencing them in your AI assistant:
-   - Claude Code: `>> @skill-name help me...`
+   - Claude Code: `>> /skill-name help me...`
    - Cursor: `@skill-name in chat`
    - Gemini CLI: `Use skill-name...`
+   - Codex CLI: `Use skill-name...`
 
 ---
 
@@ -328,33 +329,77 @@ _For system design and technical decisions._
 
 ---
 
+## 🧰 Maintainer & OSS
+
+### 🛠️ The "OSS Maintainer" Pack
+
+_For shipping clean changes in public repositories._
+
+- [`commit`](../skills/commit/): High-quality conventional commits.
+- [`create-pr`](../skills/create-pr/): PR creation with review-ready context.
+- [`requesting-code-review`](../skills/requesting-code-review/): Ask for targeted, high-signal reviews.
+- [`receiving-code-review`](../skills/receiving-code-review/): Apply feedback with technical rigor.
+- [`changelog-automation`](../skills/changelog-automation/): Keep release notes and changelogs consistent.
+- [`git-advanced-workflows`](../skills/git-advanced-workflows/): Rebase, cherry-pick, bisect, recovery.
+- [`documentation-templates`](../skills/documentation-templates/): Standardize docs and handoffs.
+
+### 🧱 The "Skill Author" Pack
+
+_For creating and maintaining high-quality SKILL.md assets._
+
+- [`skill-creator`](../skills/skill-creator/): Design effective new skills.
+- [`skill-developer`](../skills/skill-developer/): Implement triggers, hooks, and skill lifecycle.
+- [`writing-skills`](../skills/writing-skills/): Improve clarity and structure of skill instructions.
+- [`documentation-generation-doc-generate`](../skills/documentation-generation-doc-generate/): Generate maintainable technical docs.
+- [`lint-and-validate`](../skills/lint-and-validate/): Validate quality after edits.
+- [`verification-before-completion`](../skills/verification-before-completion/): Confirm changes before claiming done.
+
+---
+
 ## 📚 How to Use Bundles
 
-### Installation
+### 1) Pick by immediate goal
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
-   ```
+- Need to ship a feature now: `Essentials` + one domain pack (`Web Wizard`, `Python Pro`, `DevOps & Cloud`).
+- Need reliability and hardening: add `QA & Testing` + `Security Developer`.
+- Need product growth: add `Startup Founder` or `Marketing & Growth`.
 
-2. **Or use the installer:**
-   ```bash
-   npx antigravity-awesome-skills
-   ```
+### 2) Start with 3-5 skills, not 20
 
-### Using Skills
+Pick the minimum set for your current milestone. Expand only when you hit a real gap.
 
-Once installed, reference skills in your AI assistant:
+### 3) Invoke skills consistently
 
-- **Claude Code**: `>> @skill-name help me...`
+- **Claude Code**: `>> /skill-name help me...`
 - **Cursor**: `@skill-name` in chat
 - **Gemini CLI**: `Use skill-name...`
+- **Codex CLI**: `Use skill-name...`
 
-### Customizing Bundles
+### 4) Build your personal shortlist
 
-You can create your own bundle by:
-1. Copying skill folders to your `.agent/skills/` directory
-2. Or referencing multiple skills in a single conversation
+Keep a small list of high-frequency skills and reuse it across tasks to reduce context switching.
+
+## 🧩 Recommended Bundle Combos
+
+### Ship a SaaS MVP (2 weeks)
+
+`Essentials` + `Full-Stack Developer` + `QA & Testing` + `Startup Founder`
+
+### Harden an existing production app
+
+`Essentials` + `Security Developer` + `DevOps & Cloud` + `Observability & Monitoring`
+
+### Build an AI product
+
+`Essentials` + `Agent Architect` + `LLM Application Developer` + `Data Engineering`
+
+### Grow traffic and conversions
+
+`Web Wizard` + `Marketing & Growth` + `Data & Analytics`
+
+### Launch and maintain open source
+
+`Essentials` + `OSS Maintainer` + `Architecture & Design`
 
 ---
 
@@ -377,6 +422,11 @@ You can create your own bundle by:
 2. Grow: `Security Engineer` → Advanced pentesting
 3. Master: Red team tactics and threat modeling
 
+**Open Source Maintenance:**
+1. Start: `Essentials` → `OSS Maintainer`
+2. Grow: `Architecture & Design` → `QA & Testing`
+3. Master: `Skill Author` + release automation workflows
+
 ---
 
 ## 🤝 Contributing
@@ -393,4 +443,4 @@ Found a skill that should be in a bundle? Or want to create a new bundle? [Open 
 
 ---
 
-_Last updated: January 2026 | Total Skills: 560+ | Total Bundles: 20+_
+_Last updated: February 2026 | Total Skills: 713+ | Total Bundles: 26_
