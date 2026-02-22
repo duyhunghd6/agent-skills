@@ -7,6 +7,109 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [6.0.0] - 2026-02-22 - "Codex YAML Fix & Community PRs"
+
+> **Major release: Codex frontmatter fixes, AWS Security & Compliance skills, Antigravity Workspace Manager CLI, and validation fixes.**
+
+This release addresses Codex invalid YAML warnings (issue #108) via frontmatter fixes, adds AWS Security & Compliance skills and the official Antigravity Workspace Manager CLI companion, and fixes validation for nerdzao-elite skills.
+
+## New Skills
+
+- **AWS Security & Compliance** (PR #106): `aws-compliance-checker`, `aws-iam-best-practices`, `aws-secrets-rotation`, `aws-security-audit`.
+- **nerdzao-elite**, **nerdzao-elite-gemini-high**: Elite workflow skills (validation fixes in-repo).
+
+## Improvements
+
+- **Frontmatter**: Fixed YAML frontmatter in code-reviewer, architect-review, c-pro, design-orchestration, haskell-pro, multi-agent-brainstorming, performance-engineer, search-specialist (PR #111) — reduces Codex "invalid YAML" warnings (fixes #108).
+- **Antigravity Workspace Manager**: Official CLI companion to auto-provision skill subsets across environments (PR #110); documented in Community Contributors.
+- **Registry**: Now tracking 889 skills.
+- **Validation**: Added frontmatter and "When to Use" for nerdzao-elite / nerdzao-elite-gemini-high.
+
+## Credits
+
+- **@Vonfry** for frontmatter YAML fixes (PR #111)
+- **@ssumanbiswas** for AWS Security & Compliance skills (PR #106)
+- **@amartelr** for Antigravity Workspace Manager CLI (PR #110)
+- **@fernandorych** for branch sync (PR #109)
+- **@Rodrigolmti** for reporting Codex YAML issue (#108)
+
+---
+
+_Upgrade now: `git pull origin main` to fetch the latest skills._
+
+## [5.10.0] - 2026-02-21 - "AWS Kiro CLI Integration"
+
+> **Native support and integration guide for AWS Kiro CLI, expanding the repository's reach to the AWS developer community.**
+
+This release adds comprehensive support for Kiro CLI, AWS's recently launched agentic IDE, enabling 883+ skills to enhance Kiro's autonomous operations across serverless, IaC, and AWS architectures. It also includes an important bugfix for the npm installer CLI.
+
+## 🚀 Improvements
+
+- **Integration Guide**: Added `docs/KIRO_INTEGRATION.md` detailing Kiro capabilities, installation instructions, AWS-recommended skills, and MCP usage.
+- **Documentation**: Updated `README.md`, `docs/GETTING_STARTED.md`, and `docs/FAQ.md` to formally support Kiro CLI and add invocation examples.
+- **Installer**: Added the `--kiro` flag to the CLI installer (`bin/install.js`) which correctly targets `~/.kiro/skills`.
+
+## 🐛 Bug Fixes
+
+- **Installer Path Consistency**: Fixed Issue #105 where the published `v5.9.0` npm install script contained an older version of `bin/install.js`, causing `--antigravity` installs to mistakenly target `.agent/skills` instead of the global `~/.gemini/antigravity/skills`. This release (`5.10.0`) properly bundles the corrected npm install script.
+
+## 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **@ssumanbiswas** for the Kiro CLI support (PR #104)
+
+---
+
+## [5.9.0] - 2026-02-20 - "Apple HIG & Quality Bar"
+
+> **Extensive Apple design guidelines and strict validation for the entire registry.**
+
+This release adds the official Apple Human Interface Guidelines skills suite, enforces strict agentskills-ref metadata validation across all skills, and addresses critical path resolution bugs in the CLI installer along with dangling link validation to prevent agent token waste.
+
+## 🚀 New Skills
+
+### 🍎 [apple-hig-skills](skills/hig-platforms/)
+
+**Comprehensive platform and UX guidelines for Apple ecosystems.**
+Official guidelines covering iOS, macOS, visionOS, watchOS, and tvOS natively formatted for AI consumption.
+
+- **Key Feature 1**: Deep dives into spatial layout, interactions, and modalities.
+- **Key Feature 2**: Component-level guidelines for status bars, dialogs, charts, and input mechanisms (Pencil, Digital Crown).
+
+> **Try it:** `Use @hig-platforms to review if our iPad app navigation follows standard iOS paradigms.`
+
+### 👁️ [manifest](skills/manifest/)
+
+**Observability plugin setup guide for AI agents.**
+Walks through a 6-step setup for the Manifest observability platform, including troubleshooting for common errors.
+
+- **Key Feature**: Complete configuration wizard from obtaining API keys to verifying traces.
+
+> **Try it:** `Use @manifest to add observability to our local python agent.`
+
+---
+
+## 📦 Improvements
+
+- **Registry Update**: Now tracking 883 skills.
+- **CLI Installer**: Fixed the default `.agent/skills` path to properly default to `~/.gemini/antigravity/skills` and added an explicit `--antigravity` flag (fixes #101).
+- **Validation**: Enforced strict folder-to-name matching and concise (<200 char) descriptions based on `agentskills-ref` (fixes #97).
+- **Validation**: Added build-time Markdown dangling link validation to `validate_skills.py` to prevent agents from hallucinating relative paths (fixes #102).
+
+## 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **@raintree-technology** for the Apple HIG Skills (PR #90)
+- **@sergeyklay** for the skill quality validations (PR #97)
+- **@SebConejo** for the manifest observability skill (PR #103)
+- **@community** for identifying installer and link bugs (Issues #101, #102)
+
+---
+
+_Upgrade now: `git pull origin main` to fetch the latest skills._
+
 ## [5.8.0] - 2026-02-19 - "Domain-Driven Design Suite"
 
 > **First full DDD skill suite: strategic design, context mapping, and tactical patterns for complex domains.**

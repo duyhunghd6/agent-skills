@@ -1,6 +1,6 @@
 ---
 name: angular
-description: >-
+description: ">-"
   Modern Angular (v20+) expert with deep knowledge of Signals, Standalone
   Components, Zoneless applications, SSR/Hydration, and reactive patterns.
   Use PROACTIVELY for Angular development, component architecture, state

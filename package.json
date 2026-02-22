@@ -1,7 +1,7 @@
 {
   "name": "antigravity-awesome-skills",
-  "version": "5.8.0",
-  "description": "845+ agentic skills for Claude Code, Gemini CLI, Cursor, Antigravity & more. Installer CLI.",
+  "version": "6.0.0",
+  "description": "883+ agentic skills for Claude Code, Gemini CLI, Cursor, Antigravity & more. Installer CLI.",
   "license": "MIT",
   "scripts": {
     "validate": "python3 scripts/validate_skills.py",

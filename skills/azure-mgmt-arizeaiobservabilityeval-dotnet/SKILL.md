@@ -1,10 +1,12 @@
 ---
 name: azure-mgmt-arizeaiobservabilityeval-dotnet
-description: |
+description: "|"
   Azure Resource Manager SDK for Arize AI Observability and Evaluation (.NET). Use when managing Arize AI organizations 
   on Azure via Azure Marketplace, creating/updating/deleting Arize resources, or integrating Arize ML observability 
   into .NET applications. Triggers: "Arize AI", "ML observability", "ArizeAIObservabilityEval", "Arize organization".
 package: Azure.ResourceManager.ArizeAIObservabilityEval
+risk: unknown
+source: community
 ---
 
 # Azure.ResourceManager.ArizeAIObservabilityEval
@@ -228,3 +230,6 @@ var data = await org.GetAsync();
 - [NuGet Package](https://www.nuget.org/packages/Azure.ResourceManager.ArizeAIObservabilityEval)
 - [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net)
 - [Arize AI](https://arize.com/)
+
+## When to Use
+This skill is applicable to execute the workflow or actions described in the overview.

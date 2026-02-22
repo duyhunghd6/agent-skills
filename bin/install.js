@@ -22,7 +22,9 @@ function parseArgs() {
   let cursor = false,
     claude = false,
     gemini = false,
-    codex = false;
+    codex = false,
+    antigravity = false,
+    kiro = false;
 
   for (let i = 0; i < a.length; i++) {
     if (a[i] === "--help" || a[i] === "-h") return { help: true };
@@ -54,10 +56,28 @@ function parseArgs() {
       codex = true;
       continue;
     }
+    if (a[i] === "--antigravity") {
+      antigravity = true;
+      continue;
+    }
+    if (a[i] === "--kiro") {
+      kiro = true;
+      continue;
+    }
     if (a[i] === "install") continue;
   }
 
-  return { pathArg, versionArg, tagArg, cursor, claude, gemini, codex };
+  return {
+    pathArg,
+    versionArg,
+    tagArg,
+    cursor,
+    claude,
+    gemini,
+    codex,
+    antigravity,
+    kiro,
+  };
 }
 
 function defaultDir(opts) {
@@ -70,7 +90,10 @@ function defaultDir(opts) {
     if (codexHome) return path.join(codexHome, "skills");
     return path.join(HOME, ".codex", "skills");
   }
-  return path.join(HOME, ".agent", "skills");
+  if (opts.kiro) return path.join(HOME, ".kiro", "skills");
+  if (opts.antigravity)
+    return path.join(HOME, ".gemini", "antigravity", "skills");
+  return path.join(HOME, ".gemini", "antigravity", "skills");
 }
 
 function printHelp() {
@@ -82,17 +105,21 @@ antigravity-awesome-skills — installer
   Clones the skills repo into your agent's skills directory.
 
 Options:
-  --cursor    Install to ~/.cursor/skills (Cursor)
-  --claude    Install to ~/.claude/skills (Claude Code)
-  --gemini    Install to ~/.gemini/skills (Gemini CLI)
-  --codex     Install to ~/.codex/skills (Codex CLI)
-  --path <dir> Install to <dir> (default: ~/.agent/skills)
+  --cursor       Install to ~/.cursor/skills (Cursor)
+  --claude       Install to ~/.claude/skills (Claude Code)
+  --gemini       Install to ~/.gemini/skills (Gemini CLI)
+  --codex        Install to ~/.codex/skills (Codex CLI)
+  --kiro         Install to ~/.kiro/skills (Kiro CLI)
+  --antigravity  Install to ~/.gemini/antigravity/skills (Antigravity)
+  --path <dir>   Install to <dir> (default: ~/.gemini/antigravity/skills)
   --version <ver>  After clone, checkout tag v<ver> (e.g. 4.6.0 -> v4.6.0)
   --tag <tag>      After clone, checkout this tag (e.g. v4.6.0)
 
 Examples:
   npx antigravity-awesome-skills
   npx antigravity-awesome-skills --cursor
+  npx antigravity-awesome-skills --kiro
+  npx antigravity-awesome-skills --antigravity
   npx antigravity-awesome-skills --version 4.6.0
   npx antigravity-awesome-skills --path ./my-skills
 `);
@@ -206,10 +233,7 @@ function main() {
         try {
           fs.mkdirSync(parent, { recursive: true });
         } catch (e) {
-          console.error(
-            `Cannot create parent directory: ${parent}`,
-            e.message,
-          );
+          console.error(`Cannot create parent directory: ${parent}`, e.message);
           process.exit(1);
         }
       }
