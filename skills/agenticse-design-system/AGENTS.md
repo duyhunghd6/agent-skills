@@ -48,3 +48,12 @@ For detailed descriptions on any layout, consult `rules/enterprise-layouts.md`.
 
 All approved elements eventually live in `showcase/index.html`.
 Load them structurally via specific target ID sections (`sections/components.html`, `sections/layouts.html`, `sections/storyboard.html`). Avoid writing complex wrapper HTML inside `sections/*` files to keep fetch injection clean.
+
+## 6. File Structure & Agent Searchability
+
+To guarantee that AI Agents (like AgenticAI) can efficiently discover, parse, and utilize UI assets, all components and composite layouts MUST adhere to the following rigid folder constraints:
+
+- **Isolated Subdirectories**: Every single component and layout MUST be placed in its own dedicated, named subdirectory containing _all_ of its relevant files (HTML, CSS/tokens, JS, SVGs, etc.).
+- **Small HTML**: The core HTML wrapper files must be kept intentionally small and clean.
+- **Detached SVGs**: SVG markup MUST NOT be inlined into the HTML. SVGs must be extracted out into separate standalone `.svg` files within the component/layout subdirectory.
+- **Purpose**: When AgenticAI just needs to search for component names, it must be able to cleanly traverse isolated folders without parsing massive monolothic HTML files.

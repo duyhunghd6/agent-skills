@@ -28,3 +28,12 @@
 
 - **Core Logic & State**: Strictly separate interactive logic (e.g., dropdown toggle, focus management) from the presentation layer. Use Headless components.
 - **Platform Adapters**: Apply Design Tokens specifically to adapt to native platform look & feel (CSS Variables for Web, Asset Catalog for iOS, XML for Android).
+
+## 6. Component File Structure
+
+To guarantee efficiency for AI code-generation and discovery:
+
+- **Dedicated Subdirectories**: Place EVERY component (e.g., `button/`, `talent-card/`) in its own separate and strictly named folder. All related HTML, CSS, JS, and SVG assets stay strictly within this folder.
+- **Small HTML**: Do not bloat component HTML.
+- **Separate SVGs**: Extract inline SVG nodes into their own `.svg` files inside the component's folder.
+- **Purpose**: When AgenticAI just needs to search for component names, isolated, non-monolithic folders guarantee reliable indexing.

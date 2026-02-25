@@ -40,4 +40,13 @@
 28. **Sidebar Navigation**: Dedicated left sidebar for Enterprise iPad apps, abandoning mobile-style bottom tabs.
 29. **Pointer & Touch Hybrid**: Support Hover states for pointer morphing, while rigidly maintaining minimum 44pt touch targets for fingers.
 
+## 4. Layout File Structure
+
+To guarantee efficiency for AI code-generation and discovery:
+
+- **Dedicated Subdirectories**: Place EVERY composite layout (e.g., `dashboard-bento/`, `holy-grail/`) in its own separate and strictly named folder. All related HTML, CSS, JS, and SVG assets stay strictly within this folder.
+- **Small HTML**: Do not bloat layout HTML wrappers.
+- **Separate SVGs**: Extract inline SVG nodes into their own `.svg` files inside the layout's folder.
+- **Purpose**: When AgenticAI just needs to search for component names (or layout schemas), isolated, non-monolithic folders guarantee reliable indexing.
+
 For detailed descriptions on any of these, consult the compiled guides.
