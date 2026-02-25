@@ -54,28 +54,37 @@ ubs <changed-files> --format=json
 
 ### Phase 4: Landing the Plane
 
+**MANDATORY: The plane is NOT landed until git push succeeds. NEVER say "ready to push when you are".**
+
 ```bash
 # 11. Final quality scan
 ubs $(git diff --name-only --cached) --format=json
 
-# 12. Close the task
+# 12. File remaining work & close the task
+bd create "Follow-up task" -t task -p 2 --json
 bd close <id> --reason "Completed" --json
 
-# 13. Sync & push
+# 13. Sync & push (CRITICAL)
 bd sync
-git pull --rebase && git push      # NOT DONE until push succeeds
+git pull --rebase
+git push                           # MUST SUCCEED
+git status                         # MUST show "up to date"
 
-# 14. Release files (multi-agent only)
+# 14. Clean up git state
+git stash clear
+git remote prune origin
+
+# 15. Release files (multi-agent only)
 release_file_reservations(reason="<id>")
 
-# 15. See what you unblocked
+# 16. See what you unblocked & announce
 bv --robot-diff
-
-# 16. Announce completion
 send_message(thread_id="<id>", subject="[<id>] Completed")
 
-# 17. Generate handoff
+# 17. Generate handoff & provide user prompt
 bd ready --json
+bd show <next-id> --json
+# Prompt user: "Continue work on bd-X: [title]. [Context]"
 ```
 
 ## Single-Agent Simplified Loop

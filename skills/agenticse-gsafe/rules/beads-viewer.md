@@ -25,6 +25,12 @@ bv --robot-diff
 bv --robot-priority --json
 ```
 
+## Mathematical Routing (Never Guess)
+
+**CRITICAL RULE:** Never allow an AI to randomly guess what task to work on next. Force it to run `bv --robot-insights` or `bv --robot-priority`.
+
+The system calculates the **PageRank** and **Betweenness Centrality** of all tasks. You must tackle the highest-scoring tasks first, as these are the structural bottlenecks blocking the most downstream work. Before writing code, use topological sorting to resolve circular dependencies (e.g., Task A waits on Task B, which waits on Task A).
+
 ## Graph Metrics Explained
 
 | Metric            | What It Measures                                         | Why It Matters                               |

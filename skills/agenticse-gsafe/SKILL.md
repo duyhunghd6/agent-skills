@@ -51,8 +51,8 @@ WORK  ─→ implement & test
 
 END   ─→ ubs <files> (final scan)
        → bd close <id> --json
-       → bd sync && git push
-       → release file reservations
+       → bd sync → git pull → git push (MANDATORY)
+       → git stash clear → prune origin
        → bd ready --json         # Handoff for next session
 ```
 
@@ -83,13 +83,14 @@ END   ─→ ubs <files> (final scan)
 | Scan staged           | `ubs --staged`                          |
 | Search past solutions | `cass search "error" --robot --limit 5` |
 
-### 4. Session Close
+### 4. Session Close ("Landing the Plane")
 
-| Action        | Command                                |
-| :------------ | :------------------------------------- |
-| Close task    | `bd close <id> --reason "Done" --json` |
-| Sync to git   | `bd sync && git push`                  |
-| Release files | `release_file_reservations(...)`       |
+| Action        | Command                                    |
+| :------------ | :----------------------------------------- |
+| Close task    | `bd close <id> --reason "Done" --json`     |
+| Sync & Push   | `bd sync` → `git pull` → `git push`        |
+| Clean state   | `git stash clear; git remote prune origin` |
+| Release files | `release_file_reservations(...)`           |
 
 ## Deep Dives
 

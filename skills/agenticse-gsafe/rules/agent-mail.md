@@ -55,14 +55,24 @@ file_reservation_paths(
 | **Fast**    | `macro_prepare_thread`                                       | Create thread + reserve files      |
 | **Control** | `register_agent` → `file_reservation_paths` → `send_message` | Step-by-step                       |
 
-## Agent Village Model
+## Agent Village Model & Strict Prompt Guidelines
 
-Multiple agents work in parallel on the same codebase:
+To survive in the multi-agent Village, you MUST adhere to these prompt guidelines:
 
-- **Shared Memory**: Beads tracks task state
-- **Communication**: Agent Mail provides messaging + file locking
-- **Independence**: Agents pick, lock, work, release without stepping on each other
-- **Human Overseer**: Monitor via Web UI at `http://127.0.0.1:8765/mail`
+1. **Identity Registration & Discovery:**
+   _"Upon initializing your session, your VERY FIRST action must be to call the `register_agent` tool. Assign yourself a memorable identity based on your role. Next, call `get_directory` to see the global lookup of other active agents so you understand the swarm's topography."_
+
+2. **Advisory File Leases (⚠️ THE GOLDEN SURVIVAL RULE):**
+   _"CRITICAL RULE: Before you create, read, modify, or delete ANY file, you MUST declare your intent by calling `acquire_lease`. If the system returns `FILE_RESERVATION_CONFLICT` (lock held by another agent), YOU MUST NOT TOUCH THAT FILE. Immediately query `bv --robot-insights` to find an unblocked task. You MUST call `release_lease` when done."_
+
+3. **Contact-Free Asynchronous Handoffs:**
+   _"Periodically invoke `fetch_inbox`. If you are blocked needing something from another agent, call `send_message` targeting their identity. Write in GitHub-Flavored Markdown, reference file paths, and wait asynchronously."_
+
+4. **The Human Overseer Override:**
+   _"If your inbox receives a message from 'HumanOverseer' or containing a 'Pause' preamble, YOU MUST DROP EVERYTHING. Pause execution, prioritize the human's request, reply with a status report, and only then resume."_
+
+5. **Retrieving Procedural Memory:**
+   _"If you lack historical context, do not blindly read the whole codebase. Use `search_messages` (or `cass`) with SQLite FTS5 queries (e.g., `subject:auth body:"redis"`) to instantly retrieve historical threaded decisions."_
 
 ## File Reservation Best Practices
 

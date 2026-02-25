@@ -6,11 +6,14 @@ This is the full compiled document for the G-SAFE (GSCfin Software Agent Framewo
 
 ## 1. Installation & Setup
 
-### Beads (Task Tracker)
+### Beads (`bd` / `br`)
+
+**Note:** `br` is the blazing-fast Rust rewrite. The mental model is identical. Always use the `--json` flag to avoid terminal formatting bloat.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
 # Or: brew tap steveyegge/beads && brew install beads
+# For br: cargo install --git https://github.com/steveyegge/beads_rust
 
 cd your-project
 bd init --quiet              # Non-interactive (for agents)
@@ -47,10 +50,18 @@ Requires the MCP Agent Mail server. Configure in your agent's MCP settings.
 
 ### Claude Code Integration
 
+**Context Injection:** Beads uses a universal CLI approach instead of Claude Skills (which add massive token overhead).
+
+- Run `bd prime` to instantly inject the full workflow context (~1-2k tokens) into your session.
+
+**Hooks Setup:**
+
 ```bash
 bd setup claude              # Install hooks globally
 bd setup claude --project    # Install for this project only
 ```
+
+This automatically runs `bd prime` on SessionStart and PreCompact to keep your context fresh.
 
 ---
 
@@ -97,9 +108,9 @@ Returns all unblocked tasks, sorted by priority.
 bd ready --json
 ```
 
-### Smart Selection: `bv --robot-priority`
+### Smart Selection: Mathematical Routing
 
-Returns tasks ranked by graph metrics — PageRank, betweenness, critical path position.
+**CRITICAL RULE:** Never guess your next task. Force mathematical routing using `bv` to resolve circular dependencies and find the highest PageRank tasks blocking downstream work.
 
 ```bash
 bv --robot-priority
@@ -169,6 +180,25 @@ All coordination uses the Beads Issue ID as the linking key:
 - Reservation `reason` = `bd-###`
 - Commit messages reference `bd-###`
 
+### Extreme Coordination Guidelines (Actionable Prompts)
+
+Agents MUST adhere to these strict prompts:
+
+1. **Identity Registration:**
+   _"Upon initializing your session, your VERY FIRST action must be to call the `register_agent` tool. Assign yourself a memorable identity. Next, call `get_directory` to see the global lookup of other active agents."_
+
+2. **Advisory File Leases (THE GOLDEN SURVIVAL RULE):**
+   _"CRITICAL RULE: Before you read or modify ANY file, you MUST acquire a lease. If the system returns `FILE_RESERVATION_CONFLICT`, YOU MUST NOT TOUCH THAT FILE. Immediately query `bv --robot-insights` to find an unblocked task. Call `release_lease` when done."_
+
+3. **Contact-Free Handoffs:**
+   _"Invoke `fetch_inbox` periodically. If blocked by another agent, call `send_message` targeting their identity. Write in GitHub Flavored Markdown, reference file paths, and wait asynchronously."_
+
+4. **Human Overseer Override:**
+   _"If your inbox receives a message from 'HumanOverseer' or containing 'Pause', YOU MUST DROP EVERYTHING. Pause your task, execute the human's request, reply when finished, and only then resume."_
+
+5. **Retrieving Procedural Memory (CASS/Agent Mail):**
+   _"If you lack historical context, do not blindly read the whole codebase. Use `search_messages` or `cass search` to rapidly retrieve historical threaded conversations."_
+
 ### Handling Conflicts
 
 - If `FILE_RESERVATION_CONFLICT`: wait for expiry or message the lock holder
@@ -187,9 +217,9 @@ Implement, test, and commit as normal. Reference the Beads ID in commits:
 git commit -m "feat: add JWT validation (bd-123)"
 ```
 
-### Tracking Discovered Work
+### Tracking Discovered Work (The 2-Minute Rule)
 
-File issues liberally — anything over ~2 minutes of work:
+_"If you discover a side-quest or bug that takes more than 2 minutes to fix, do not get derailed. Create a new Bead for it using `discovered-from:<parent-id>`."_
 
 ```bash
 bd create "Memory leak in image loader" -t bug -p 1 \
@@ -269,35 +299,68 @@ ubs --profile=loose     # Skip TODO/debug nits (prototyping)
 
 ## 7. Session Close ("Landing the Plane")
 
+**MANDATORY: The plane is NOT landed until `git push` succeeds. NEVER say "ready to push when you are!"**
+
 ```bash
-# Final quality scan
+# 1. Final quality scan
 ubs $(git diff --name-only --cached) --format=json
 
-# Close completed work
+# 2. File remaining work & close completed work
+bd create "Follow-up work" -t task -p 2 --json
 bd close <id> --reason "Done" --json
 
-# Sync to git (CRITICAL — not done until push succeeds)
+# 3. Sync to git (CRITICAL — not done until push succeeds)
 bd sync
-git pull --rebase && git push
+# For br/strict compliance:
+git add .beads/ && git commit -m "Update beads state"
 
-# Multi-agent: release file reservations
+git pull --rebase
+git push                          # MUST SUCCEED
+git status                        # MUST output "up to date"
+
+# 4. Clean up git state
+git stash clear
+git remote prune origin
+
+# 5. Multi-agent: release file reservations
 release_file_reservations(reason="<id>")
 
-# See what you unblocked
+# 6. See what you unblocked & announce
 bv --robot-diff
-
-# Multi-agent: announce completion
 send_message(thread_id="<id>", subject="[<id>] Completed")
 
-# Generate handoff for next session
+# 7. Generate handoff for next session
 bd ready --json
+bd show <next-id> --json
 ```
+
+**Generate Prompt for User:**
+At the end of the session, provide the user with a prompt for their next session:
+_"Continue work on bd-X: [issue title]. [Brief context about what's next]"_
 
 **Restart agents after each task.** One task → land the plane → kill → start fresh. Context rot happens in long sessions.
 
 ---
 
 ## 8. Advanced Topics
+
+### Duplicate Detection & Merging
+
+```bash
+bd duplicates --json           # Scan for duplicated issues
+bd merge bd-42 --into bd-41    # Merge duplicates and preserve dependencies
+```
+
+### Multi-Repo & OSS Patterns
+
+Use a single MCP Server instance. It auto-routes to per-project Dolt servers.
+
+```bash
+bd config get routing.mode     # Check routing configuration
+bd config set routing.mode auto
+bd config set routing.contributor "~/.beads-planning" # OSS Contributor Pattern
+bd list --json | jq '.[] | select(.source_repo == ".")' # Filter aggregated issues
+```
 
 ### CASS: Cross-Agent Session Search
 
