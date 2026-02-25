@@ -1,0 +1,79 @@
+# Agent Mail Coordination
+
+MCP Agent Mail provides messaging, file reservations, and coordination for multi-agent workflows. It integrates with Beads for task-linked communication.
+
+## Core Concepts
+
+### Identity & Inbox
+
+Every agent has an identity (e.g., `GreenCastle`) and an inbox.
+
+- Register: `register_agent(project_key="<repo>", ...)` or `macro_start_session(...)`
+- Check messages: `fetch_inbox` or `resource://inbox/{Agent}`
+
+### File Reservations (Leases)
+
+Prevent conflicts by reserving files _before_ editing.
+
+- **Exclusive** (`exclusive=true`): Only you can edit. **Recommended.**
+- **Shared** (`exclusive=false`): Others can also edit (use with caution).
+
+```bash
+file_reservation_paths(
+  project_key="<repo>",
+  agent_name="<identity>",
+  paths=["src/components/**", "README.md"],
+  ttl_seconds=3600,
+  exclusive=true,
+  reason="bd-123"
+)
+```
+
+### Beads Linkage
+
+- **Mail `thread_id`** ↔ `bd-###` (Beads Issue ID)
+- **Mail subject**: `[bd-###] Starting <title>`
+- **Reservation `reason`**: `bd-###`
+
+## Workflow: The Beads + Mail Loop
+
+1. **Analyze & Pick**: `bv --robot-priority` → note Issue ID (e.g., `bd-123`)
+2. **Reserve Files**: `file_reservation_paths(..., reason="bd-123")`
+3. **Announce Start**: `send_message(thread_id="bd-123", subject="[bd-123] Starting...")`
+4. **Work**: Edit code, include `bd-123` in commits
+5. **Release**:
+   - `bd close bd-123 --reason "Completed"`
+   - `release_file_reservations(...)`
+   - `bv --robot-diff` to see what you unblocked
+   - Reply: `[bd-123] Completed`
+
+## Macros vs Granular Tools
+
+| Speed       | Tool                                                         | Use                                |
+| :---------- | :----------------------------------------------------------- | :--------------------------------- |
+| **Fast**    | `macro_start_session`                                        | Register + check inbox in one call |
+| **Fast**    | `macro_prepare_thread`                                       | Create thread + reserve files      |
+| **Control** | `register_agent` → `file_reservation_paths` → `send_message` | Step-by-step                       |
+
+## Agent Village Model
+
+Multiple agents work in parallel on the same codebase:
+
+- **Shared Memory**: Beads tracks task state
+- **Communication**: Agent Mail provides messaging + file locking
+- **Independence**: Agents pick, lock, work, release without stepping on each other
+- **Human Overseer**: Monitor via Web UI at `http://127.0.0.1:8765/mail`
+
+## File Reservation Best Practices
+
+- **Be specific** — reserve only what you need, avoid `**/*`
+- **Release early** — don't hold locks while idle
+- **Use TTL** — set reasonable expiry so locks expire on crash
+- **Handle conflicts** — if blocked, wait or check inbox for lock holder messages
+- **Always include `bd-###`** in the `reason` field
+
+## Handling Messages
+
+- Check `fetch_inbox` regularly
+- If `ack_required=true`, you **must** reply or acknowledge
+- Use the Beads Issue ID as `thread_id` for all task-related messages
