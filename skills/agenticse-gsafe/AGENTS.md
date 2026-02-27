@@ -48,6 +48,15 @@ curl -fsSL "https://raw.githubusercontent.com/Dicklesworthstone/ultimate_bug_sca
 
 Requires the MCP Agent Mail server. Configure in your agent's MCP settings.
 
+### FastCode (Codebase Intelligence)
+
+Instantly search and query the entire codebase for context.
+
+```bash
+fastcode index .               # Index the current repository
+fastcode --repo . query "Where is X?"   # Semantic search
+```
+
 ### Claude Code Integration
 
 **Context Injection:** Beads uses a universal CLI approach instead of Claude Skills (which add massive token overhead).
@@ -81,6 +90,9 @@ bd show <id> --json
 
 # Atomically claim it (prevents race conditions)
 bd update <id> --claim --json
+
+# Gather codebase context
+fastcode --repo . query "Where is the implementation for <task properties>?"
 
 # Search for prior solutions
 cass search "<task keywords>" --robot --limit 5
@@ -126,6 +138,18 @@ bv --robot-priority
 | **HITS**          | Hub vs Authority          | Foundational vs integration tasks |
 | **Eigenvector**   | Graph influence           | Overall structural importance     |
 | **K-Core**        | Dense subgraph membership | Tightly coupled clusters          |
+
+### Codebase Context
+
+Use **FastCode** to orient yourself within the codebase:
+
+```bash
+# Force an index update if necessary
+fastcode index --force .
+
+# Find specific implementations or logic
+fastcode --repo . query "Where is the authentication middleware located?"
+```
 
 ### Planning & Blast Radius
 

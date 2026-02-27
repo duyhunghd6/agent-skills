@@ -18,7 +18,8 @@ bv --robot-priority               # Smart: what has highest impact?
 # 3. Claim the task
 bd update <id> --claim --json      # Atomic — fails if already claimed
 
-# 4. Search for prior art
+# 4. Search for prior art & Codebase context
+fastcode --repo . query "Where is the code for <task keywords>?"
 cass search "<task keywords>" --robot --limit 5
 ```
 
@@ -127,10 +128,10 @@ bd ready --json → bd update <id> --claim --json → WORK
      │                                       │
      └──────────┐               ┌────────────┘
                 │               │
-            ┌───┴───────────────┴───┐
-            │        CASS           │
-            │  (session search)     │
-            └───────────────────────┘
+  ┌─────────────┴──┐        ┌───┴───────────────┴───┐
+  │   FastCode     │        │        CASS           │
+  │(code context)  │        │  (session search)     │
+  └────────────────┘        └───────────────────────┘
 ```
 
 ## Key Principle
