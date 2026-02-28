@@ -6,7 +6,7 @@ description: >-
   multi-agent coordination, FastCode (fastcode) codebase intelligence, CASS (cass) cross-agent session search, and UBS (ubs)
   static bug scanning into one integrated workflow.
   Triggers: gsafe, beads, br, bd, bv, agent mail, fastcode, query, codebase intelligence, cass, ubs, multi-agent, task tracker,
-  quality gate, session search, agent memory, file reservation, bug scanner.
+  quality gate, session search, agent memory, file reservation, bug scanner, github, gh, git, commit trailer, beads-id.
 license: MIT
 compatibility: Requires Beads Rust (br/bv), MCP Agent Mail server, FastCode, CASS, and UBS CLIs.
 metadata:
@@ -29,14 +29,15 @@ The G-SAFE (GSCfin Software Agent Framework for Engineering) skill gives AI codi
 
 ## Tool Overview
 
-| Tool             | CLI        | Purpose                                      | Key Command                     |
-| :--------------- | :--------- | :------------------------------------------- | :------------------------------ |
-| **Beads Rust**   | `br`       | SQLite+JSONL task tracker & agent memory     | `br ready --json`               |
-| **Beads Viewer** | `bv`       | Graph intelligence (PageRank, critical path) | `bv --robot-priority`           |
-| **Agent Mail**   | MCP tools  | Multi-agent messaging & file reservations    | `macro_start_session`           |
-| **FastCode**     | `fastcode` | Codebase intelligence & semantic search      | `fastcode --repo . query "<q>"` |
-| **CASS**         | `cass`     | Cross-agent session search & indexing        | `cass search "query" --robot`   |
-| **UBS**          | `ubs`      | Multi-language static bug scanner            | `ubs <files> --format=json`     |
+| Tool             | CLI        | Purpose                                      | Key Command                         |
+| :--------------- | :--------- | :------------------------------------------- | :---------------------------------- |
+| **Beads Rust**   | `br`       | SQLite+JSONL task tracker & agent memory     | `br ready --json`                   |
+| **Beads Viewer** | `bv`       | Graph intelligence (PageRank, critical path) | `bv --robot-priority`               |
+| **Agent Mail**   | MCP tools  | Multi-agent messaging & file reservations    | `macro_start_session`               |
+| **FastCode**     | `fastcode` | Codebase intelligence & semantic search      | `fastcode --repo . query "<q>"`     |
+| **CASS**         | `cass`     | Cross-agent session search & indexing        | `cass search "query" --robot`       |
+| **UBS**          | `ubs`      | Multi-language static bug scanner            | `ubs <files> --format=json`         |
+| **GitHub**       | `git`+`gh` | Commit↔Beads linking, PR/CI lookup           | `git log --grep='Beads-ID: br-xxx'` |
 
 ## Unified Session Workflow
 
@@ -53,6 +54,7 @@ WORK  ─→ implement & test
 
 END   ─→ ubs <files> (final scan)
        → br close <id> --json
+       → git commit --trailer "Beads-ID: br-xxx"  # Link commit to task
        → br sync → git pull → git push (MANDATORY)
        → git stash clear → prune origin
        → br ready --json         # Handoff for next session
@@ -86,14 +88,25 @@ END   ─→ ubs <files> (final scan)
 | Scan staged           | `ubs --staged`                          |
 | Search past solutions | `cass search "error" --robot --limit 5` |
 
-### 4. Session Close ("Landing the Plane")
+### 4. GitHub Integration (Commit Traceability)
 
-| Action        | Command                                    |
-| :------------ | :----------------------------------------- |
-| Close task    | `br close <id> --reason "Done" --json`     |
-| Sync & Push   | `br sync` → `git pull` → `git push`        |
-| Clean state   | `git stash clear; git remote prune origin` |
-| Release files | `release_file_reservations(...)`           |
+| Action                       | Command                                                            |
+| :--------------------------- | :----------------------------------------------------------------- |
+| Commit with Beads-ID trailer | `git commit -m "feat: desc" --trailer "Beads-ID: br-xxx"`          |
+| Find commits for task        | `git log --all --grep='Beads-ID: br-xxx'`                          |
+| Find PRs for task            | `gh pr list --search "br-xxx" --state all --json number,title,url` |
+| Check CI status              | `gh run list --limit 5 --json status,conclusion,displayTitle`      |
+| View run details             | `gh run view <run-id> --json jobs`                                 |
+
+### 5. Session Close ("Landing the Plane")
+
+| Action         | Command                                    |
+| :------------- | :----------------------------------------- |
+| Close task     | `br close <id> --reason "Done" --json`     |
+| Commit+Trailer | `git commit --trailer "Beads-ID: br-xxx"`  |
+| Sync & Push    | `br sync` → `git pull` → `git push`        |
+| Clean state    | `git stash clear; git remote prune origin` |
+| Release files  | `release_file_reservations(...)`           |
 
 ## Deep Dives
 
@@ -103,6 +116,7 @@ END   ─→ ubs <files> (final scan)
 - [FastCode Codebase Intelligence](rules/analyze-codebase.md) — Fast semantic code search
 - [CASS Session Search](rules/cass-search.md) — Cross-agent search & token management
 - [UBS Quality Gate](rules/ubs-quality-gate.md) — Bug scanning, fix-verify loop, severity guide
+- [GitHub Integration](rules/github-integration.md) — Commit trailers, `git`+`gh` CLI, Beads-ID traceability
 - [The Coordination Loop](rules/coordination-loop.md) — Unified br→bv→am→ubs workflow
 
 ## Full Compiled Document
