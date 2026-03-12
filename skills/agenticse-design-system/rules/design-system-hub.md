@@ -1,6 +1,6 @@
 # Design System Hub Maintenance
 
-The **Design System Hub** (`showcase/index.html`) is the centralized viewer. It displays tokens, components, layouts, screens, and the full change-tracking ledger.
+The **Design System Hub** (`packages/design-system/showcase/index.html`) is the centralized viewer. It displays tokens, components, layouts, screens, and the full change-tracking ledger.
 
 ## 9 Standard Sections
 

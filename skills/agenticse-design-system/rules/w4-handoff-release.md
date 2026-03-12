@@ -12,7 +12,7 @@ Ensure the package contains:
 - `design-tokens.json` (The SSOT)
 - `token-mapping.md` (Visual property -> token name)
 - `screens/*/index.html` (HTML prototypes)
-- `showcase/index.html` (The Design System Hub)
+- `packages/design-system/showcase/index.html` (The Design System Hub)
 - `variants/` (Platform variants)
 - `a11y/` (Accessibility annotations)
 - `changes/changelog.json` & `decisions.json` (Full history)

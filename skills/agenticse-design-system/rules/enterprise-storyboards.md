@@ -1,6 +1,6 @@
 # Enterprise Storyboard Patterns
 
-**Goal**: Prove the interactivity of components in a simulated user journey context within the Design System Hub (`showcase/index.html`). Static previews are insufficient.
+**Goal**: Prove the interactivity of components in a simulated user journey context within the Design System Hub (`packages/design-system/showcase/index.html`). Static previews are insufficient.
 
 ## Standard Storyboard Flows
 
