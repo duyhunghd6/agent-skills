@@ -2,11 +2,13 @@
 
 <!-- beads-id: br-gatecheck-gate-a -->
 
-> **Pipeline position:** Between Step 2 and Step 3 • **BLOCKS pipeline until human approves.**
+> **Pipeline position:** Between Step 2 and Step 3 • Preceded by Contract Quality Convergence Loop (TASK 1B) • **BLOCKS pipeline until human approves.**
 
 ## Purpose
 
 Gate A (Gate Check 1) is the core **User Experience (UX) checkpoint**. It ensures the human reviewer agrees with the Low-Fidelity concepts (ASCII Wireframes and JSON Storyboards) *before* the Agentic AI spends compute generating High-Fidelity HTML. This prevents wasted CI resources by catching logical flow errors early.
+
+> **Note:** Gate A is reached only after the Contract Quality Scoring Engine (TASK 1B) achieves a score ≥ 90 or escalates due to stall/timeout. The Ralph Loop self-improves the contract before presenting to the human.
 
 ## Input
 
@@ -70,9 +72,10 @@ Map P0/P1/P2 severity levels per test category (see [pass-fail-policy.md](./pass
 Use `notify_user` with `BlockedOnUser: true` to present:
 
 1. The test plan summary
-2. **Low-Fidelity Wireframes (ASCII):** Ask the user to focus strictly on functionality and screen structure without visual bias.
-3. **Storyboard Validation (JSON flows):** Ask the user to validate the "click paths" and navigation logic against the PRD's problem statements.
-4. Links to all UI/UX contract artifacts
+2. **Contract Quality Score** — show the final score and any escalation warnings
+3. **Low-Fidelity Wireframes (ASCII):** Ask the user to focus strictly on functionality and screen structure without visual bias.
+4. **Storyboard Validation (JSON flows):** Ask the user to validate the "click paths" and navigation logic against the PRD's problem statements.
+5. Links to all UI/UX contract artifacts
 
 ## Gate Check — PASS/FAIL Decision
 
@@ -81,11 +84,12 @@ The human reviewer chooses one of:
 | Decision                     | Action                       | Next Step                    |
 | ---------------------------- | ---------------------------- | ---------------------------- |
 | ✅ **APPROVE**               | Plan is correct and complete | → Step 3 (Environment Setup) |
-| 🔄 **REJECT — Fix Contract** | Contract has errors          | → Return to Step 1 or Step 2 |
+| 🔄 **REJECT — Fix Contract** | Contract has errors          | → Return to TASK 1A (GENERATE) — re-enter scoring loop |
 | 🔄 **REJECT — Fix PRD**      | PRD is incomplete            | → Return to Step 0           |
 
 ### PASS Criteria (UX Concept Approved)
 
+- [ ] **[CONTRACT QUALITY] Contract Quality Score ≥ 90** (or escalated with stall/timeout warning disclosed to reviewer).
 - [ ] Wireframes accurately represent the user stories and PRD problem statements.
 - [ ] Storyboard click paths and navigational logic reflect human intent.
 - [ ] UI components map correctly to the standard Design System library (`data-ds-id`).

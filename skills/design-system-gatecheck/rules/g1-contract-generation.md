@@ -163,24 +163,48 @@ Before emitting the contract, run a conflict scan:
 | Component map    | `docs/design/contracts/feature-x.component-map.json`    |
 | Conflict report  | `docs/design/contracts/feature-x.prd-ds-conflicts.md`   |
 
-### Contract Quality Score Template (GAP-19)
+### Contract Quality Scoring Engine (Stage 1 RFT Loop)
 
-After the Implementor completes its first run, rate the contract quality:
+This scoring engine is used by **TASK 1B (EVALUATE)** in the Stage 1 Ralph Loop. After GENERATE (g1+g2) produces contract artifacts, this engine scores them on 5 pillars to determine if the contract is ready for Gate A.
+
+**Contract Quality Score (0–100):**
+
+| Pillar | Weight | Checks |
+|--------|--------|--------|
+| **PRD Coverage** | 25% | Every screen + state + journey in PRD → matching wireframe + storyboard |
+| **Component Traceability** | 25% | Every ASCII block → `data-ds-id` in `component-map.json` |
+| **Storyboard Completeness** | 20% | Every user journey has ≥1 trajectory; error recovery paths present |
+| **Layout Compilability** | 15% | `layout-rules.json` parses cleanly; zero `AMBIGUOUS_RULE` flags |
+| **Conflict Resolution** | 15% | All `PRD_DS_CONFLICT` items detected and surfaced |
+
+**Scoring Mechanics:**
+- Gradient penalty: `missing_items × (weight / total_items_expected)` — every improvement is rewarded
+- Rollout ID: `rl-stage1-YYYY-MM-DD-NNN` per iteration
+- Pillar deltas tracked per iteration
+- Cross-iteration regression check (iteration ≥ 2)
+- Attribution: `evaluator_contract` | `prd_gap` | `unknown`
+- All graded rollouts → `docs/rft-dataset/{prd_id}/stage1/`
+
+**Convergence:** Score ≥ 90 AND zero `AMBIGUOUS_RULE` → `GATE_A_READY`. Otherwise, Prioritized Fix Queue sent back to GENERATE. See `gsafe-uiux-ralph-loop-stage1.md` for full convergence decision table.
+
+**Output:**
 
 ```json
 {
-  "contract_quality": {
-    "implementor_clarification_requests": 0,
-    "spec_gaps_found_during_implementation": 2,
-    "storyboard_trajectories_count": 3,
-    "conflict_items_resolved_at_gate_a": 1,
-    "quality_score": 85,
-    "notes": "Two state transitions were ambiguous — refine g1 template for next feature."
-  }
+  "contract_quality_score": 87,
+  "pillars": {
+    "prd_coverage": { "score": 22, "max": 25, "missing": ["error state for /settings"] },
+    "component_traceability": { "score": 25, "max": 25 },
+    "storyboard_completeness": { "score": 16, "max": 20, "missing": ["error recovery for journey 2"] },
+    "layout_compilability": { "score": 12, "max": 15, "ambiguous_rules": 1 },
+    "conflict_resolution": { "score": 12, "max": 15 }
+  },
+  "rollout_id": "rl-stage1-2026-03-13-001",
+  "iteration": 1,
+  "verdict": "CONTINUE",
+  "fix_queue": ["Add error state wireframe for /settings", "Resolve AMBIGUOUS_RULE in kpi-cards"]
 }
 ```
-
-Feed quality score back into `g1-contract-generation.md` iteration notes to improve contract completeness over time.
 
 ## Switching Rules
 

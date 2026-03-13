@@ -5,6 +5,31 @@
 > **Version:** 1.0.0 — Compiled holistic guide for the full UI/UX QA pipeline.
 > Read `SKILL.md` first for the quick reference. This document provides the full end-to-end narrative.
 
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                 3-LAYER AGENT COMPREHENSION PYRAMID                        │
+│                                                                             │
+│                    /\        LAYER 1: ROOT METHODOLOGY                     │
+│                   /  \       spike-design-system-ralph-loop-agent.md        │
+│                  /    \      "WHY & WHAT" — Theory, DoD, RFT, 3-Tier Eval  │
+│                 /──────\                                                    │
+│                /        \    LAYER 2: ORCHESTRATION                         │
+│               /          \   gsafe-uiux-ralph-loop-antigravity.md (main)    │
+│              /            \  ├── gsafe-uiux-ralph-loop-stage1.md            │
+│             /              \ └── gsafe-uiux-ralph-loop-stage2.md            │
+│            /────────────────\                                               │
+│           /                  \  LAYER 3: EXECUTOR SKILLS                   │
+│          /  ◄── YOU ARE HERE  \ design-system-gatecheck/ (THIS FILE)       │
+│         /  The Evaluator Agent \ agenticse-design-system/ (Implementor)    │
+│        /────────────────────────\ "HOW" — Full pipeline narrative           │
+│                                                                             │
+│  >> AGENT DIRECTIVE:                                                       │
+│  >> You are at LAYER 3 (Evaluator — full guide). For quick lookup use      │
+│  >> SKILL.md. For execution, follow Stage workflow instructions.            │
+│  >> Do NOT read Layer 1 (spike) unless modifying this skill.               │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
 ## 1. What This Skill Does
 
 This skill runs a **12-step UI/UX QA pipeline** that validates a live UI implementation against a formalized **UI Contract** derived from a PRD. The pipeline is **contract-driven** (no subjective judgment) and **auto-gated** (two human approval gates control progression).
@@ -44,6 +69,20 @@ Step 6: Nav Flow ──► Step 7: A11y Audit ──► Step 8: Scoring
 - **Gate A rejects** → Loop back to Step 0, 1, or 2 as directed
 - **Gate B rejects** → Create bug bundle, fix, re-run from Step 4
 - **Baseline update** → Step 9 archives old + replaces with new
+
+### Ralph Loop 1 — Stage 1 Orchestration
+
+Steps 0–2 + Gate A form the **Stage 1 Ralph Loop** (Ralph Loop 1). This is the iterative low-fidelity cycle that stabilizes the UX contract *before* any code is written. The loop has two rejection paths:
+
+- **REJECT_FIX_PRD** → returns to Step 0 to re-enter the PRD Completeness Sub-Loop
+- **REJECT_FIX_CONTRACT** → returns to Step 1 to regenerate ASCII wireframes/storyboards
+
+The full execution recipe is defined in:
+```
+.agents/workflows/gsafe-uiux-ralph-loop-stage1.md
+```
+
+> When executing Stage 1, follow this workflow as the authoritative guide. It references each rule file at the appropriate step.
 
 ## 3. The 3-Tier Evaluation Pyramid
 
@@ -138,7 +177,7 @@ docs/
       feature-x-uiux-report.html
       feature-x-scorecard.json
       feature-x-approval-log.md
-apps/website/tests/e2e/uiux-gatecheck/
+<e2e-testing-root>/uiux-gatecheck/
   fixtures/                     ← Step 3 output
     feature-x.*.json
   reports/

@@ -9,6 +9,32 @@ metadata:
 
 <!-- beads-id: br-skill-gatecheck-01 -->
 
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                 3-LAYER AGENT COMPREHENSION PYRAMID                        │
+│                                                                             │
+│                    /\        LAYER 1: ROOT METHODOLOGY                     │
+│                   /  \       spike-design-system-ralph-loop-agent.md        │
+│                  /    \      "WHY & WHAT" — Theory, DoD, RFT, 3-Tier Eval  │
+│                 /──────\                                                    │
+│                /        \    LAYER 2: ORCHESTRATION                         │
+│               /          \   gsafe-uiux-ralph-loop-antigravity.md (main)    │
+│              /            \  ├── gsafe-uiux-ralph-loop-stage1.md            │
+│             /              \ └── gsafe-uiux-ralph-loop-stage2.md            │
+│            /────────────────\                                               │
+│           /                  \  LAYER 3: EXECUTOR SKILLS                   │
+│          /  ◄── YOU ARE HERE  \ design-system-gatecheck/ (THIS SKILL)      │
+│         /  The Evaluator Agent \ agenticse-design-system/ (Implementor)    │
+│        /────────────────────────\ "HOW" — Rules, Steps, Standards          │
+│                                                                             │
+│  >> AGENT DIRECTIVE:                                                       │
+│  >> You are at LAYER 3 (Evaluator). This skill file is a quick reference.  │
+│  >> Read individual rule files ONLY when a Stage workflow instructs you to. │
+│  >> Do NOT read the spike (Layer 1) unless you are modifying this skill.   │
+│  >> Do NOT read agenticse-design-system unless debugging a Ralph Loop.     │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
 # Design System Gatecheck Skill (V1.0)
 
 This skill enables AI agents to execute a **12-step UI/UX QA pipeline** following the **PRD-first, Contract-driven, Auto-gated** model. The pipeline ensures that live UI implementation matches the agreed UI Contract through automated conformance testing, visual diffing, accessibility audits, and navigation integrity checks — all governed by two formal human approval gates.
@@ -94,6 +120,42 @@ rules/pass-fail-policy.md
 rules/product-switching.md
 ```
 
+## Stage 1 Orchestration (Ralph Loop 1 — Contract RFT Loop)
+
+Steps 0–2 + Gate A form the **Stage 1 Ralph Loop** — an internal RFT loop that autonomously self-improves the low-fi contract before human review. Use the orchestration workflow:
+
+```
+.agents/workflows/gsafe-uiux-ralph-loop-stage1.md
+```
+
+This workflow defines:
+- **Step 0 (g0):** PRD intake & normalization with gap sub-loop
+- **TASK 1A — GENERATE (g1+g2):** Contract generation + compile in a single pass
+- **TASK 1B — EVALUATE:** Contract Quality Scoring Engine (5-pillar, 0–100)
+- **Convergence Decision:** Score ≥ 90 → Gate A; otherwise self-improve via Prioritized Fix Queue
+- **Gate A:** Human UX concept approval (requires Contract Quality Score ≥ 90)
+- **Rejection routing:** REJECT_FIX_PRD → Step 0, REJECT_FIX_CONTRACT → TASK 1A
+
+> ⚠️ When executing Stage 1, follow the workflow file as the authoritative execution guide. Read individual rule files only when the workflow instructs you to.
+
+## Stage 2 Orchestration (Ralph Loop 2 — Implementation RFT Loop)
+
+Steps 3–8 + Gate B form the **Stage 2 Ralph Loop** — the BUILD↔AUDIT convergence loop. Use the orchestration workflow:
+
+```
+.agents/workflows/gsafe-uiux-ralph-loop-stage2.md
+```
+
+This workflow defines:
+- **W0:** Plan Declaration Gate (Implementor emits build plan)
+- **TASK 2A — BUILD (W1→W2):** Implementor writes HTML/CSS/Tokens
+- **TASK 2B — AUDIT (g3→g8):** Evaluator runs 100-pt DoD scoring engine
+- **Convergence Decision:** Score ≥ 95 → Gate B; otherwise self-improve
+- **Task 3:** Agile Refine (PRD journey coverage matrix)
+- **Gate B:** Human structured scorecard approval
+
+> ⚠️ When executing Stage 2, follow the workflow file. The Evaluator runs g3–g8; the Implementor runs W1–W2.
+
 ## Artifact Directory Convention
 
 ```text
@@ -115,7 +177,7 @@ rules/product-switching.md
       feature-x-uiux-report.html
       feature-x-scorecard.json
       feature-x-approval-log.md
-/apps/website/tests/e2e/uiux-gatecheck
+/<e2e-testing-root>/uiux-gatecheck
   /ui
     feature-x.visual.spec.ts
     feature-x.flow.spec.ts
