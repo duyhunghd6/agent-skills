@@ -4,21 +4,17 @@ This is the maintainer playbook for cutting a repository release. Historical rel
 
 ## Preconditions
 
-- The working tree is clean, or you have explicitly isolated the release changes.
-- `package.json` contains the version you intend to publish.
-- Generated registry files are synchronized.
+- The tracked working tree is clean.
+- You are on `main`.
+- `CHANGELOG.md` already contains the release section you intend to publish.
 - README counts, badges, and acknowledgements are up to date.
 
 ## Release Checklist
 
-1. Run the operational verification suite:
+1. Run the scripted preflight:
 
 ```bash
-npm run validate
-npm run validate:references
-npm run sync:all
-npm run test
-npm run app:build
+npm run release:preflight
 ```
 
 2. Optional hardening pass:
@@ -35,25 +31,37 @@ Use this as a diagnostic signal. It is useful for spotting legacy quality debt, 
 - Confirm `README.md` reflects the current version and generated counts.
 - Confirm Credits & Sources, contributors, and support links are still correct.
 
-4. Create the release commit and tag:
+4. Prepare the release commit and tag locally:
 
 ```bash
-git add README.md CHANGELOG.md CATALOG.md data/ skills_index.json package.json package-lock.json
-git commit -m "chore: release vX.Y.Z"
-git tag vX.Y.Z
+npm run release:prepare -- X.Y.Z
 ```
+
+This command:
+
+- checks `CHANGELOG.md` for `X.Y.Z`
+- aligns `package.json` / `package-lock.json`
+- runs the full release suite
+- refreshes release metadata in `README.md`
+- stages canonical release files
+- creates `chore: release vX.Y.Z`
+- creates the local tag `vX.Y.Z`
 
 5. Publish the GitHub release:
 
 ```bash
-gh release create vX.Y.Z --title "vX.Y.Z" --notes-file CHANGELOG.md
+npm run release:publish -- X.Y.Z
 ```
+
+This command pushes `main`, pushes `vX.Y.Z`, and creates the GitHub release object from the matching `CHANGELOG.md` section.
 
 6. Publish to npm if needed:
 
 ```bash
 npm publish
 ```
+
+Normally this still happens via the existing GitHub release workflow after the GitHub release is published.
 
 ## Rollback Notes
 

@@ -2,6 +2,18 @@
 
 Please include a summary of the change and which skill is added or fixed.
 
+## Change Classification
+
+- [ ] Skill PR
+- [ ] Docs PR
+- [ ] Infra PR
+
+## Issue Link (Optional)
+
+Use this only when the PR should auto-close an issue:
+
+`Closes #N` or `Fixes #N`
+
 ## Quality Bar Checklist ✅
 
 **All items must be checked before merging.**
@@ -12,13 +24,9 @@ Please include a summary of the change and which skill is added or fixed.
 - [ ] **Triggers**: The "When to use" section is clear and specific.
 - [ ] **Security**: If this is an _offensive_ skill, I included the "Authorized Use Only" disclaimer.
 - [ ] **Local Test**: I have verified the skill works locally.
-- [ ] **Repo Checks**: I ran `npm run validate:references` if my change affected docs, bundles, workflows, or generated artifacts.
+- [ ] **Repo Checks**: I ran `npm run validate:references` if my change affected docs, workflows, or infrastructure.
+- [ ] **Source-Only PR**: I did not manually include generated registry artifacts (`CATALOG.md`, `skills_index.json`, `data/*.json`) in this PR.
 - [ ] **Credits**: I have added the source credit in `README.md` (if applicable).
-
-## Type of Change
-
-- [ ] New Skill (Feature)
-- [ ] Documentation Update
-- [ ] Infrastructure
+- [ ] **Maintainer Edits**: I enabled **Allow edits from maintainers** on the PR.
 
 ## Screenshots (if applicable)

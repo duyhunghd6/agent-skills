@@ -29,6 +29,8 @@ git commit -m "feat: add my-awesome-skill for [purpose]"
 git push origin my-branch
 ```
 
+Open the PR with the default template and enable **Allow edits from maintainers** so conflicts can be resolved without extra back-and-forth.
+
 If you only want to improve docs, editing directly in GitHub is still perfectly fine.
 
 ---
@@ -219,11 +221,26 @@ More examples...
 
 Recommended validation path:
 
+For a **skill-only PR**:
+
+```bash
+npm install
+npm run validate
+```
+
+For **docs / workflows / infra changes**:
+
 ```bash
 npm install
 npm run validate
 npm run validate:references
 npm test
+```
+
+Optional maintainer-style preflight:
+
+```bash
+npm run pr:preflight
 ```
 
 Python-only fallback:
@@ -238,6 +255,15 @@ This checks:
 - ✅ Name matches folder name
 - ✅ Description exists
 - ✅ Reference data and docs bundles stay coherent
+
+Do **not** commit generated registry artifacts in a normal PR. These files are canonicalized on `main` after merge:
+
+- `CATALOG.md`
+- `skills_index.json`
+- `data/skills_index.json`
+- `data/catalog.json`
+- `data/bundles.json`
+- `data/aliases.json`
 
 Optional hardening pass:
 
@@ -386,8 +412,10 @@ Before submitting your contribution:
 - [ ] I've included examples
 - [ ] I've tested the skill with an AI assistant
 - [ ] I've run `npm run validate`
-- [ ] I've run `npm run validate:references` and `npm test` when my change affects docs, bundles, workflows, or generated artifacts
+- [ ] I've run `npm run validate:references` and `npm test` when my change affects docs, workflows, or infrastructure
+- [ ] I did **not** include generated registry artifacts (`CATALOG.md`, `skills_index.json`, `data/*.json`) in this PR
 - [ ] My commit message is clear (e.g., "feat: add docker-compose skill")
+- [ ] I enabled **Allow edits from maintainers** on the PR
 - [ ] I've checked for typos and grammar
 
 ---
