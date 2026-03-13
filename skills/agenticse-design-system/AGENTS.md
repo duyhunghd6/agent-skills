@@ -1,5 +1,31 @@
 # AgenticSE Design System (AGENTS.md)
 
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                 3-LAYER AGENT COMPREHENSION PYRAMID                        │
+│                                                                             │
+│                    /\        LAYER 1: ROOT METHODOLOGY                     │
+│                   /  \       spike-design-system-ralph-loop-agent.md        │
+│                  /    \      "WHY & WHAT" — Theory, DoD, RFT, 3-Tier Eval  │
+│                 /──────\                                                    │
+│                /        \    LAYER 2: ORCHESTRATION                         │
+│               /          \   gsafe-uiux-ralph-loop-antigravity.md (main)    │
+│              /            \  ├── gsafe-uiux-ralph-loop-stage1.md            │
+│             /              \ └── gsafe-uiux-ralph-loop-stage2.md            │
+│            /────────────────\                                               │
+│           /                  \  LAYER 3: EXECUTOR SKILLS                   │
+│          /                    \ design-system-gatecheck/ (Evaluator)       │
+│         /  ◄── YOU ARE HERE    \ agenticse-design-system/ (THIS FILE)     │
+│        /  The Implementor Agent \ "HOW" — Full workflow narrative          │
+│       /──────────────────────────\                                          │
+│                                                                             │
+│  >> AGENT DIRECTIVE:                                                       │
+│  >> You are at LAYER 3 (Implementor — full guide). For quick lookup use   │
+│  >> SKILL.md. For execution, follow Stage 2 workflow instructions.         │
+│  >> Do NOT read Layer 1 (spike) unless modifying this skill.               │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
 This document is the compiled, comprehensive guide for the `agenticse-design-system` skill. It combines the 4-phase workflow, the mandatory Element Diff Protocol, and the deeply specified Enterprise Guidelines encompassing components, layouts, state matrix coverage, tokens, and Mobile App platform logic.
 
 ## 1. Tenets & Principles

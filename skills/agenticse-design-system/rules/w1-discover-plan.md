@@ -2,6 +2,8 @@
 
 **Goal**: Understand requirements, plan components, analyze platform needs, draft RFCs, and map state edge cases.
 
+> **Orchestration:** This rule is executed as part of **TASK 2A (BUILD)** in the Stage 2 Ralph Loop. See `.agents/workflows/gsafe-uiux-ralph-loop-stage2.md` for the full execution flow. Read Gate A's Contract Quality Score report to understand which contract artifacts are strongest/weakest.
+
 ## Steps
 
 ### W0 — Plan Declaration Gate (GAP-23) ⚠️ MANDATORY BEFORE ANY CODE
@@ -41,10 +43,10 @@
 
 ### 1.2 Edge Case & Wireframe Alignment
 
-- For every screen in the PRD, create a state coverage matrix mapping to the **Low-Fidelity ASCII Wireframes** approved in Gate Check 1.
-- You must understand that your primary role is converting these heavily-vetted Low-Fi text layouts and JSON Storyboards into High-Fi HTML interactives.
+- For every screen in the PRD, create a state coverage matrix mapping to the **Low-Fidelity ASCII Wireframes** and **ASCII User Flows** approved in Gate Check 1.
+- You must understand that your primary role is converting these heavily-vetted Low-Fi text layouts, ASCII User Flows, and JSON Storyboards into High-Fi HTML interactives.
 - Ensure you plan for: **Default, Loading, Empty, Error, Offline, Permission Denied, and Special States** (e.g., Bulk Import).
-- This Matrix feeds into Workflow 2 to ensure High-Fi prototypes cover ALL approved UX flow states.
+- This Matrix feeds into Workflow 2 to ensure High-Fi prototypes cover ALL approved UX flow states via the mandatory ASCII flows.
 
 ### 1.3 Component Triage
 
