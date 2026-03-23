@@ -9,6 +9,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [8.7.1] - 2026-03-23 - "Release Pipeline Repair"
+
+> Patch release to restore npm publication after the `v8.7.0` GitHub Release failed before reaching the npm registry.
+
+Start here:
+
+- Install: `npx antigravity-awesome-skills`
+- Choose your tool: [README -> Choose Your Tool](https://github.com/sickn33/antigravity-awesome-skills#choose-your-tool)
+- Best skills by tool: [README -> Best Skills By Tool](https://github.com/sickn33/antigravity-awesome-skills#best-skills-by-tool)
+- Bundles: [docs/users/bundles.md](https://github.com/sickn33/antigravity-awesome-skills/blob/main/docs/users/bundles.md)
+- Workflows: [docs/users/workflows.md](https://github.com/sickn33/antigravity-awesome-skills/blob/main/docs/users/workflows.md)
+
+This patch release keeps the `8.7.0` skill/library content intact and fixes the release pipeline so npm publication works end-to-end again. The root cause was that the publish workflow only installed root dependencies before building `apps/web-app`, leaving the web app without its own `node_modules` in CI.
+
+## Improvements
+
+- **npm publish repair**: Updated the publish workflow to install `apps/web-app` dependencies before the web build, matching the working GitHub Pages workflow and preventing the missing-React/missing-Vite TypeScript cascade seen in CI.
+- **Release verification hardening**: Added deterministic web-app installation to the maintainer release suite so `release:preflight` and `release:prepare` now catch this class of failure before a GitHub Release is published.
+- **Deterministic installs**: Switched the shared `app:install` script to `npm ci` so local and CI web-app installs use the same locked dependency graph.
+
+## Who should care
+
+- **Maintainers** can cut releases again without the publish workflow failing during the web-app build.
+- **npm users** can finally receive the `8.7.x` catalog and skill updates through the package registry instead of being stuck on `8.4.0`.
+- **Web-app contributors** get a cleaner release contract where CI explicitly prepares the frontend before building it.
+
 ## [8.7.0] - 2026-03-23 - "Reference Recovery and Release Reliability"
 
 > Installable skill library update for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and related AI coding assistants.
