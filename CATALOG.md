@@ -2,7 +2,7 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 1329
+Total skills: 1331
 
 ## architecture (88)
 
@@ -614,7 +614,7 @@ Total skills: 1329
 | `zod-validation-expert` | Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinements, type inference, and integration with React Hook Form, Next.js... | zod, validation | zod, validation, typescript, first, schema, covers, parsing, custom, errors, refinements, type, inference |
 | `zustand-store-ts` | Create Zustand stores following established patterns with proper TypeScript types and middleware. | zustand, store, ts | zustand, store, ts, stores, following, established, proper, typescript, types, middleware |
 
-## general (325)
+## general (326)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -844,6 +844,7 @@ Total skills: 1329
 | `pentest-checklist` | Provide a comprehensive checklist for planning, executing, and following up on penetration tests. Ensure thorough preparation, proper scoping, and effective ... | pentest, checklist | pentest, checklist, provide, planning, executing, following, up, penetration, tests, thorough, preparation, proper |
 | `performance-optimizer` | Identifies and fixes performance bottlenecks in code, databases, and APIs. Measures before and after to prove improvements. | performance, optimizer | performance, optimizer, identifies, fixes, bottlenecks, code, databases, apis, measures, before, after, prove |
 | `performance-profiling` | Performance profiling principles. Measurement, analysis, and optimization techniques. | performance, profiling | performance, profiling, principles, measurement, analysis, optimization, techniques |
+| `phase-gated-debugging` | Use when debugging any bug. Enforces a 5-phase protocol where code edits are blocked until root cause is confirmed. Prevents premature fix attempts. | phase, gated, debugging | phase, gated, debugging, any, bug, enforces, protocol, where, code, edits, blocked, until |
 | `plaid-fintech` | Create a linktoken for Plaid Link, exchange publictoken for accesstoken. Link tokens are short-lived, one-time use. Access tokens don't expire but may need u... | plaid, fintech | plaid, fintech, linktoken, link, exchange, publictoken, accesstoken, tokens, short, lived, one, time |
 | `plan-writing` | Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing features, refactoring, or any multi-step work. | plan, writing | plan, writing, structured, task, planning, clear, breakdowns, dependencies, verification, criteria, implementing, features |
 | `planning-with-files` | Work like Manus: Use persistent markdown files as your "working memory on disk." | planning, with, files | planning, with, files, work, like, manus, persistent, markdown, working, memory, disk |
@@ -1068,7 +1069,7 @@ Total skills: 1329
 | `whatsapp-cloud-api` | Integracao com WhatsApp Business Cloud API (Meta). Mensagens, templates, webhooks HMAC-SHA256, automacao de atendimento. Boilerplates Node.js e Python. | messaging, whatsapp, meta, webhooks | messaging, whatsapp, meta, webhooks, cloud, api, integracao, com, business, mensagens, hmac, sha256 |
 | `x-twitter-scraper` | X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engagement metrics, giveaway draws, monitoring, webhooks, 19 extraction too... | [twitter, x-api, scraping, mcp, social-media, data-extraction, giveaway, monitoring, webhooks] | [twitter, x-api, scraping, mcp, social-media, data-extraction, giveaway, monitoring, webhooks], twitter, scraper, data |
 
-## security (165)
+## security (166)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -1186,6 +1187,7 @@ Total skills: 1329
 | `red-team-tools` | Implement proven methodologies and tool workflows from top security researchers for effective reconnaissance, vulnerability discovery, and bug bounty hunting... | red, team | red, team, proven, methodologies, top, security, researchers, effective, reconnaissance, vulnerability, discovery, bug |
 | `risk-manager` | Monitor portfolio risk, R-multiples, and position limits. Creates hedging strategies, calculates expectancy, and implements stop-losses. | risk, manager | risk, manager, monitor, portfolio, multiples, position, limits, creates, hedging, calculates, expectancy, implements |
 | `risk-metrics-calculation` | Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and drawdown analysis. Use when measuring portfolio risk, implementing risk limits, or... | risk, metrics, calculation | risk, metrics, calculation, calculate, portfolio, including, var, cvar, sharpe, sortino, drawdown, analysis |
+| `saas-multi-tenant` | Design and implement multi-tenant SaaS architectures with row-level security, tenant-scoped queries, shared-schema isolation, and safe cross-tenant admin pat... | multi-tenancy, saas, row-level-security, postgresql, tenant-isolation | multi-tenancy, saas, row-level-security, postgresql, tenant-isolation, multi, tenant, architectures, row, level, security, scoped |
 | `saas-mvp-launcher` | Use when planning or building a SaaS MVP from scratch. Provides a structured roadmap covering tech stack, architecture, auth, payments, and launch checklist. | saas, mvp, launcher | saas, mvp, launcher, planning, building, scratch, provides, structured, roadmap, covering, tech, stack |
 | `sast-configuration` | Static Application Security Testing (SAST) tool setup, configuration, and custom rule creation for comprehensive security scanning across multiple programmin... | sast, configuration | sast, configuration, static, application, security, testing, setup, custom, rule, creation, scanning, multiple |
 | `scanning-tools` | Master essential security scanning tools for network discovery, vulnerability assessment, web application testing, wireless security, and compliance validati... | scanning | scanning, essential, security, network, discovery, vulnerability, assessment, web, application, testing, wireless, compliance |

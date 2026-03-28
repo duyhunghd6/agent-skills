@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 1329,
+  "total": 1331,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -22693,6 +22693,32 @@
       "path": "skills/personal-tool-builder/SKILL.md"
     },
     {
+      "id": "phase-gated-debugging",
+      "name": "phase-gated-debugging",
+      "description": "Use when debugging any bug. Enforces a 5-phase protocol where code edits are blocked until root cause is confirmed. Prevents premature fix attempts.",
+      "category": "general",
+      "tags": [
+        "phase",
+        "gated",
+        "debugging"
+      ],
+      "triggers": [
+        "phase",
+        "gated",
+        "debugging",
+        "any",
+        "bug",
+        "enforces",
+        "protocol",
+        "where",
+        "code",
+        "edits",
+        "blocked",
+        "until"
+      ],
+      "path": "skills/phase-gated-debugging/SKILL.md"
+    },
+    {
       "id": "php-pro",
       "name": "php-pro",
       "description": "Write idiomatic PHP code with generators, iterators, SPL data\nstructures, and modern OOP features. Use PROACTIVELY for high-performance PHP\napplications.",
@@ -25126,6 +25152,34 @@
         "programming"
       ],
       "path": "skills/rust-pro/SKILL.md"
+    },
+    {
+      "id": "saas-multi-tenant",
+      "name": "saas-multi-tenant",
+      "description": "Design and implement multi-tenant SaaS architectures with row-level security, tenant-scoped queries, shared-schema isolation, and safe cross-tenant admin patterns in PostgreSQL and TypeScript.",
+      "category": "security",
+      "tags": [
+        "multi-tenancy",
+        "saas",
+        "row-level-security",
+        "postgresql",
+        "tenant-isolation"
+      ],
+      "triggers": [
+        "multi-tenancy",
+        "saas",
+        "row-level-security",
+        "postgresql",
+        "tenant-isolation",
+        "multi",
+        "tenant",
+        "architectures",
+        "row",
+        "level",
+        "security",
+        "scoped"
+      ],
+      "path": "skills/saas-multi-tenant/SKILL.md"
     },
     {
       "id": "saas-mvp-launcher",

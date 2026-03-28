@@ -20349,6 +20349,28 @@
     }
   },
   {
+    "id": "phase-gated-debugging",
+    "path": "skills/phase-gated-debugging",
+    "category": "uncategorized",
+    "name": "phase-gated-debugging",
+    "description": "Use when debugging any bug. Enforces a 5-phase protocol where code edits are blocked until root cause is confirmed. Prevents premature fix attempts.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-28",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "php-pro",
     "path": "skills/php-pro",
     "category": "code",
@@ -22538,6 +22560,28 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "saas-multi-tenant",
+    "path": "skills/saas-multi-tenant",
+    "category": "database",
+    "name": "saas-multi-tenant",
+    "description": "Design and implement multi-tenant SaaS architectures with row-level security, tenant-scoped queries, shared-schema isolation, and safe cross-tenant admin patterns in PostgreSQL and TypeScript.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-28",
     "plugin": {
       "targets": {
         "codex": "supported",

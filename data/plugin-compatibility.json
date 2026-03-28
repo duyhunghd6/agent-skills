@@ -17648,6 +17648,25 @@
       "runtime_files": []
     },
     {
+      "id": "phase-gated-debugging",
+      "path": "skills/phase-gated-debugging",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "php-pro",
       "path": "skills/php-pro",
       "targets": {
@@ -19541,6 +19560,25 @@
     {
       "id": "rust-pro",
       "path": "skills/rust-pro",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "saas-multi-tenant",
+      "path": "skills/saas-multi-tenant",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -25413,10 +25451,10 @@
     }
   ],
   "summary": {
-    "total_skills": 1329,
+    "total_skills": 1331,
     "supported": {
-      "codex": 1300,
-      "claude": 1315
+      "codex": 1302,
+      "claude": 1317
     },
     "blocked": {
       "codex": 29,
