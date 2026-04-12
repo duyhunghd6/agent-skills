@@ -26241,6 +26241,25 @@
       "runtime_files": []
     },
     {
+      "id": "wordpress-centric-high-seo-optimized-blogwriting-skill",
+      "path": "skills/wordpress-centric-high-seo-optimized-blogwriting-skill",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "wordpress-penetration-testing",
       "path": "skills/wordpress-penetration-testing",
       "targets": {
@@ -26793,10 +26812,10 @@
     }
   ],
   "summary": {
-    "total_skills": 1401,
+    "total_skills": 1402,
     "supported": {
-      "codex": 1370,
-      "claude": 1385
+      "codex": 1371,
+      "claude": 1386
     },
     "blocked": {
       "codex": 31,

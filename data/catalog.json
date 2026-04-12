@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 1401,
+  "total": 1402,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -33740,6 +33740,34 @@
         "security"
       ],
       "path": "skills/wordpress/SKILL.md"
+    },
+    {
+      "id": "wordpress-centric-high-seo-optimized-blogwriting-skill",
+      "name": "wordpress-centric-high-seo-optimized-blogwriting-skill",
+      "description": "Use this skill when the user asks to write a blog post, article, or SEO content. This applies a professional structure, truth boxes, click-bait-free accurate information, and outputs direct WordPress-ready content.",
+      "category": "business",
+      "tags": [
+        "writing",
+        "blog",
+        "seo",
+        "content",
+        "wordpress"
+      ],
+      "triggers": [
+        "writing",
+        "blog",
+        "seo",
+        "content",
+        "wordpress",
+        "centric",
+        "high",
+        "optimized",
+        "blogwriting",
+        "skill",
+        "user",
+        "asks"
+      ],
+      "path": "skills/wordpress-centric-high-seo-optimized-blogwriting-skill/SKILL.md"
     },
     {
       "id": "wordpress-penetration-testing",
